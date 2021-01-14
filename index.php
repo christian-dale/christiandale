@@ -47,5 +47,10 @@ $router->add("/set-lang", "get", function() use(&$app) {
     header("Location: {$_SERVER['HTTP_REFERER']}");
 });
 
+$router->add("/.well-known/acme-challenge/xhox6Lg3ZGAwEQAXXWWhdtHq5Dq_PIr4NGS5akC2MCs", "get", function() use(&$app) {
+    echo "xhox6Lg3ZGAwEQAXXWWhdtHq5Dq_PIr4NGS5akC2MCs.KuxeqH5fgh_4qbKAWWaOnvB9vfTJaS_kpUNbfdvKZ6k";
+    exit();
+});
+
 $router->begin();
 $app->render();
