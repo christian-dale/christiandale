@@ -34,6 +34,7 @@
 
         <a href="#" class="badge">Customer Projects</a>
         <a href="#" class="badge">My Projects</a>
+        <a href="#" class="badge">Small projects / tools</a>
 
         <h2>Customer Projects</h2>
 
@@ -54,7 +55,7 @@
                 {* <img src="/assets/ptoffice_logo.svg" style="max-width: 200px;"> *}
                 <h2>Soma Effects</h2>
                 <p>Guitar effects web shop, quality items.</p>
-                <a href="https://soma-effects.com">https://some-effects.com</a>
+                <a href="https://soma-effects.com">https://soma-effects.com</a>
             </div>
             <div class="projectItem">
                 {* <img src="/assets/ptoffice_logo.svg" style="max-width: 200px;"> *}
@@ -71,7 +72,30 @@
                 {* <img src="/assets/ptoffice_logo.svg" style="max-width: 200px;"> *}
                 <h2>Kernel.css</h2>
                 <p>Simple CSS framework.</p>
-                <a href="https://ptoffice.no">https://ptoffice.no</a>
+                <a href="https://github.com/Ionogy/kernel.css">https://github.com/Ionogy/kernel.css</a>
+            </div>
+            <div class="projectItem" style="background: linear-gradient(to right, #59297f, #4e127c);">
+                {* <img src="/assets/ptoffice_logo.svg" style="max-width: 200px;"> *}
+                <h2>Colony</h2>
+                <p>Real time strategy game written in C.</p>
+                <a href="https://github.com/Ionogy/kernel.css">...</a>
+            </div>
+            <div class="projectItem" style="background: linear-gradient(to right, #59297f, #4e127c);">
+                {* <img src="/assets/ptoffice_logo.svg" style="max-width: 200px;"> *}
+                <h2>Libre</h2>
+                <p>Work-in progress open source Discord like software written in 2015.</p>
+                <a href="https://github.com/Ionogy/kernel.css">...</a>
+            </div>
+        </div>
+
+        <h2>Small projects / tools</h2>
+
+        <div class="projects" style="">
+            <div class="projectItem" style="background: linear-gradient(to right, #59297f, #4e127c);">
+                {* <img src="/assets/ptoffice_logo.svg" style="max-width: 200px;"> *}
+                <h2>Dirlist recursive</h2>
+                <p>Recursive directory traversal library.</p>
+                <a href="https://github.com/Ionogy/kernel.css">...</a>
             </div>
         </div>
 
