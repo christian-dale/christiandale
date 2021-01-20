@@ -34,6 +34,12 @@
             <p>{$post->get("date")}</p>
         </div>
 
+        <div class="section" style="margin-top: 25px;">
+            {foreach $post->get("categories") as $category}
+                <a href="#" class="postCategory badge">{$category}</a>
+            {/foreach}
+        </div>
+
         <p>{$post->get("content")}</p>
 
         <div id="disqus_thread"></div>
