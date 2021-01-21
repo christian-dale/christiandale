@@ -1,6 +1,5 @@
-This is an exciting topic. We will first learn about the physics of orbital mechanics,
-and then we will implement a demo in javascript. This article assumes you have experience
-with coding in javascript from before.
+This article is about coding orbital mechanics in javascript, and learning the
+equations needed for creating a demo. This article assumes you already have some experience with coding in javascript.
 
 Listen, I like getting right to writing code as much as the next person,
 but there are a few things we need to learn before that. We will learn about
