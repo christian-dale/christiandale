@@ -41,6 +41,8 @@
             {/foreach}
         </div>
 
+        <h4>Latest update: {$post->get("dateLatest")}</h4>
+
         <p>{$post->get("content")}</p>
 
         <div id="disqus_thread"></div>
