@@ -9,10 +9,10 @@ class BlogPost extends Item {
 }
 
 class Blog {
-    public $posts = [];
-    public $posts_rendered = [];
-    private $table = "post";
-    private $postscount = 7;
+    public Array $posts = [];
+    public Array $posts_rendered = [];
+    private String $table = "post";
+    private int $postscount = 7;
 
     function __construct() {
 
