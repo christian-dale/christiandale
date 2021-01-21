@@ -6,6 +6,7 @@
         min-height: 400px;
         background: url("{$post->get("image")}") no-repeat center center fixed;
         background-size: cover;
+        border-radius: 4px;
     }
 
     .intro h1 {
