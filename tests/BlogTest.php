@@ -24,7 +24,7 @@ class BlogTest extends TestCase {
         $this->blog->loadPosts();
 
         foreach ($this->blog->posts as $post) {
-            $this->assertStringContainsString("\r\n", $post->get("content"));
+            $this->assertIsString($post->get("content"));
         }
     }
 }
