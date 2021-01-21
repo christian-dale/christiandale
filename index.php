@@ -48,4 +48,4 @@ $router->add("/set-lang", "get", function() use(&$app) {
 });
 
 $router->begin();
-$app->render();
+echo $app->render();

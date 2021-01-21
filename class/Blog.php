@@ -18,18 +18,32 @@ class Blog {
 
     }
 
+    function loadPostMeta(String $file_name): Array {
+        $post_meta = json_decode(file_get_contents($file_name), true);
+        $post_meta["id"] = $this->getPostID($file_name);
+        return $post_meta;
+    }
+
+    function loadPostContent(String $file_name): String {
+        return file_get_contents(preg_replace("@.json@", ".txt", $file_name));
+    }
+
+    function getPostID(String $file_name): String {
+        $match = [];
+        preg_match("@/([a-z0-9]+).json@", $file_name, $match);
+
+        return $match[1];
+    }
+
     function loadPosts() {
         // $posts = DB::query("SELECT * FROM {$this->table}")->fetchAll();
         // Create an instance of type BlogPost of every item in $posts.
         // $this->posts = array_map(fn($post) => Item::simpleLoad(BlogPost::class, $post), $posts);
 
         foreach (glob("posts/*.json") as $file_name) {
-            $file = file_get_contents($file_name);
-            $json = json_decode($file, true);
-            $json["content"] = file_get_contents(preg_replace("@.json@", ".txt", $file_name));
-            preg_match("@/([a-z0-9]+).json@", $file_name, $name);
-            $json["id"] = $name[1];
-            $this->posts[$json["id"]] = Item::simpleLoad(BlogPost::class, $json);
+            $post_meta = $this->loadPostMeta($file_name);
+            $post_meta["content"] = $this->loadPostContent($file_name);
+            $this->posts[$post_meta["id"]] = Item::simpleLoad(BlogPost::class, $post_meta);
         }
 
         uasort($this->posts, fn($a, $b) => strtotime($a->get("date")) < strtotime($b->get("date")));

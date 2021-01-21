@@ -17,10 +17,16 @@ class App {
 
     function render() {
         $this->smarty->assign("content", $this->content);
-        echo $this->smarty->fetch("templates/main.tpl");
+        return $this->smarty->fetch("templates/main.tpl");
     }
 
-    function prettyPrint($i) {
-        echo "<pre>" . print_r($i, true) . "</pre>";
+    function prettyPrint($i, $r = false) {
+        $str = "<pre>" . print_r($i, true) . "</pre>";
+
+        if ($r) {
+            return $str;
+        }
+
+        echo $str;
     }
 }

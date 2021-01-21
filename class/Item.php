@@ -1,5 +1,7 @@
 <?php
 
+require_once("class/DB.php");
+
 abstract class ItemState {
     public const CREATE = 0;
     public const LOAD = 1;
