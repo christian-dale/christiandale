@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta description="Full-stack web developer with many years of experience.">
     <title>Chrisdale</title>
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
     <link rel="stylesheet" href="/assets/styles/normalize.css">
     <link rel="stylesheet" href="/assets/styles/main.css">
 </head>
