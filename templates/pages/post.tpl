@@ -41,7 +41,7 @@
             {/foreach}
         </div>
 
-        <h4>Latest update: {$post->get("dateLatest")}</h4>
+        <h4>Latest update: {$post->get("dateUpdate")}</h4>
 
         <p>{$post->get("content")}</p>
 
