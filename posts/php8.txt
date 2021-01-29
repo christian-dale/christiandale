@@ -1,3 +1,5 @@
+PHP logo courtesy of Colin Viebrock, [Creative Commons BY SA](https://creativecommons.org/licenses/by-sa/4.0/).
+
 With the release of PHP 8, there are a number of new and powerful features that can
 help simplify and improve your codebase, so let's get right to it. These are in no particular order.
 
