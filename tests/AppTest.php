@@ -8,7 +8,7 @@ class AppTest extends TestCase {
     public $app = null;
 
     public function setUp(): void {
-        $this->app = new App(new Smarty(), null);
+        $this->app = new App(new Smarty(), new Lang("en"), null);
     }
 
     public function testAppRender() {

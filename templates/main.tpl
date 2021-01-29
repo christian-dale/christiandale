@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta description="Full-stack web developer with many years of experience.">
-    <title>Chrisdale</title>
+    <meta description="{$description}">
+    <title>{$title}</title>
     <link rel="icon" type="image/png" href="/assets/favicon.png">
     <script data-ad-client="ca-pub-4919922704535736" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <link rel="stylesheet" href="/assets/styles/normalize.css">

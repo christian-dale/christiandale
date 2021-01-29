@@ -10,9 +10,12 @@ require_once("class/Author.php");
 require_once("class/Blog.php");
 require_once("class/App.php");
 
-$app = new App(new Smarty(), null);
-$app->init();
-$app->smarty->assign("lang", new Lang());
+session_start();
+
+$app = new App(new Smarty(), new Lang($_SESSION["lang"] ??= "en"), null);
+$app->title = "Chrisdale";
+$app->description = "Full-stack web developer with many years of experience.";
+$app->smarty->assign("lang", $app->lang);
 
 // DB::setup();
 
@@ -31,7 +34,13 @@ $router->add("/", "get", function() use(&$app) {
 });
 
 $router->add("/blog/{id}", "get", function($res) use(&$app, &$blog) {
-    $app->content = $app->smarty->fetch("templates/pages/post.tpl", ["post" => $blog->posts[$res->attr["id"]]]);
+    $post = $blog->posts[$res->attr["id"]];
+
+    $app->title = $post->get("title");
+    $description = substr(strip_tags($post->get("content")), 0, 250);
+    $app->description = "${description} ...";
+
+    $app->content = $app->smarty->fetch("templates/pages/post.tpl", ["post" => $post]);
 });
 
 $router->add("/blog", "get", function() use(&$app, &$blog) {

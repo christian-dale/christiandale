@@ -2,20 +2,21 @@
 
 class App {
     public $smarty = null;
+    public $lang = null;
     public $db = null;
+    public $title = "";
+    public $description = "";
     public $content = "";
 
-    function __construct($smarty, $db) {
+    function __construct(Smarty $smarty, Lang $lang, DB $db = null) {
         $this->smarty = $smarty;
+        $this->lang = $lang;
         $this->db = $db;
     }
 
-    function init() {
-        session_start();
-        $_SESSION["lang"] ??= "en";
-    }
-
     function render() {
+        $this->smarty->assign("title", $this->title);
+        $this->smarty->assign("description", $this->description);
         $this->smarty->assign("content", $this->content);
         return $this->smarty->fetch("templates/main.tpl");
     }
