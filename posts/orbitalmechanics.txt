@@ -1,10 +1,10 @@
-This article is about coding orbital mechanics in javascript, and learning the
+This article is about coding orbital mechanics in javascript and learning the
 equations needed for creating a demo. This article assumes you already have some experience with coding in javascript.
 
 Listen, I like getting right to writing code as much as the next person,
 but there are a few things we need to learn before that. We will learn about
 computing the distance between points, calculating the amount of force acting upon an object
-using newtons gravity equation and computing the direction of a vector.
+using Newtons gravity equation, and computing the direction of a vector.
 
 ** The distance between points **
 
@@ -15,7 +15,7 @@ Computing the distance between two points is easy. This is the equation for doin
 ** Newton's law of gravity **
 
 This is probably the most complicated part of this article, but once you understand it
-everything else will be simple in comparison. In this equation F is equal to the amount of force
+everything else will be simple in comparison. In this equation, F is equal to the amount of force
 in newtons (N) acting upon an object.
 
 G is the gravitational constant. M and m is the mass of the two objects we are calculating,
@@ -23,7 +23,7 @@ and d is the distance between the two objects.
 
 <pre class="code code-block prettyprint"><code>F = (G * m * M) / d^2</code></pre>
 
-** Direction of a vector **
+** The direction of a vector **
 
 <pre class="code code-block prettyprint">o = atan2(x1 - x0, y1 - y0)
 Fx = cos(o) * F
@@ -31,9 +31,9 @@ Fy = sin(o) * F</code></pre>
 
 ** Astronomical units **
 
-Astronomical units are a way of measuring distances in space, and is what works best for large distances
+Astronomical units are a way of measuring distances in space and is what works best for large distances
 like between planets and moons. An astronomical unit is the distance between the center of the sun to
-the center of the earth, and is defined as AU = 149.6e9, or about 150 million kilometers.
+the center of the earth and is defined as AU = 149.6e9, or about 150 million kilometers.
 
 ** A demo **
 
