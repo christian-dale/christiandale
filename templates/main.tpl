@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 
-<head>
+<head lang="{$lang->getLang()}">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta description="{$description}">
