@@ -26,6 +26,7 @@
         gtag('config', 'G-ZT6DCCNQCD');
     </script>
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
 
 </html>
