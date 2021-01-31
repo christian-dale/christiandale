@@ -11,7 +11,8 @@
     <main>
         <div class="content" style="padding: 2px 0;">
             <h1>Christian Dale</h1>
-            <p class="homeText" style="max-width: 50%;">Full-stack web developer with many years of experience. Interested in most things tech, including game development and arduino.</p>
+            <p class="homeText" style="max-width: 50%;">Full-stack web developer from Norway with many years of experience. Interested in most things tech, including game development and embedded devices like arduino.</p>
+            <a class="github-button" href="https://github.com/vaporwave98" aria-label="Follow @vaporwave98 on GitHub">Follow @vaporwave98</a>
         </div>
 
         <div class="content" style="padding: 0; {*background-color: #fce4ec;*}">
