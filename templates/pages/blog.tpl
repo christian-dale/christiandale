@@ -1,3 +1,11 @@
+<style>
+    .blogPosts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+</style>
+
 <div class="contentBlog">
     <div class="container">
         {include file="templates/partials/nav.tpl"}

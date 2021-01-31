@@ -18,6 +18,24 @@ pre {
     padding: 15px !important;
 }
 
+input[type="text"] {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: block;
+    font-family: inherit;
+    margin: 15px 0;
+    width: 100%;
+    padding: 8px;
+    transition: border 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+input[type="text"]:focus {
+    border: 1px solid #0091ea;
+    outline: 0;
+}
+
 .code .str { color: #27ae60; }
 .code .kwd { color: #2980b9; }
 .code .com { color: #c0392b; }
@@ -51,7 +69,7 @@ pre {
 }
 
 .content {
-    max-width: 1200px;
+    max-width: 900px;
     margin: 75px auto;
     min-height: 200px;
 }

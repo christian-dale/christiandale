@@ -1,8 +1,6 @@
 <style>
     .intro {
         position: relative;
-        background-color: #fce4ec;
-        padding: 0 25px;
         min-height: 400px;
         background: url("{$post->get("image")}") no-repeat center center fixed;
         background-size: cover;
@@ -10,17 +8,20 @@
     }
 
     .intro h1 {
-        color: #fff;
         text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
         position: absolute;
         bottom: 25px;
     }
 
     .intro p {
-        color: #fff;
         text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
         position: absolute;
         bottom: 0;
+    }
+
+    h2 {
+        margin-top: 50px;
+        margin-bottom: 25px;
     }
 </style>
 
@@ -31,17 +32,18 @@
 <div class="contentBlog">
     <div class="container">
         <div class="intro">
-            <h1>{$post->get("title")}</h1>
-            <p>{$post->get("date")}</p>
         </div>
+    </div>
+
+    <div class="content">
+        <h1>{$post->get("title")}</h1>
+        <h4>Created at: {$post->get("date")}, Latest update: {$post->get("dateUpdate")}.</h4>
 
         <div class="section" style="margin-top: 25px;">
             {foreach $post->get("categories") as $category}
                 <a href="#" class="postCategory badge">{$category}</a>
             {/foreach}
         </div>
-
-        <h4>Latest update: {$post->get("dateUpdate")}</h4>
 
         <p>{$post->get("content")}</p>
 
