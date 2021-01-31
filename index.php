@@ -51,6 +51,15 @@ $router->add("/projects", "get", function() use(&$app) {
     $app->content = $app->smarty->fetch("templates/pages/projects.tpl", []);
 });
 
+$router->add("/contact", "get", function() use(&$app) {
+    $app->content = $app->smarty->fetch("templates/pages/contact.tpl", []);
+});
+
+$router->add("/contact", "post", function() use(&$app) {
+    $name = $_POST["name"] ?? "";
+    $email = $_POST["email"] ?? "";
+});
+
 $router->add("/set-lang", "get", function() use(&$app) {
     $_SESSION["lang"] = $_GET["lang"];
     header("Location: {$_SERVER['HTTP_REFERER']}");
