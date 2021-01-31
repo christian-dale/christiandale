@@ -47,7 +47,7 @@
             </div>
             <div class="projectItem">
                 <h2>NIA</h2>
-                <p>Notodden og Rjukan industriarv.</p>
+                <p>Norsk industriarbeidermuseum.</p>
                 <a href="https://nia.no">https://nia.no</a>
                 {* <img src="/assets/ptoffice_logo.svg" style="max-width: 200px;"> *}
             </div>
