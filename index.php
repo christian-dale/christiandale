@@ -66,5 +66,8 @@ $router->add("/set-lang", "get", function() use(&$app) {
     exit();
 });
 
-$router->begin();
+if (!$router->begin()) {
+    $app->content = $app->smarty->fetch("templates/pages/404.tpl", []);
+}
+
 echo $app->render();
