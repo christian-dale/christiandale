@@ -61,8 +61,9 @@ $router->add("/contact", "post", function() use(&$app) {
 });
 
 $router->add("/set-lang", "get", function() use(&$app) {
-    $_SESSION["lang"] = $_GET["lang"];
-    header("Location: {$_SERVER['HTTP_REFERER']}");
+    $app->lang->setLang($_GET["lang"]);
+    header("Location: {$_SERVER['HTTP_REFERER']}", true, 301);
+    exit();
 });
 
 $router->begin();
