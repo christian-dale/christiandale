@@ -17,6 +17,9 @@
             <label>Email</label>
             <input type="text" name="email" placeholder="Enter your email">
 
+            <label>Enter your question</label>
+            <textarea name="content"></textarea>
+
             <input type="submit" value="Send">
         </form>
 
