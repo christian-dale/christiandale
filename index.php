@@ -4,6 +4,7 @@ require_once("vendor/autoload.php");
 
 require_once("class/Router.php");
 require_once("class/DB.php");
+require_once("class/FSDB.php");
 require_once("class/Lang.php");
 require_once("class/Item.php");
 require_once("class/Author.php");
@@ -12,7 +13,7 @@ require_once("class/App.php");
 
 session_start();
 
-$app = new App(new Smarty(), new Lang($_SESSION["lang"] ??= "en"), null);
+$app = new App(new Smarty(), new Lang($_SESSION["lang"] ??= "en"), new FSDB());
 $app->title = "Chrisdale";
 $app->description = "Full-stack web developer with many years of experience.";
 $app->smarty->assign("lang", $app->lang);
