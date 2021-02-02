@@ -8,6 +8,7 @@
     <div class="container">
         {include file="templates/partials/nav.tpl"}
         <h1>Contact</h1>
+        {if $sent}Form was sent.{/if}
 
         <form action="/contact" method="POST">
             <label>Name</label>

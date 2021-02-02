@@ -23,6 +23,8 @@ $app->smarty->assign("lang", $app->lang);
 // $item = new Item("post");
 // $item->save(["title" => "Test"]);
 
+$app->fsdb->createTable("contact", ["name", "email", "content"]);
+
 $blog = new Blog();
 
 $blog->loadPosts();
@@ -53,12 +55,18 @@ $router->add("/projects", "get", function() use(&$app) {
 });
 
 $router->add("/contact", "get", function() use(&$app) {
-    $app->content = $app->smarty->fetch("templates/pages/contact.tpl", []);
+    $app->content = $app->smarty->fetch("templates/pages/contact.tpl", ["sent" => $_GET["sent"] ?? 0]);
 });
 
 $router->add("/contact", "post", function() use(&$app) {
     $name = $_POST["name"] ?? "";
     $email = $_POST["email"] ?? "";
+    $content = $_POST["content"] ?? "";
+
+    $app->fsdb->addRow("contact", ["name" => $name, "email" => $email, "content" => $content]);
+    $app->fsdb->commit();
+
+    header("Location: /contact?sent=1", true, 301);
 });
 
 $router->add("/set-lang", "get", function() use(&$app) {
