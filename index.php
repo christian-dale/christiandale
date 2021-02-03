@@ -47,14 +47,17 @@ $router->add("/blog/{id}", "get", function($res) use(&$app, &$blog) {
 });
 
 $router->add("/blog", "get", function() use(&$app, &$blog) {
+    $app->title = "Blog";
     $app->content = $app->smarty->fetch("templates/pages/blog.tpl", ["posts" => $blog->posts]);
 });
 
 $router->add("/projects", "get", function() use(&$app) {
+    $app->title = "Projects";
     $app->content = $app->smarty->fetch("templates/pages/projects.tpl", []);
 });
 
 $router->add("/contact", "get", function() use(&$app) {
+    $app->title = "Contact";
     $app->content = $app->smarty->fetch("templates/pages/contact.tpl", ["sent" => $_GET["sent"] ?? 0]);
 });
 
