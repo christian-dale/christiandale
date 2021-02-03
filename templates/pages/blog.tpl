@@ -15,7 +15,9 @@
 
         <ul class="blogPosts" style="padding: 0;">
         {foreach $posts as $post}
-            {include file="templates/partials/post.tpl" post=$post}
+            {if $post->get("draft") == false}
+                {include file="templates/partials/post.tpl" post=$post}
+            {/if}
         {/foreach}
         </ul>
 
