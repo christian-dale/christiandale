@@ -13,6 +13,11 @@ require_once("class/App.php");
 
 session_start();
 
+if (!isset($_SERVER["HTTPS"]) || $_SERVER["HTTPS"] != "on") {
+    header("Location: https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"], true, 301);
+    exit();
+}
+
 $app = new App(new Smarty(), new Lang($_SESSION["lang"] ??= "en"), new FSDB());
 $app->title = "Chrisdale";
 $app->description = "Full-stack web developer with many years of experience.";
