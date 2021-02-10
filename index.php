@@ -41,7 +41,7 @@ $router->add("/blog/{id}", "get", function($res) use(&$app, &$blog) {
     $post = $blog->posts[$res->attr["id"]];
 
     $app->title = $post->get("title");
-    $description = substr(strip_tags($post->get("content")), 0, 250);
+    $description = substr(strip_tags($post->get("content")), 0, 150);
     $app->description = "${description} ...";
 
     $app->content = $app->smarty->fetch("templates/pages/post.tpl", ["post" => $post]);
