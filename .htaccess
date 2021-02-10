@@ -4,6 +4,8 @@ RewriteCond %{HTTP_HOST} !=localhost
 RewriteCond %{HTTP_HOST} !=127.0.0.1
 RewriteCond %{REMOTE_ADDR} !=127.0.0.1
 RewriteCond %{REMOTE_ADDR} !=::1
+RewriteCond %{HTTP:X-Forwarded-Proto} =http [OR]
+RewriteCond %{HTTP:X-Forwarded-Proto} =""
 RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
