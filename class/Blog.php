@@ -30,7 +30,7 @@ class Blog {
 
     function getPostID(String $file_name): String {
         $match = [];
-        preg_match("@/([a-z0-9]+).json@", $file_name, $match);
+        preg_match("@/([a-z0-9-_]+).json@", $file_name, $match);
 
         return $match[1];
     }
