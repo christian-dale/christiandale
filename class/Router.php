@@ -16,8 +16,8 @@ class Router {
         $parsed = parse_url($_SERVER["REQUEST_URI"]);
 
         foreach (self::$routes as $route) {
-            if (preg_match("@/+[a-z0-9]+/+([a-z0-9]+)@", $parsed["path"], $val) && preg_match("@{(.*?)}@", $route["path"], $selector)) {
-                preg_match("@/+[a-z0-9]+@", $parsed["path"], $match);
+            if (preg_match("@/+[a-z0-9-_]+/+([a-z0-9-_]+)@", $parsed["path"], $val) && preg_match("@{(.*?)}@", $route["path"], $selector)) {
+                preg_match("@/+[a-z0-9-_]+@", $parsed["path"], $match);
 
                 if (strpos($match[0], $route["path"]) != -1) {
                     if ($route["method"] == $_SERVER["REQUEST_METHOD"]) {
