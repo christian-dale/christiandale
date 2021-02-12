@@ -15,7 +15,8 @@ session_start();
 
 $app = new App(new Smarty(), new Lang($_SESSION["lang"] ??= "en"), new FSDB());
 $app->title = "Chrisdale";
-$app->description = "Full-stack web developer with many years of experience.";
+$app->description = "Full-stack web developer from Norway with many years of experience. "
+    . "Interested in most things tech, including game development and embedded devices like arduino.";
 $app->smarty->assign("lang", $app->lang);
 
 // DB::setup();
