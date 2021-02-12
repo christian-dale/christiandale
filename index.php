@@ -80,6 +80,7 @@ $router->add("/set-lang", "get", function() use(&$app) {
 
 if (!$router->begin()) {
     $app->content = $app->smarty->fetch("templates/pages/404.tpl", []);
+    http_response_code(404);
 }
 
 echo $app->render();
