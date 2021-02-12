@@ -30,10 +30,7 @@
 </div>
 
 <div class="contentBlog">
-    <div class="container">
-        <div class="intro">
-        </div>
-    </div>
+    <div class="intro"></div>
 
     <div class="content">
         <h1>{$post->get("title")}</h1>
