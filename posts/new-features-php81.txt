@@ -1,8 +1,6 @@
 PHP 8.1 will be released later this year, but there have already been several features added to the RFC for PHP 8.1.
 This is not a complete list, and there will probably be more features added to before it's release later this year.
 
-PHP logo courtesy of Colin Viebrock, [Creative Commons BY SA](https://creativecommons.org/licenses/by-sa/4.0/).
-
 ## Array unpacking with string keys
 
 Array unpacking did not previously support unpacking arrays with string keys, but this will now be supported.

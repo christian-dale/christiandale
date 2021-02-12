@@ -1,8 +1,6 @@
 With the release of PHP 8, there are a number of new and powerful features that can
 help simplify and improve your codebase, so let's get right to it. These are in no particular order.
 
-PHP logo courtesy of Colin Viebrock, [Creative Commons BY SA](https://creativecommons.org/licenses/by-sa/4.0/).
-
 ## Named arguments
 
 If you're like me, you may often forget the order of arguments to a function call.

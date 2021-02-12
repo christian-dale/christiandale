@@ -17,6 +17,13 @@
         text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
         position: absolute;
         bottom: 0;
+        left: 15px;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .intro p a {
+        color: rgba(0, 0, 0, 0.8);
+        text-decoration: none;
     }
 
     h2 {
@@ -30,7 +37,7 @@
 </div>
 
 <div class="contentBlog">
-    <div class="intro"></div>
+    <div class="intro">{$post->get("attrib")}</div>
 
     <div class="content">
         <h1>{$post->get("title")}</h1>

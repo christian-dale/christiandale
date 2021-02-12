@@ -4,5 +4,6 @@
     "dateUpdate": "11.02.2021",
     "draft": false,
     "categories": ["programming", "php"],
-    "image": "/assets/php8.png"
+    "image": "/assets/php8.png",
+    "attrib": "Logo by Colin Viebrock, [CC BY SA](https://creativecommons.org/licenses/by-sa/4.0/)."
 }

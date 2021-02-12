@@ -53,7 +53,10 @@ class Blog {
         $parsedown = new Parsedown();
 
         foreach ($this->posts as $post) {
-            $post->set(["content" => $parsedown->text($post->get("content"))]);
+            $post->set([
+                "content" => $parsedown->text($post->get("content")),
+                "attrib" => $parsedown->text($post->get("attrib"))
+            ]);
             $this->posts_rendered[] = $post;
         }
     }
