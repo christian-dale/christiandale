@@ -1,0 +1,18 @@
+In game development we often think that object oriented is the best way.
+
+## ECS design
+
+An entity component system is built up of the following components:
+
+### Entities
+
+Entities are generic placeholders for the objects in our game world,
+and can be represented by using just an id, which is what this implentation is doing.
+
+### Components
+
+Components are collections of data that will be connected to the entities.
+
+### Systems
+
+Systems are functions that will handle the components and is where the game logic itself is stored.
