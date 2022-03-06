@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{$description}">
-    <meta property="og:image" content="{$smarty.server.HTTP_HOST}{$smarty.server.REQUEST_URI}/assets/hero.jpg">
     <meta http-equiv="content-language" content="{$lang->getLang()}">
     <title>{$title}</title>
     <link rel="icon" type="image/png" href="/assets/favicon.png">
