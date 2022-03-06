@@ -1,5 +1,8 @@
 {
     "nav:projects": "Projects",
     "nav:blog": "Blog",
-    "nav:contact": "Contact"
+    "nav:contact": "Contact",
+    "nav:cv": "Resumè",
+    "lang:en": "English",
+    "lang:no": "Norwegian"
 }
