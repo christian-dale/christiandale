@@ -11,7 +11,7 @@
         {include file="templates/partials/nav.tpl"}
 
         <h1>Blog</h1>
-        <p>A blog about technology and philosophy.</p>
+        <p>My opinions on topics like technology and philosophy.</p>
 
         <ul class="blogPosts" style="padding: 0;">
         {foreach $posts as $post}
