@@ -1,23 +1,25 @@
 <style>
     .projects {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        flex-wrap: wrap;        
+        background-color: #f3efe8;
+        border-radius: 5px;
     }
 
     .projectItem {
         min-width: 250px;
         max-width: 400px;
-        background-color: #3d5afe;
         border-radius: 5px;
-        color: #fff;
-        margin: 25px 0;
+        margin: 25px;
         padding: 0 15px 15px 15px;
     }
 
     .projectItem a {
-        color: #fff;
         text-decoration: none;
+    }
+
+    .projectTitle {
+        margin-top: 50px;
     }
 
     @media (max-width: 1200px) {
@@ -32,14 +34,14 @@
         {include file="templates/partials/nav.tpl"}
         <h1>Projects</h1>
 
-        <a href="#" class="badge">Customer Projects</a>
-        <a href="#" class="badge">My Projects</a>
-        <a href="#" class="badge">Small projects / tools</a>
+        <a href="#customer-projects" class="badge">Customer Projects</a>
+        <a href="#my-projects" class="badge">My Projects</a>
+        <a href="#small-projects" class="badge">Small projects / tools</a>
 
-        <h2>Customer Projects</h2>
+        <h2 class="projectTitle" id="customer-projects">Customer Projects</h2>
 
-        <div class="projects" style="">
-            <div class="projectItem" style="background: linear-gradient(to right, #59297f, #4e127c);">
+        <div class="projects">
+            <div class="projectItem">
                 {* <img src="/assets/ptoffice_logo.svg" style="max-width: 200px;"> *}
                 <h2>PT Office</h2>
                 <p>PT Office is a complete software for personal trainers and their customers.</p>
@@ -51,7 +53,7 @@
                 <a href="https://nia.no">https://nia.no</a>
                 {* <img src="/assets/ptoffice_logo.svg" style="max-width: 200px;"> *}
             </div>
-            <div class="projectItem" style="background-color: #039be5;">
+            <div class="projectItem">
                 {* <img src="/assets/ptoffice_logo.svg" style="max-width: 200px;"> *}
                 <h2>Soma Effects</h2>
                 <p>Guitar effects web shop, quality items.</p>
@@ -65,22 +67,28 @@
             </div>
         </div>
 
-        <h2>My Projects</h2>
+        <h2 class="projectTitle" id="my-projects">My Projects</h2>
 
-        <div class="projects" style="">
-            <div class="projectItem" style="background: linear-gradient(to right, #59297f, #4e127c);">
+        <div class="projects">
+            <div class="projectItem">
+                {* <img src="/assets/ptoffice_logo.svg" style="max-width: 200px;"> *}
+                <h2>PairSynth</h2>
+                <p>Modular synthesizer.</p>
+                <a href="https://github.com/team-cryo/pairsynth">https://github.com/team-cryo/pairsynth</a>
+            </div>
+            <div class="projectItem">
                 {* <img src="/assets/ptoffice_logo.svg" style="max-width: 200px;"> *}
                 <h2>Kernel.css</h2>
                 <p>Simple CSS framework.</p>
                 <a href="https://github.com/Ionogy/kernel.css">https://github.com/Ionogy/kernel.css</a>
             </div>
-            <div class="projectItem" style="background: linear-gradient(to right, #59297f, #4e127c);">
+            <div class="projectItem">
                 {* <img src="/assets/ptoffice_logo.svg" style="max-width: 200px;"> *}
                 <h2>Colony</h2>
                 <p>Real time strategy game written in C.</p>
                 <a href="https://github.com/Ionogy/kernel.css">...</a>
             </div>
-            <div class="projectItem" style="background: linear-gradient(to right, #59297f, #4e127c);">
+            <div class="projectItem">
                 {* <img src="/assets/ptoffice_logo.svg" style="max-width: 200px;"> *}
                 <h2>Libre</h2>
                 <p>Work-in progress open source Discord like software written in 2015.</p>
@@ -88,10 +96,10 @@
             </div>
         </div>
 
-        <h2>Small projects / tools</h2>
+        <h2 class="projectTitle" id="small-projects">Small projects / tools</h2>
 
-        <div class="projects" style="">
-            <div class="projectItem" style="background: linear-gradient(to right, #59297f, #4e127c);">
+        <div class="projects">
+            <div class="projectItem">
                 {* <img src="/assets/ptoffice_logo.svg" style="max-width: 200px;"> *}
                 <h2>Dirlist recursive</h2>
                 <p>Recursive directory traversal library.</p>
