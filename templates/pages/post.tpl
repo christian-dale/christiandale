@@ -30,6 +30,12 @@
         margin-top: 50px;
         margin-bottom: 25px;
     }
+
+    .postContent + p:first-letter {
+        font-size: 40px;
+        font-family: serif;
+        font-weight: bold;
+    }
 </style>
 
 <div class="container">
@@ -40,8 +46,8 @@
     <div class="intro">{$post->get("attrib")}</div>
 
     <div class="content">
-        <h1>{$post->get("title")}</h1>
-        <h4>Created at: {$post->get("date")}, Latest update: {$post->get("dateUpdate")}.</h4>
+        <h1 style="margin-bottom: 10px;">{$post->get("title")}</h1>
+        <h4 style="margin-top: 0;">{date("M d, Y", strtotime($post->get("dateUpdate")))}</h4>
 
         <div class="section" style="margin-top: 25px;">
             {foreach $post->get("categories") as $category}
@@ -49,7 +55,7 @@
             {/foreach}
         </div>
 
-        <p>{$post->get("content")}</p>
+        <p class="postContent">{$post->get("content")}</p>
 
         <div id="disqus_thread"></div>
         <script>
