@@ -85,7 +85,7 @@ input[type="text"]:focus {
     }
 
     .btnLang {
-        display: none !important;
+        /* display: none !important; */
     }
 
     .nav-items ul li {
