@@ -4,12 +4,21 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
+
+    .header .logo .headerIcon {
+        color: #fff;
+        background-color: #212121;
+        border-radius: 5px;
+        padding: 5px;
+        font-family: monospace;
+        letter-spacing: 0.1em;
+    }
 </style>
 
 <div class="header" style="display: flex; justify-content: space-between;">
     <nav class="logo" style="display: inline-block;">
         <ul>
-            <li><a href="/" style="color: #212121;">ChrisDale</a></li>
+            <li><a href="/" class="headerIcon">&gt;_</a></li>
         </ul>
     </nav>
 
