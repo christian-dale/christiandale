@@ -3,7 +3,7 @@
         list-style: none;
         margin: 25px;
         width: 400px;
-        background-color: #fafafa;
+        background-color: #e8ebf3;
         border-radius: 4px;
         display: inline-block;
     }

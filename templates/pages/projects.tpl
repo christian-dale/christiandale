@@ -2,7 +2,7 @@
     .projects {
         display: flex;
         flex-wrap: wrap;        
-        background-color: #f3efe8;
+        background-color: #e8ebf3;
         border-radius: 5px;
     }
 
