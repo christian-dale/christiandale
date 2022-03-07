@@ -36,6 +36,12 @@
         font-family: serif;
         font-weight: bold;
     }
+
+    @media (max-width: 1200px) {
+        .contentBlog .intro {
+            display: none;
+        }
+    }
 </style>
 
 <div class="container">
