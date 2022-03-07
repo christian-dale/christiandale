@@ -6,5 +6,5 @@
 </script>
 
 <div class="footer">
-    <p class="footerCopyright">&copy; Chrisdale </p>
+    <p class="footerCopyright">&copy; Chrisdale 2021 - </p>
 </div>
