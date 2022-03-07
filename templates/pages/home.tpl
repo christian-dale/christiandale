@@ -18,7 +18,7 @@
     <main>
         <div class="content" style="padding: 5px 15px; background: #f3e8e8; border-radius: 5px;">
             <h1>Christian Dale</h1>
-            <p class="homeText" style="max-width: 50%;">Full-stack web developer from Norway with many years of experience. Interested in most things tech, including game development and embedded devices.</p>
+            <p class="homeText" style="max-width: 50%;">{$lang->get("home:intro")}</p>
             {* <a class="github-button" href="https://github.com/christian-dale"
 			aria-label="Follow @christian-dale on GitHub">Follow @christian-dale</a> *}
             <p>
