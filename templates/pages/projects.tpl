@@ -54,7 +54,7 @@
             <div class="projectItem">
                 <h2>Soma Effects</h2>
                 <p>Guitar effects web shop, quality items.</p>
-                <a href="https://soma-effects.com">https://somaeffects.com</a>
+                <a href="https://somaeffects.com">https://somaeffects.com</a>
             </div>
             <div class="projectItem">
                 <h2>IRN</h2>
