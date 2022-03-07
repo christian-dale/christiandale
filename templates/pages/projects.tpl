@@ -74,7 +74,7 @@
             <div class="projectItem">
                 <h2>Kernel.css</h2>
                 <p>Simple CSS framework.</p>
-                <a href="https://github.com/Ionogy/kernel.css">https://github.com/Ionogy/kernel.css</a>
+                <a href="https://ionogy.github.io/kernel.css/">https://ionogy.github.io/kernel.css/</a>
             </div>
             <div class="projectItem">
                 <h2>Colony</h2>
