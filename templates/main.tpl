@@ -17,15 +17,13 @@
 <body>
     {$content}
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZT6DCCNQCD"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9RX98F0117"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-        gtag('config', 'G-ZT6DCCNQCD');
+    gtag('config', 'G-9RX98F0117');
     </script>
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
