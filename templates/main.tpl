@@ -12,10 +12,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="/assets/styles/normalize.css">
     <link rel="stylesheet" href="/assets/styles/main.css">
-</head>
-
-<body>
-    {$content}
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9RX98F0117"></script>
     <script>
@@ -27,6 +23,10 @@
 
     gtag('config', 'G-9RX98F0117');
     </script>
+</head>
+
+<body>
+    {$content}
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
