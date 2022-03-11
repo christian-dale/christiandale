@@ -8,7 +8,7 @@
     <meta http-equiv="content-language" content="{$lang->getLang()}">
     <title>{$title}</title>
     <link rel="icon" type="image/png" href="/assets/favicon.png">
-    <script data-ad-client="ca-pub-4919922704535736" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4919922704535736" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="/assets/styles/normalize.css">
     <link rel="stylesheet" href="/assets/styles/main.css">
