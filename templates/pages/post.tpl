@@ -42,6 +42,11 @@
             display: none;
         }
     }
+
+    img {
+        max-width: 100%;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    }
 </style>
 
 <div class="container">
