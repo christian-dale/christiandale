@@ -6,12 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{$description}">
     <meta http-equiv="content-language" content="{$lang->getLang()}">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="{$title}">
+    <meta property="og:description" content="{$description}">
+
     <title>{$title}</title>
+
     <link rel="icon" type="image/png" href="/assets/favicon.png">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4919922704535736" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="/assets/styles/normalize.css">
     <link rel="stylesheet" href="/assets/styles/main.css">
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9RX98F0117"></script>
     <script>
