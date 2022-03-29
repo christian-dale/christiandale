@@ -11,6 +11,15 @@
     <meta property="og:title" content="{$title}">
     <meta property="og:description" content="{$description}">
 
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{$title}">
+    <meta name="twitter:description" content="{$description}">
+
+    {if isset($blogpost)}
+        <meta name="twitter:image" content="{$smarty.server.HTTP_HOST}{$blogpost->get('image')}">
+    {/if}
+
     <title>{$title}</title>
 
     <link rel="icon" type="image/png" href="/assets/favicon.png">
