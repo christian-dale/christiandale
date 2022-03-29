@@ -7,6 +7,7 @@ class App {
     public $title = "";
     public $description = "";
     public $content = "";
+    public $blogpost = null;
 
     function __construct(Smarty $smarty, Lang $lang, FSDB $fsdb = null) {
         $this->smarty = $smarty;
@@ -18,7 +19,9 @@ class App {
         $this->smarty->assign("lang", $this->lang);
         $this->smarty->assign("title", $this->title);
         $this->smarty->assign("description", $this->description);
+        $this->smarty->assign("blogpost", $this->blogpost);
         $this->smarty->assign("content", $this->content);
+
         return $this->smarty->fetch("templates/main.tpl");
     }
 
