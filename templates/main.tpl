@@ -17,7 +17,7 @@
     <meta name="twitter:description" content="{$description}">
 
     {if isset($blogpost)}
-        <meta name="twitter:image" content="{$smarty.server.HTTP_HOST}{$blogpost->get('image')}">
+        <meta name="twitter:image" content="https://{$smarty.server.HTTP_HOST}{$blogpost->get('image')}">
     {/if}
 
     <title>{$title}</title>
