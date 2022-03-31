@@ -11,7 +11,8 @@
         {include file="templates/partials/nav.tpl"}
 
         <h1>Blog</h1>
-        <p>My opinions on topics like technology and philosophy.</p>
+        <p style="margin-bottom: -15px;">My opinions on topics like technology and philosophy.</p>
+        <p>If you enjoy my work and wish to support me, you can <a href="https://buymeacoffee.com/christiandale" target="_blank" style="text-decoration: none;">Buy me a coffee</a>.</p>
 
         <ul class="blogPosts" style="padding: 0;">
         {foreach $posts as $post}
