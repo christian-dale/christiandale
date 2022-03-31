@@ -54,7 +54,9 @@
 </div>
 
 <div class="contentBlog">
+    {if !empty($post->get("image"))}
     <div class="intro">{$post->get("attrib")}</div>
+    {/if}
 
     <div class="content">
         <h1 style="margin-bottom: 10px;">{$post->get("title")}</h1>
