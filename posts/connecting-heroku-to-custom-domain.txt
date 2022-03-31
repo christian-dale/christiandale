@@ -1,14 +1,14 @@
 ## Introduction
 
-Connecting an Heroku app to has been difficult for me, and probably for many else,
+Connecting an Heroku app to has been difficult for me, and probably for many other,
 so I made this tutorial to clarify a few things. This article assumes you already have a
-Heroku project setup and ready, and a domain name with DNS configuration support.
+Heroku project set up and ready, and a domain name with DNS configuration support.
 
 ### Note on GoDaddy domain hosting
 
 It is important to note that **GoDaddy does not support CNAME DNS records for the root domain**, and
 can only be used with the www subdomain.
-I managed to fix this problem by using CloudFlare as a middle man.
+I managed to fix this problem by using CloudFlare as a middle-man.
 You can check out [this guide](/blog/setting-up-cloudflare-with-godaddy) on how to set up cloudflare with GoDaddy.
 
 ## Adding a new domain in Heroku
