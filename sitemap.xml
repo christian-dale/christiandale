@@ -8,33 +8,43 @@
 
 
 <url>
-  <loc>https://chrisdale.tech/</loc>
-  <lastmod>2021-02-07T00:55:45+00:00</lastmod>
+  <loc>https://christiandale.me/</loc>
+  <lastmod>2022-03-31T10:54:26+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://chrisdale.tech/projects</loc>
-  <lastmod>2021-02-07T00:55:45+00:00</lastmod>
+  <loc>https://christiandale.me/projects</loc>
+  <lastmod>2022-03-31T10:54:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://chrisdale.tech/blog</loc>
-  <lastmod>2021-02-07T00:55:45+00:00</lastmod>
+  <loc>https://christiandale.me/blog</loc>
+  <lastmod>2022-03-31T10:54:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://chrisdale.tech/blog/php8</loc>
-  <lastmod>2021-02-07T00:55:45+00:00</lastmod>
+  <loc>https://christiandale.me/blog/x11-forwarding-remote-desktop</loc>
+  <lastmod>2022-03-31T10:54:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://chrisdale.tech/blog/orbitalmechanics</loc>
-  <lastmod>2021-02-07T00:55:45+00:00</lastmod>
+  <loc>https://christiandale.me/blog/new-features-php81</loc>
+  <lastmod>2022-03-31T10:54:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://chrisdale.tech/blog/arduino</loc>
-  <lastmod>2021-02-07T00:55:45+00:00</lastmod>
+  <loc>https://christiandale.me/blog/php8</loc>
+  <lastmod>2022-03-31T10:54:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://christiandale.me/blog/orbitalmechanics</loc>
+  <lastmod>2022-03-31T10:54:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://christiandale.me/blog/arduino</loc>
+  <lastmod>2022-03-31T10:54:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
