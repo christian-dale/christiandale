@@ -38,7 +38,7 @@
         <a href="#my-projects" class="badge">My Projects</a>
         <a href="#small-projects" class="badge">Small projects / tools</a>
 
-        <p>The following is a list of my projects I have worked on for customers and personal projects.</p>
+        <p>The following is a list of projects I have worked on for customers and personal projects.</p>
 
         <h2 class="projectTitle" id="customer-projects">Customer Projects</h2>
 
