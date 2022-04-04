@@ -38,6 +38,8 @@
         <a href="#my-projects" class="badge">My Projects</a>
         <a href="#small-projects" class="badge">Small projects / tools</a>
 
+        <p>The following is a list of my projects I have worked on for customers and personal projects.</p>
+
         <h2 class="projectTitle" id="customer-projects">Customer Projects</h2>
 
         <div class="projects">
@@ -70,6 +72,11 @@
                 <h2>PairSynth</h2>
                 <p>Modular synthesizer.</p>
                 <a href="https://github.com/team-cryo/pairsynth" target="_blank">https://github.com/team-cryo/pairsynth</a>
+            </div>
+            <div class="projectItem">
+                <h2>Lord of The Lands</h2>
+                <p>Competitive and fast-paced economy management game..</p>
+                <a href="https://github.com/team-cryo/pairsynth" target="_blank">https://teamcryo.tech/</a>
             </div>
             <div class="projectItem">
                 <h2>Kernel.css</h2>
