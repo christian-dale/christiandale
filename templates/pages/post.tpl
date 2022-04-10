@@ -2,7 +2,7 @@
     .intro {
         position: relative;
         min-height: 400px;
-        background: url("{$post->get("image")}") no-repeat center center fixed;
+        background: url("{$post->get("image")}") no-repeat center center;
         background-size: cover;
         border-radius: 4px;
     }
@@ -37,7 +37,7 @@
         font-weight: bold;
     }
 
-    @media (max-width: 1200px) {
+    @media (max-width: 1000px) {
         .contentBlog .intro {
             display: none;
         }
@@ -54,9 +54,11 @@
 </div>
 
 <div class="contentBlog">
+    <div class="container">
     {if !empty($post->get("image"))}
     <div class="intro">{$post->get("attrib")}</div>
     {/if}
+    </div>
 
     <div class="content">
         <h1 style="margin-bottom: 10px;">{$post->get("title")}</h1>
