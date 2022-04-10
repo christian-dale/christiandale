@@ -40,7 +40,7 @@ the center of the earth and is defined as AU = 149.6e9, or about 150 million kil
 This is not to scale.
 
 <div class="game">
-  <canvas width="400" height="400"></canvas>
+  <canvas style="max-width: 100%" width="400" height="400"></canvas>
 </div>
 
 ** This is the code **
