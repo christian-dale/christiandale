@@ -1,7 +1,7 @@
 <?php
 
-require_once("class/Item.php");
-require_once("class/Blog.php");
+require_once("../class/Item.php");
+require_once("../plugins_default/BlogPosts/Blog.php");
 
 use \PHPUnit\Framework\TestCase;
 

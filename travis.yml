@@ -1,0 +1,9 @@
+language: php
+
+php:
+  - 8.1
+
+before-script:
+  - composer install
+
+script: phpunit --bootstrap lib/vendor/autoload.php tests

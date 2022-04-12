@@ -1,7 +1,7 @@
 <?php
 
-require_once("class/App.php");
-require_once("class/Lang.php");
+require_once("../class/App.php");
+require_once("../class/Lang.php");
 
 use \PHPUnit\Framework\TestCase;
 
