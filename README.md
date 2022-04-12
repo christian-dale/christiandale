@@ -1,4 +1,4 @@
-## Chrisdale.tech
+## christiandale.me
 
 Full-stack web developer from Norway with many years of experience. Interested in most things tech, including game development and embedded devices.
 
