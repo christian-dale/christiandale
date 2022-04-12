@@ -23,16 +23,6 @@
     {foreach $css_paths as $css_path}
         <link rel="stylesheet" href="{$css_path}">
     {/foreach}
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9RX98F0117"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-9RX98F0117');
-    </script>
 </head>
 
 <body>

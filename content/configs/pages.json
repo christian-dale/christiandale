@@ -5,7 +5,10 @@
             "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css",
             "/content/assets/styles/custom.css"
         ],
-        "js": []
+        "js": [
+            "https://www.googletagmanager.com/gtag/js?id=G-9RX98F0117",
+            "/content/assets/js/custom.js"
+        ]
     },
     "pages": [
         {
