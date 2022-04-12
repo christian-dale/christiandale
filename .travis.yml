@@ -6,5 +6,7 @@ php:
 before-script:
   - cd lib
   - composer install
+  - cd ..
 
-script: phpunit --bootstrap vendor/autoload.php tests
+script:
+  - ./lib/vendor/bin/phpunit --bootstrap lib/tests/bootstrap.php lib/tests
