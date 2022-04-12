@@ -7,4 +7,4 @@ before-script:
   - cd lib
   - composer install
 
-script: phpunit --bootstrap lib/vendor/autoload.php tests
+script: phpunit --bootstrap vendor/autoload.php tests
