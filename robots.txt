@@ -1,1 +1,1 @@
-# robots.txt file for chrisdale.tech
+# robots.txt file for portfolio
