@@ -86,9 +86,9 @@
                 <p>Work-in progress open source Discord like software written in 2015.</p>
             </div>
             <div class="projectItem">
-                <h2><a href="https://github.com/christian-dale/portfolio-cms" target="_blank">Portfolio CMS</a></h2>
-                <p>Portfolio content management system.</p>
-            </div>            
+                <h2><a href="https://github.com/christian-dale/VerbatimCMS" target="_blank">VerbatimCMS</a></h2>
+                <p>Modular Content Management System.</p>
+            </div>
         </div>
 
         <h2 class="projectTitle" id="small-projects">Small projects / tools</h2>
