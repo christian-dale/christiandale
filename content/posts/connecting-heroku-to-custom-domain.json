@@ -1,10 +1,13 @@
 {
     "title": "Connecting Heroku to a custom domain",
-    "date": "31.03.2022",
-    "dateUpdate": "31.03.2022",
+    "date": "2022-03-31",
+    "dateUpdate": "2022-03-31",
     "lang": "en",
     "draft": false,
-    "categories": ["programming", "heroku"],
-    "image": "/content/assets/media/herokucloudflare.jpg",
+    "categories": [
+        "programming",
+        "heroku"
+    ],
+    "image": "/assets/media/626323c875c20.jpg",
     "attrib": ""
 }

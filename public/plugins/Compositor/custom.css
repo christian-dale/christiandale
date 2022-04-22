@@ -1,0 +1,16 @@
+.contentEditor .posts .post {
+    margin-bottom: 10px;
+}
+
+.contentEditor .posts .post h4, h5, p {
+    margin: 5px 0;
+}
+
+.header .logo .headerTitle {
+    color: #fff !important;
+    background-color: #212121;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: monospace;
+    letter-spacing: 0.1em;
+}

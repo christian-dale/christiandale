@@ -1,10 +1,13 @@
 {
     "title": "Connecting CloudFlare with GoDaddy",
-    "date": "31.03.2022",
-    "dateUpdate": "31.03.2022",
+    "date": "2022-03-31",
+    "dateUpdate": "2022-03-31",
     "lang": "en",
     "draft": false,
-    "categories": ["webdev", "cloudflare"],
-    "image": "/content/assets/media/connections.jpg",
+    "categories": [
+        "webdev",
+        "cloudflare"
+    ],
+    "image": "/assets/media/626323c11ffb1.jpg",
     "attrib": ""
 }

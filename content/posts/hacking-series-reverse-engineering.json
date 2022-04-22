@@ -1,10 +1,13 @@
 {
     "title": "Hacking series part 1: Reverse engineering",
-    "date": "19.12.2021",
-    "dateUpdate": "19.12.2021",
+    "date": "2021-12-19",
+    "dateUpdate": "2021-12-19",
     "lang": "en",
     "draft": true,
-    "categories": ["programming", "hacking"],
-    "image": "/content/assets/strings.png",
+    "categories": [
+        "programming",
+        "hacking"
+    ],
+    "image": "/assets/media/6262b96e7a54d.jpg",
     "attrib": ""
 }

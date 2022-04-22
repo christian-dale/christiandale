@@ -1,2 +1,4 @@
 vendor/*
 lib/templates_cache/*
+lib/update.zip
+lib/update/

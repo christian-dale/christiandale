@@ -1,8 +1,5 @@
 <?php
 
-require_once("lib/class/Item.php");
-require_once("lib/plugins_default/BlogPosts/Blog.php");
-
 use \PHPUnit\Framework\TestCase;
 
 class BlogTest extends TestCase {
