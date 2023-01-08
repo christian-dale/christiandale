@@ -1,0 +1,111 @@
+@import url("/assets/css/timeline.css");
+
+a {
+    color: #0091ea;
+    text-decoration: none;
+    overflow-wrap: break-word;
+}
+
+.header-wrapper {
+    background-color: #307ecc;
+}
+
+.header-wrapper header {
+    background: transparent;
+}
+
+.header-wrapper header ul li a {
+    color: #fff;
+    text-transform: none;
+}
+
+.ke-header-brand .logo {
+    color: #fff !important;
+    background-color: #212121;
+    border-radius: 5px;
+    font-family: monospace;
+    padding: 5px;
+}
+
+.main-hero {
+    background-color: #307ecc;
+}
+
+.main-hero h3, .main-hero p {
+    text-align: left;
+    color: #fff;
+}
+
+.main-hero .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+}
+
+.main-hero .social-icons a:first-of-type {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.main-hero .social-icons a:hover {
+    color: #212121;
+}
+
+.page-post .post-content img {
+    width: 100%;
+}
+
+.post-header {
+    height: 50vh;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 75px;
+}
+
+.post-header .post-header-content {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    padding: 15px;
+}
+
+.post-header h1 {
+    margin: 0;
+    color: #fff;
+}
+
+.post-header p {
+    margin: 0;
+    color: #fff;
+}
+
+@media (max-width: 900px) {
+    .main-hero {
+        height: 100vh !important;
+    }
+
+    .ke-header-mobile {
+        background-color: #212121;
+        width: 100%;
+    }
+}
+
+.tag-list .ke-tag {
+    background-color: #212121;
+    color: #fff;
+}
+
+footer .ke-footer-main {
+    background-color: #212121 !important;
+    color: #fff;
+    padding: 50px 0;
+}
+
+footer .footer-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer .footer-nav ul li {
+    padding: 10px 0;
+}

@@ -1,0 +1,132 @@
+<div class="ke-hero main-hero" style="height: 60vh;">
+    <div class="ke-container ke-vertical-center">
+        <h3>Christian Dale</h3>
+        <p>Full-stack web developer from Norway with many years of experience. Interested in most things tech, including game development and embedded devices.</p>
+
+        <p class="social-icons">
+            <a class="linkIcon github-btn" href="https://github.com/christian-dale" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a class="linkIcon linkedin-button" href="https://www.linkedin.com/in/jim-christian-dale-haukvik-1a8b36162/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a class="linkIcon youtube-button" href="https://www.youtube.com/@ChristianDale" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a class="linkIcon twitter-button" href="https://twitter.com/chrisdaletweets" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        </p>
+    </div>
+</div>
+
+<div class="section-timeline" style="margin: 75px 0;">
+    <div class="ke-container">
+        <h1 style="text-align: center;">TIMELINE</h1>
+        <p style="text-align: center;">Companies I´ve worked for over the years</p>
+
+        <section class="block-content t-block-teal l-block-spacing">
+            <div class="l-contained">
+                <ul class="timeline-list">
+                    <li>
+            <div class="content">
+                        <h3>Akari (2022 -)</h3>
+                
+                        <p>
+                        <a href="https://akari.no" target="_blank" class="ke-anchor">Akari</a> is a marketing agency that works closely with local customers, partners and suppliers.
+                        </p>
+
+                        <p>
+                        Akari focuses on creating and telling good stories together with holistic profiling and marketing for small and medium-sized businesses.
+                        </p>
+
+                        <p>My role at Akari is <b>web developer / web lead.</b></p>
+        </div>
+                    </li>
+                    <li>
+            <div class="content">
+                        <h3>Strixcode (2019  - 2022)</h3>
+                    
+                        <p>Strixcode was a self owned company I started after my job at Brandingbox in order to serve
+                            a couple of the customers.
+                        </p>
+
+                        <p>My role at Strixcode was <b>owner / software developer</b>.</p>
+        </div>
+                    </li>
+                    <li>
+            <div class="content">
+                        <h3>Brandingbox (2017 - 2019)</h3>
+                
+                        <p></p>
+
+                        <p>My role at Brandingbox was <b>web developer</b>.</p>
+        </div>
+                    </li>
+                </ul>
+                
+                        
+                
+            </div>
+
+        </section>            
+    </div>            
+</div>
+
+<div class="section-skills" style="background-color: #f5f5f5; padding: 75px 0;">
+    <div class="ke-container">
+        <h1 style="text-align: center;">LIST OF SKILLS</h1>
+        <h3>My 5 top skills</h3>
+
+        <p><b>HTML / CSS / Javascript</b></p>
+        <div class="ke-progressbar">
+            <div class="ke-progress" style="width: 100%;"></div>
+        </div>
+
+        <p><b>PHP / Node.js</b></p>
+        <div class="ke-progressbar">
+            <div class="ke-progress" style="width: 100%;"></div>
+        </div>
+
+        <p><b>Wordpress</b></p>
+        <div class="ke-progressbar">
+            <div class="ke-progress" style="width: 75%; background-color: #00e676;"></div>
+        </div>
+
+        <p><b>C / C++</b></p>
+        <div class="ke-progressbar">
+            <div class="ke-progress" style="width: 75%; background-color: #00e676;"></div>
+        </div>
+
+        <p><b>Unity 3D</b></p>
+        <div class="ke-progressbar">
+            <div class="ke-progress" style="width: 75%; background-color: #00e676;"></div>
+        </div>           
+
+        <h3>Other skills</h3>
+        <div class="tag-list">
+            <a class="ke-tag" href="#">DNS</a>
+            <a class="ke-tag" href="#">Java</a>
+            <a class="ke-tag" href="#">Bash</a>
+            <a class="ke-tag" href="#">Haskell</a>
+            <a class="ke-tag" href="#">Rust</a>
+            <a class="ke-tag" href="#">Linux</a>
+            <a class="ke-tag" href="#">Python</a>
+            <a class="ke-tag" href="#">Blender</a>
+            <a class="ke-tag" href="#">Arduino</a>
+            <a class="ke-tag" href="#">Micro:bit</a>
+            <a class="ke-tag" href="#">LaTeX</a>
+            <a class="ke-tag" href="#">Typescript</a>
+            <a class="ke-tag" href="#">Deno</a>                    
+        </div> 
+    </div>
+</div>
+
+<div class="section-me" id="about" style="padding: 75px 0;">
+    <div class="ke-container">
+        <h1 style="text-align: center;">A BIT ABOUT ME</h1>
+
+        <div class="ke-grid">
+            <div class="ke-col-1">
+                <img src="/assets/img/jim.jpeg" style="width: 96px; border-radius: 150px;">
+            </div>
+            <div class="ke-col-9">  
+                <p style="margin-top: 20px;">Hello, and welcome to my website! I am a software developer from Norway, who is interested in most programming languages. In my spare time I do music composing, youtube and weight lifting 💪</p>
+            </div>
+        </div>
+
+        <p>You can contact me at <a href="mailto:inquiry@christiandale.me" class="ke-anchor">inquiry@christiandale.me</a></p>
+    </div>            
+</div>

@@ -1,0 +1,12 @@
+<div class="section-blog" style="margin: 75px 0;">
+    <div class="ke-container">
+        <h1 style="text-align: center;">BLOG</h1>
+        <p style="text-align: center;">A blog about technology and philosophy.</p>
+
+        <ul style="list-style-type: none; padding: 0;">
+            <% it.posts.forEach(function(post) { %>
+                <li><a href="/blog/<%= post.permalink %>" class="ke-anchor"><%= post.title %></a></li>
+            <% }) %>
+        </ul>
+    </div>
+</div>

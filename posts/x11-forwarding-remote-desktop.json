@@ -1,0 +1,11 @@
+{
+    "title": "Installing a GUI on your remote Ubuntu server using X11 Forwarding and Remote Desktop",
+    "date": "2022-03-08",
+    "dateUpdate": "2022-03-08",
+    "permalink": "x11-forwarding-remote-desktop",
+    "lang": "en",
+    "draft": false,
+    "categories": ["linux"],
+    "image": "/assets/img/blog/linux.jpg",
+    "attrib": ""
+}

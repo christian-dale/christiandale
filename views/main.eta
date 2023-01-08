@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+    <title>Christian Dale</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://ionogy.github.io/kernel.css/kernel.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body class="ke-base">
+    <div class="header-wrapper">
+        <div class="" style="margin: 0 25px;">
+            <header class="ke-header ke-header-sm">
+                <div class="ke-header-brand"><a class="logo ke-anchor" href="/">>_</a></div>
+
+                <button class="ke-nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <nav class="ke-nav ke-float-right" style="float: right;">
+                <ul>
+                    <!--<li><a href="#">Services</a></li>-->
+                    <li><a href="/my-work">My Work</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/#about">About / Contact</a></li>
+                </ul>
+                </nav>
+            </header>
+        </div>
+    </div>
+
+    <main>
+        <%~ it.mainContent %>
+    </main>
+
+    <footer>
+        <div class="ke-footer-main">
+            <div class="ke-container">
+                <div class="ke-grid">
+                    <div class="ke-col-1">
+                        <h3>Navigation</h3>
+                        <nav class="footer-nav">
+                            <ul>
+                                <li>
+                                    <a href="/kernel.css" class="ke-anchor">Home</a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/Ionogy/kernel.css/releases" class="ke-anchor">Downloads</a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/Ionogy/kernel.css/blob/master/README.md" class="ke-anchor">Docs</a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/ionogy/kernel.css" class="ke-anchor">Github</a>
+                                </li>
+                            </ul>
+                        </nav>                        
+                    </div>
+                    <div class="ke-col-1">
+                        <h3>Other</h3>
+                        <nav class="footer-nav">
+                            <ul>
+                                <li>
+                                    <a href="/kernel.css" class="ke-anchor">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </nav>                        
+                    </div>                    
+                </div>
+            </div>
+        </div>
+
+        <div class="ke-container">
+            <div class="footer-copyright">
+                <p>Copyright &copy; 2023 - Christian Dale</p>
+            </div>            
+        </div>
+    </footer>
+
+    <script src="https://ionogy.github.io/kernel.css/kernel.js"></script>
+</body>
+</html>
