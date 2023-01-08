@@ -90,6 +90,12 @@ a {
     }
 }
 
+@media (min-width: 900px) {
+    .header-wrapper {
+        padding: 0 25px;
+    }
+}
+
 .tag-list .ke-tag {
     background-color: #212121;
     color: #fff;

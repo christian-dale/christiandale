@@ -27,24 +27,22 @@
 </head>
 <body class="ke-base">
     <div class="header-wrapper">
-        <div class="" style="margin: 0 25px;">
-            <header class="ke-header ke-header-sm">
-                <div class="ke-header-brand"><a class="logo ke-anchor" href="/">>_</a></div>
+        <header class="ke-header ke-header-sm">
+            <div class="ke-header-brand"><a class="logo ke-anchor" href="/">>_</a></div>
 
-                <button class="ke-nav-toggle">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
+            <button class="ke-nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
 
-                <nav class="ke-nav ke-float-right" style="float: right;">
-                <ul>
-                    <!--<li><a href="#">Services</a></li>-->
-                    <li><a href="/my-work">My Work</a></li>
-                    <li><a href="/blog">Blog</a></li>
-                    <li><a href="/#about">About / Contact</a></li>
-                </ul>
-                </nav>
-            </header>
-        </div>
+            <nav class="ke-nav ke-float-right" style="float: right;">
+            <ul>
+                <!--<li><a href="#">Services</a></li>-->
+                <li><a href="/my-work">My Work</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/#about">About / Contact</a></li>
+            </ul>
+            </nav>
+        </header>
     </div>
 
     <main>
