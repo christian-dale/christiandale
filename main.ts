@@ -9,16 +9,16 @@ Eta.configure({
 const router = new Router();
 
 router.get("/", async (ctx) => {
-  const templateMain = await Eta.renderFile("main.eta", {
-    mainContent: await Eta.renderFile("home.eta")
+  const templateMain = Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/main.eta`), {
+    mainContent: Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/home.eta`))
   });
 
   ctx.response.body = templateMain;
 });
 
 router.get("/my-work", async (ctx) => {
-  const templateMain = await Eta.renderFile("main.eta", {
-    mainContent: await Eta.renderFile("mywork.eta")
+  const templateMain = Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/main.eta`), {
+    mainContent: Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/mywork.eta`))
   });
 
   ctx.response.body = templateMain;
@@ -33,8 +33,8 @@ router.get("/blog", async (ctx) => {
     }
   }
 
-  const templateMain = await Eta.renderFile("main.eta", {
-    mainContent: await Eta.renderFile("blog.eta", {posts: posts})
+  const templateMain = Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/main.eta`), {
+    mainContent: Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/blog.eta`), {posts: posts})
   });
 
   ctx.response.body = templateMain;
@@ -47,8 +47,8 @@ router.get("/blog/:id", async (ctx) => {
   postMeta = JSON.parse(postMeta);
   postMeta.attrib = Marked.parse(postMeta.attrib).content;
 
-  const templateMain = await Eta.renderFile("main.eta", {
-    mainContent: await Eta.renderFile("post.eta", {
+  const templateMain = Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/main.eta`), {
+    mainContent: Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/post.eta`), {
       post: {
         content: Marked.parse(post).content,
         meta: postMeta
@@ -71,7 +71,6 @@ app.use(async (context, next) => {
       index: "index.html",
     });
   } catch (err) {
-    console.log(err);
     await next();
   }
 });
