@@ -10,7 +10,10 @@ const router = new Router();
 
 router.get("/", async (ctx) => {
   const templateMain = Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/main.eta`), {
-    mainContent: Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/home.eta`))
+    mainContent: Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/home.eta`)),
+    meta: {
+      title: "Christian Dale"
+    }
   });
 
   ctx.response.body = templateMain;
@@ -18,7 +21,10 @@ router.get("/", async (ctx) => {
 
 router.get("/my-work", async (ctx) => {
   const templateMain = Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/main.eta`), {
-    mainContent: Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/mywork.eta`))
+    mainContent: Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/mywork.eta`)),
+    meta: {
+      title: "Christian Dale - My Work"
+    }
   });
 
   ctx.response.body = templateMain;
@@ -34,7 +40,10 @@ router.get("/blog", async (ctx) => {
   }
 
   const templateMain = Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/main.eta`), {
-    mainContent: Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/blog.eta`), {posts: posts})
+    mainContent: Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/blog.eta`), {posts: posts}),
+    meta: {
+      title: "Christian Dale - Blog"
+    }
   });
 
   ctx.response.body = templateMain;
@@ -53,8 +62,11 @@ router.get("/blog/:id", async (ctx) => {
         content: Marked.parse(post).content,
         meta: postMeta
       }
-    })
-  });
+    }),
+    meta: {
+      title: `Christian Dale - ${postMeta.title}`
+    }
+});
 
   ctx.response.body = templateMain;  
 });
