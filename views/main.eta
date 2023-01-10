@@ -58,16 +58,16 @@
                         <nav class="footer-nav">
                             <ul>
                                 <li>
-                                    <a href="/kernel.css" class="ke-anchor">Home</a>
+                                    <a href="/" class="ke-anchor">Home</a>
                                 </li>
                                 <li>
-                                    <a href="https://github.com/Ionogy/kernel.css/releases" class="ke-anchor">Downloads</a>
+                                    <a href="/my-work" class="ke-anchor">My Work</a>
                                 </li>
                                 <li>
-                                    <a href="https://github.com/Ionogy/kernel.css/blob/master/README.md" class="ke-anchor">Docs</a>
+                                    <a href="/blog" class="ke-anchor">Blog</a>
                                 </li>
                                 <li>
-                                    <a href="https://github.com/ionogy/kernel.css" class="ke-anchor">Github</a>
+                                    <a href="/#about" class="ke-anchor">About / Contact</a>
                                 </li>
                             </ul>
                         </nav>                        
