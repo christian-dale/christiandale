@@ -40,7 +40,7 @@ router.get("/blog", async (ctx) => {
   }
 
   const templateMain = Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/main.eta`), {
-    mainContent: Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/blog.eta`), {posts: posts}),
+    mainContent: Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/blog.eta`), {posts}),
     meta: {
       title: "Christian Dale - Blog"
     }

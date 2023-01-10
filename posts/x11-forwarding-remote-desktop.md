@@ -1,4 +1,4 @@
-When using ssh to access servers remotely, have you ever thought, &laquo;wouldn't it be nice to view GUI programs on my server&raquo;?
+When using ssh to access servers remotely, have you ever thought, wouldn't it be nice to view GUI programs on my server?
 In this guide I will show you how to do exactly this.
 This guide assumes you are using Ubuntu, but I would assume the packages used are available on most GNU / Linux distros.
 
