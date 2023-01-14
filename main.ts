@@ -6,6 +6,11 @@ Eta.configure({
   views: `${Deno.cwd()}/views/`
 });
 
+/** Fix for Deno Deploy */
+Eta.config.includeFile = function(path, data) {
+  return Eta.templates.get(path)(data, Eta.config);
+};
+
 Eta.templates.define("main", Eta.compile(
   await Deno.readTextFile(`${Deno.cwd()}/views/main.eta`)));
 
