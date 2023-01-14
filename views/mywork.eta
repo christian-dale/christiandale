@@ -1,3 +1,5 @@
+<% layout("main") %>
+
 <div class="page-mywork" style="padding: 75px 0;">
     <div class="ke-container">
         <h1 style="text-align: center;">MY WORK</h1>

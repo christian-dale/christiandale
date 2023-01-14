@@ -1,3 +1,5 @@
+<% layout("main") %>
+
 <div class="page-post">
     <div class="post-header" style="background: url('<%= it.post.meta.image %>') no-repeat center center; background-size: cover;">
         <div class="post-header-content">

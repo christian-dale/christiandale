@@ -1,3 +1,5 @@
+<% layout("main") %>
+
 <div class="section-blog" style="margin: 75px 0;">
     <div class="ke-container">
         <h1 style="text-align: center;">BLOG</h1>

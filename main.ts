@@ -6,28 +6,21 @@ Eta.configure({
   views: `${Deno.cwd()}/views/`
 });
 
+Eta.templates.define("main", Eta.compile(
+  await Deno.readTextFile(`${Deno.cwd()}/views/main.eta`)));
+
 const router = new Router();
 
 router.get("/", async (ctx) => {
-  const templateMain = Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/main.eta`), {
-    mainContent: Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/home.eta`)),
-    meta: {
-      title: "Christian Dale"
-    }
+  ctx.response.body = await Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/home.eta`), {
+    title: "Christian Dale"
   });
-
-  ctx.response.body = templateMain;
 });
 
-router.get("/my-work", async (ctx) => {
-  const templateMain = Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/main.eta`), {
-    mainContent: Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/mywork.eta`)),
-    meta: {
-      title: "Christian Dale - My Work"
-    }
+router.redirect("/projects", "/my-work").get("/my-work", async (ctx) => {
+  ctx.response.body = await Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/mywork.eta`), {
+    title: "Christian Dale - My Work"
   });
-
-  ctx.response.body = templateMain;
 });
 
 router.get("/blog", async (ctx) => {
@@ -39,14 +32,10 @@ router.get("/blog", async (ctx) => {
     }
   }
 
-  const templateMain = Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/main.eta`), {
-    mainContent: Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/blog.eta`), {posts}),
-    meta: {
-      title: "Christian Dale - Blog"
-    }
+  ctx.response.body = await Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/blog.eta`), {
+    title: "Christian Dale - Blog",
+    posts: posts
   });
-
-  ctx.response.body = templateMain;
 });
 
 router.get("/blog/:id", async (ctx) => {
@@ -56,19 +45,13 @@ router.get("/blog/:id", async (ctx) => {
   postMeta = JSON.parse(postMeta);
   postMeta.attrib = Marked.parse(postMeta.attrib).content;
 
-  const templateMain = Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/main.eta`), {
-    mainContent: Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/post.eta`), {
-      post: {
-        content: Marked.parse(post).content,
-        meta: postMeta
-      }
-    }),
-    meta: {
-      title: `Christian Dale - ${postMeta.title}`
+  ctx.response.body = await Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/post.eta`), {
+    title: `Christian Dale - ${postMeta.title}`,
+    post: {
+      content: Marked.parse(post).content,
+      meta: postMeta
     }
-});
-
-  ctx.response.body = templateMain;  
+  });
 });
 
 const app = new Application();

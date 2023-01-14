@@ -1,3 +1,5 @@
+<% layout("main") %>
+
 <div class="ke-hero main-hero" style="height: 60vh;">
     <div class="ke-container ke-vertical-center">
         <h3>Christian Dale</h3>
