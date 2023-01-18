@@ -1,4 +1,4 @@
-<% layout("main") %>
+<% layout("main", {metaDescription: "A blog about technology and philosophy.}) %>
 
 <div class="section-blog" style="margin: 75px 0;">
     <div class="ke-container">
