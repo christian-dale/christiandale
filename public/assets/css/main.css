@@ -36,17 +36,17 @@ a {
     color: #fff;
 }
 
-.main-hero .social-icons a {
+.social-icons a {
     color: #fff;
     margin: 0 10px;
 }
 
-.main-hero .social-icons a:first-of-type {
+.social-icons a:first-of-type {
     margin-left: 0;
     margin-right: 10px;
 }
 
-.main-hero .social-icons a:hover {
+.social-icons a:hover {
     color: #212121;
 }
 

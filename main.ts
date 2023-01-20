@@ -28,6 +28,12 @@ router.redirect("/projects", "/my-work").get("/my-work", async (ctx) => {
   });
 });
 
+router.get("/music", async (ctx) => {
+  ctx.response.body = await Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/music.eta`), {
+    title: "Christian Dale - Music"
+  });
+});
+
 router.get("/blog", async (ctx) => {
   const posts = [];
 
