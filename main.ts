@@ -45,7 +45,7 @@ router.get("/blog", async (ctx) => {
 
   ctx.response.body = await Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/blog.eta`), {
     title: "Christian Dale - Blog",
-    posts: posts
+    posts: posts.sort((a, b) => new Date(a.date) - new Date(b.date)).reverse()
   });
 });
 
