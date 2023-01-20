@@ -1,4 +1,4 @@
-<% layout("main" {metaDescription: "These are some of the projects I´ve worked on."}) %>
+<% layout("main", {metaDescription: "These are some of the projects I´ve worked on."}) %>
 
 <div class="page-mywork" style="padding: 75px 0;">
     <div class="ke-container">
