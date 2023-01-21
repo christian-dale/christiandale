@@ -6,8 +6,8 @@
         <p style="text-align: center;">Music I have created. Take a look on Spotify or Soundcloud.</p>
 
         <p class="social-icons" style="text-align: center;">
-            <a class="linkIcon spotify-btn" style="color: #212121 !important; font-size: 1.5em;" href="https://github.com/christian-dale" target="_blank"><i class="fa-brands fa-spotify"></i></a>
-            <a class="linkIcon soundcloud-btn" style="color: #212121 !important; font-size: 1.5em;" href="https://github.com/christian-dale" target="_blank"><i class="fa-brands fa-soundcloud"></i></a>            
+            <a class="linkIcon spotify-btn" style="color: #212121 !important; font-size: 1.5em;" href="https://open.spotify.com/artist/6w169Ejb7ec8p7Z4cVtCs3?si=1AFXbpQSQuea0ElZHr2YPg" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+            <a class="linkIcon soundcloud-btn" style="color: #212121 !important; font-size: 1.5em;" href="https://soundcloud.com/christian_dale_music" target="_blank"><i class="fa-brands fa-soundcloud"></i></a>            
         </p>
 
         <div class="ke-grid">
