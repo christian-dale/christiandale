@@ -81,4 +81,12 @@ app.use(async (context, next) => {
   }
 });
 
+app.use(async (ctx) => {
+  ctx.response.type = "text/html; charset=utf-8";
+  ctx.response.status = 404;
+  ctx.response.body = await Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/404.eta`), {
+    title: "Christian Dale"
+  });
+});
+
 await app.listen({ port: 80 });

@@ -1,0 +1,8 @@
+<% layout("main", {metaDescription: "404 - Not found"}) %>
+
+<div class="page-404" style="padding: 75px 0;">
+    <div class="ke-container">
+        <h1 style="text-align: center;">404</h1>
+        <p style="text-align: center;">This page could not be found.</p>
+    </div>
+</div>
