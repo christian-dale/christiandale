@@ -13,6 +13,9 @@
             <%~ it.post.meta.attrib %>
         <% } %>
         <div class="post-content">
+            <% it.post.meta.categories.forEach(function(category) { %>
+                <a href="#" class="ke-tag"><%= category %></a>
+            <% }) %>
             <%~ it.post.content %>
         </div>
 
