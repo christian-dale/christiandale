@@ -1,0 +1,31 @@
+<% layout("main", {metaDescription: "At christiandale.me, we understand the importance of protecting your personal information. We are committed to maintaining the privacy and security of your information and providing you with clear and transparent information about how we collect, use, and share your data."}) %>
+
+<div class="ke-container">
+    <h1>Privacy Policy</h1>
+
+    <p>At christiandale.me, we understand the importance of protecting your personal information. We are committed to maintaining the privacy and security of your information and providing you with clear and transparent information about how we collect, use, and share your data.</p>
+
+    <h2>Information We Collect</h2>
+
+    <p>We collect information that you provide directly to us, including your name, email address, and any other information that you choose to share with us. We may also collect information about your use of our website, including the pages you visit, the links you click, and the features you use.</p>
+
+    <h2>How We Use Your Information</h2>
+
+    <p>We use the information we collect to provide you with a better user experience, to improve the content and features of our website, and to contact you with information that we believe will be of interest to you. We may also use your information to personalize your experience on our website and to tailor our marketing efforts to better meet your needs.</p>
+
+    <h2>Sharing Your Information</h2>
+
+    <p>We do not share your information with third parties for their own marketing purposes without your consent. We may share your information with third-party service providers that we use to support our business, such as website hosting, analytics, and marketing services.</p>
+
+    <h2>Security</h2>
+
+    <p>We take reasonable measures to protect your information from unauthorized access, use, or disclosure. However, no data transmission over the internet can be guaranteed to be 100% secure. We cannot ensure or warrant the security of any information you transmit to us, so you do so at your own risk.</p>
+
+    <h2>Changes to this Policy</h2>
+
+    <p>We may update this privacy policy from time to time. If we make any changes to our policy, we will post the updated policy on this page so that you are always aware of what information we collect, how we use it, and under what circumstances we may share it.</p>
+
+    <h2>Contact Us</h2>
+
+    <p>If you have any questions or concerns about our privacy policy or our data collection and use practices, please contact us at <a href="mailto:inquiry@christiandale.me">inquiry@christiandale.me</a>.</p>
+</div>

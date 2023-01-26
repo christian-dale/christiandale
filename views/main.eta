@@ -82,7 +82,7 @@
                         <nav class="footer-nav">
                             <ul>
                                 <li>
-                                    <a href="/kernel.css" class="ke-anchor">Privacy Policy</a>
+                                    <a href="/privacy" class="ke-anchor">Privacy Policy</a>
                                 </li>
                             </ul>
                         </nav>                        

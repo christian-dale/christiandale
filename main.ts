@@ -34,6 +34,12 @@ router.get("/music", async (ctx) => {
   });
 });
 
+router.get("/privacy", async (ctx) => {
+  ctx.response.body = await Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/privacy.eta`), {
+    title: "Christian Dale - Privacy Policy"
+  });
+});
+
 router.get("/blog", async (ctx) => {
   const posts = [];
 
