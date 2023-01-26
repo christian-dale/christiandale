@@ -53,7 +53,10 @@
             <div class="content">
                         <h3>Brandingbox (2017 - 2019)</h3>
                 
-                        <p></p>
+                        <p>
+                        Brandingbox was a marketing agency specifying in helping small to medium sized businesses.
+                        This was the first company I worked for as a developer.
+                        </p>
 
                         <p>My role at Brandingbox was <b>web developer</b>.</p>
         </div>
@@ -71,7 +74,7 @@
 <div class="section-skills" style="background-color: #f5f5f5; padding: 75px 0;">
     <div class="ke-container">
         <h1 style="text-align: center;">List of skills</h1>
-        <p style="text-align: center;">The skills I´ve amassed over the years</p>
+        <p style="text-align: center;">The skills I´ve amassed over the years.</p>
 
         <h3>My 5 top skills</h3>
 
@@ -132,6 +135,7 @@
             </div>
         </div>
 
-        <p>You can contact me at <a href="mailto:inquiry@christiandale.me" class="ke-anchor">inquiry@christiandale.me</a></p>
+        <h2 style="text-align: center;">Contact</h2>
+        <p>You can send me an email at <a href="mailto:inquiry@christiandale.me" class="ke-anchor">inquiry@christiandale.me</a> if you have any questions, or wish to get in contact. I usually answer in 1 - 2 working days.</p>
     </div>            
 </div>
