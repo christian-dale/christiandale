@@ -1,5 +1,20 @@
 <% layout("main", {metaDescription: it.post.meta.description}) %>
 
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org/",
+    "@type": "Article",
+    "name": "<%= it.post.meta.title %>",
+    "author": {
+    "@type": "Person",
+    "name": "Christian Dale"
+    },
+    "datePublished": "<%= it.post.meta.date %>",
+    "description": "<%= it.post.meta.description %>",
+    "prepTime": "PT20M"
+}
+</script>
+
 <div class="page-post">
     <div class="post-header" style="background: url('<%= it.post.meta.image %>') no-repeat center center; background-size: cover;">
         <div class="post-header-content">
