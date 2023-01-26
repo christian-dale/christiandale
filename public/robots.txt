@@ -1,4 +1,4 @@
 User-Agent: *
-Disallow: 
+Disallow: /cdn-cgi/
 
 Sitemap: https://christiandale.me/sitemap.xml
