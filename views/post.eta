@@ -10,8 +10,7 @@
     "name": "Christian Dale"
     },
     "datePublished": "<%= it.post.meta.date %>",
-    "description": "<%= it.post.meta.description %>",
-    "prepTime": "PT20M"
+    "description": "<%= it.post.meta.description %>"
 }
 </script>
 
