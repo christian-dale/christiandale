@@ -31,9 +31,13 @@ a {
     background-color: #307ecc;
 }
 
-.main-hero h3, .main-hero p {
+.main-hero h1, .main-hero p {
     text-align: left;
     color: #fff;
+}
+
+.main-hero h1 {
+    font-size: 4.5em;
 }
 
 .social-icons a {

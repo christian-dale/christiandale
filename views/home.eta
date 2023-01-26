@@ -2,7 +2,7 @@
 
 <div class="ke-hero main-hero" style="height: 60vh;">
     <div class="ke-container ke-vertical-center">
-        <h3>Christian Dale</h3>
+        <h1>Christian Dale</h1>
         <p>Full-stack web developer from Norway with many years of experience. Interested in most things tech, including game development and embedded devices.</p>
 
         <p class="social-icons">
@@ -17,7 +17,7 @@
 
 <div class="section-timeline" style="margin: 75px 0;">
     <div class="ke-container">
-        <h1 style="text-align: center;">TIMELINE</h1>
+        <h1 style="text-align: center;">Timeline</h1>
         <p style="text-align: center;">Companies I´ve worked for over the years</p>
 
         <section class="block-content t-block-teal l-block-spacing">
@@ -70,7 +70,9 @@
 
 <div class="section-skills" style="background-color: #f5f5f5; padding: 75px 0;">
     <div class="ke-container">
-        <h1 style="text-align: center;">LIST OF SKILLS</h1>
+        <h1 style="text-align: center;">List of skills</h1>
+        <p style="text-align: center;">The skills I´ve amassed over the years</p>
+
         <h3>My 5 top skills</h3>
 
         <p><b>HTML / CSS / Javascript</b></p>
@@ -119,7 +121,7 @@
 
 <div class="section-me" id="about" style="padding: 75px 0;">
     <div class="ke-container">
-        <h1 style="text-align: center;">A BIT ABOUT ME</h1>
+        <h1 style="text-align: center;">A bit about me</h1>
 
         <div class="ke-grid">
             <div class="ke-col-1">
