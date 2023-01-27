@@ -16,7 +16,7 @@ Eta.templates.define("main", Eta.compile(
 
 const router = new Router();
 
-router.get("/", async (ctx) => {
+router.redirect("/set-lang", "/").get("/", async (ctx) => {
   ctx.response.body = await Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/home.eta`), {
     title: "Christian Dale"
   });
