@@ -9,7 +9,7 @@
     <title><%= it.title %></title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet" href="https://ionogy.github.io/kernel.css/kernel.css">
+    <link rel="stylesheet" href="/assets/css/kernel.css">
     <link rel="stylesheet" href="/assets/css/main.css">
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4919922704535736" crossorigin="anonymous"></script>
@@ -26,14 +26,13 @@
     gtag('config', 'G-9RX98F0117');
     </script>
 </head>
-<body class="ke-base">
+<body class="ke-modern">
     <div class="header-wrapper">
         <header class="ke-header ke-header-sm">
             <div class="ke-header-brand"><a class="logo ke-anchor" href="/">>_</a></div>
 
-            <button class="ke-nav-toggle">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+            <input class="ke-nav-toggle" id="ke-nav-toggle" type="checkbox">
+            <label for="ke-nav-toggle" class="ke-nav-toggle-hamburger"><span>☰</span></label>
 
             <nav class="ke-nav ke-float-right" style="float: right;">
             <ul>
@@ -41,7 +40,7 @@
                 <li><a href="/my-work">My Work</a></li>
                 <li><a href="/music">Music</a></li>                
                 <li><a href="/blog">Blog</a></li>
-                <li><a href="/#about">About / Contact</a></li>
+                <li><a href="/about">About</a></li>
             </ul>
             </nav>
         </header>
