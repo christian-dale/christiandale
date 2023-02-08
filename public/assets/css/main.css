@@ -93,6 +93,10 @@ a {
         background-color: #212121 !important;
         width: 100%;
     }
+
+    .ke-nav-toggle-hamburger {
+        margin-right: 10px;
+    }
 }
 
 @media (min-width: 900px) {
