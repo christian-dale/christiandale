@@ -86,7 +86,11 @@ a {
 
 @media (max-width: 900px) {
     .main-hero {
-        height: 100vh !important;
+        height: 120vh !important;
+    }
+
+    .ke-header {
+        position: fixed;
     }
 
     .ke-header .ke-nav {
