@@ -37,7 +37,7 @@ a {
 }
 
 .main-hero h1 {
-    font-size: 4.5em;
+    font-size: 4.5em;   
 }
 
 .social-icons a {
@@ -89,8 +89,8 @@ a {
         height: 100vh !important;
     }
 
-    .ke-header-mobile {
-        background-color: #212121;
+    .ke-header .ke-nav {
+        background-color: #212121 !important;
         width: 100%;
     }
 }
