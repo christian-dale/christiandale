@@ -40,7 +40,7 @@
                 <li><a href="/my-work">My Work</a></li>
                 <li><a href="/music">Music</a></li>                
                 <li><a href="/blog">Blog</a></li>
-                <li><a href="/about">About</a></li>
+                <li><a href="#about">About</a></li>
             </ul>
             </nav>
         </header>
