@@ -1,6 +1,7 @@
 import { Application, Router } from "https://deno.land/x/oak/mod.ts";
 import * as Eta from "https://deno.land/x/eta@v1.12.3/mod.ts";
 import { Marked } from "https://deno.land/x/markdown@v2.0.0/mod.ts";
+import { Bson, MongoClient } from "https://deno.land/x/mongo@v0.31.1/mod.ts";
 
 Eta.configure({
   views: `${Deno.cwd()}/views/`
@@ -15,6 +16,32 @@ Eta.templates.define("main", Eta.compile(
   await Deno.readTextFile(`${Deno.cwd()}/views/main.eta`)));
 
 const router = new Router();
+
+const client = new MongoClient();
+await client.connect({
+  db: "christiandale",
+  tls: true,
+  servers: [
+    {
+      host: Deno.env.get("DBHOST"),
+      port: 27017,
+    },
+  ],
+  credential: {
+    username: Deno.env.get("DBUSER"),
+    password: Deno.env.get("DBPASS"),
+    db: "christiandale",
+    mechanism: "SCRAM-SHA-1",
+  },
+});
+
+interface Email {
+  _id: { $oid: string };
+  email: string;
+}
+
+const db = client.database("christiandale");
+const emails = db.collection<Email>("emails");
 
 window.App = {
   currentLang: "no",
@@ -105,6 +132,17 @@ router.get("/blog/:id", async (ctx) => {
       meta: postMeta
     }
   });
+});
+
+router.post("/mailing-list", async (ctx) => {
+  const body = ctx.request.body({type: "form"});
+  const value = await body.value;
+
+  emails.insertOne({
+    email: value.get("email")
+  });
+
+  ctx.response.body = `<html><head></head><body><p>Thank you for subscribing. <a href="/">Continue ...</a></p></body></html>`;
 });
 
 const app = new Application();

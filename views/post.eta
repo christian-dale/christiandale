@@ -45,9 +45,9 @@
             <p>If you enjoyed this article and found it interesting. Consider joining my mailing list where you receive
             an email when I post new articles.</p>
 
-            <form style="margin-bottom: 25px;">
-                <input type="text" class="ke-input-text" placeholder="Email" style="max-width: 350px;">
-                <input type="submit" class="ke-button ke-btn-primary">                
+            <form style="margin-bottom: 25px;" method="post" action="/mailing-list">
+                <input type="text" name="email" class="ke-input-text" placeholder="Email" style="max-width: 350px;">
+                <input type="submit" class="ke-button ke-btn-primary">
             </form>
         </div>
 
