@@ -16,13 +16,33 @@ Eta.templates.define("main", Eta.compile(
 
 const router = new Router();
 
-router.redirect("/set-lang", "/").get("/", async (ctx) => {
+window.App = {
+  currentLang: "no",
+  lang(word: string) {
+
+  }
+}
+
+router.get("/", async (ctx) => {
+  const posts = [];
+
+  for await (const post of Deno.readDir(`${Deno.cwd()}/posts/`)) {
+    if (post.isFile && post.name.includes(".json")) {
+      const postJson = JSON.parse(await Deno.readTextFile(`${Deno.cwd()}/posts/${post.name}`));
+
+      if (postJson.draft == false) {
+        posts.push(postJson);
+      }
+    }
+  }
+
   ctx.response.body = await Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/home.eta`), {
-    title: "Christian Dale"
+    title: "Christian Dale",
+    posts: posts.sort((a, b) => new Date(a.date) - new Date(b.date)).reverse().slice(0, 3)
   });
 });
 
-router.redirect("/projects", "/my-work").get("/my-work", async (ctx) => {
+router.get("/my-work", async (ctx) => {
   ctx.response.body = await Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/mywork.eta`), {
     title: "Christian Dale - My Work"
   });
@@ -31,6 +51,18 @@ router.redirect("/projects", "/my-work").get("/my-work", async (ctx) => {
 router.get("/music", async (ctx) => {
   ctx.response.body = await Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/music.eta`), {
     title: "Christian Dale - Music"
+  });
+});
+
+router.get("/about", async (ctx) => {
+  ctx.response.body = await Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/about.eta`), {
+    title: "Christian Dale - About"
+  });
+});
+
+router.get("/contact", async (ctx) => {
+  ctx.response.body = await Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/contact.eta`), {
+    title: "Christian Dale - Contact"
   });
 });
 
@@ -45,7 +77,11 @@ router.get("/blog", async (ctx) => {
 
   for await (const post of Deno.readDir(`${Deno.cwd()}/posts/`)) {
     if (post.isFile && post.name.includes(".json")) {
-      posts.push(JSON.parse(await Deno.readTextFile(`${Deno.cwd()}/posts/${post.name}`)));
+      const postJson = JSON.parse(await Deno.readTextFile(`${Deno.cwd()}/posts/${post.name}`));
+
+      if (postJson.draft == false) {
+        posts.push(postJson);
+      }
     }
   }
 

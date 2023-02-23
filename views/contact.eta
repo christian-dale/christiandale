@@ -1,0 +1,38 @@
+<% layout("main", {metaDescription: "Contact"}) %>
+
+<div class="page-contact">
+    <div class="ke-container">
+        <h1 style="text-align: center;">Contact</h1>
+
+        <form class="ke-section">
+            <h3>Select your inquiry</h3>
+
+            <div>
+                <input type="radio" id="huey" name="drone" value="inqury_type" checked>
+                <label for="huey">Wordpress Help & Care</label>
+            </div>
+            <div>
+                <input type="radio" id="huey" name="drone" value="inqury_type" checked>
+                <label for="huey">Service Integrations</label>
+            </div>
+            <div>
+                <input type="radio" id="huey" name="drone" value="inqury_type" checked>
+                <label for="huey">Other inquiries</label>
+            </div>
+
+            <h3>Write a bit</h3>
+            <textarea class="ke-input-text"></textarea>
+
+            <div class="ke-grid">
+                <div class="ke-col-1">
+                    <input type="text" class="ke-input-text" placeholder="Enter your name">
+                </div>
+                <div class="ke-col-1">
+                    <input type="text" class="ke-input-text" placeholder="Enter your email">
+                </div>                
+            </div>            
+
+            <input type="submit" class="ke-button ke-button-default">
+        </form>
+    </div>
+</div>

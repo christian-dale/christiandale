@@ -15,10 +15,8 @@
 </script>
 
 <div class="page-post">
-    <div class="post-header" style="background: url('<%= it.post.meta.image %>') no-repeat center center; background-size: cover;">
-        <div class="post-header-content">
-            <h1><%= it.post.meta.title %></h1>
-            <p><%= it.post.meta.date %></p>
+    <div style="max-width: 1200px; margin: 0 auto;">
+        <div class="post-header" style="background: url('<%= it.post.meta.image %>') no-repeat center center; background-size: cover;">
         </div>
     </div>
 
@@ -27,13 +25,31 @@
             <%~ it.post.meta.attrib %>
         <% } %>
         <div class="post-content">
-            <% it.post.meta.categories.forEach(function(category) { %>
-                <a href="#" class="ke-tag"><%= category %></a>
-            <% }) %>
+            <h1><%= it.post.meta.title %></h1>
+            <p><%= it.post.meta.date %></p>
+
+            <div class="post-tags">
+                <% it.post.meta.categories.forEach(function(category) { %>
+                    <a href="#" class="ke-tag"><%= category %></a>
+                <% }) %>
+            </div>
+
             <%~ it.post.content %>
         </div>
 
         <p><b>Last updated: <%= it.post.meta.dateUpdate %></b></p>
+
+        <div style="border: 1px solid #eee; padding: 0 25px; margin: 25px 0;">
+            <h3>Dear reader</h3>
+
+            <p>If you enjoyed this article and found it interesting. Consider joining my mailing list where you receive
+            an email when I post new articles.</p>
+
+            <form style="margin-bottom: 25px;">
+                <input type="text" class="ke-input-text" placeholder="Email" style="max-width: 350px;">
+                <input type="submit" class="ke-button ke-btn-primary">                
+            </form>
+        </div>
 
         <div id="disqus_thread"></div>
         <script>

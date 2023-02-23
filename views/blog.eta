@@ -2,8 +2,8 @@
 
 <div class="section-blog" style="margin: 75px 0;">
     <div class="ke-container">
-        <h1 style="text-align: center;">BLOG</h1>
-        <p style="text-align: center;">A blog about technology and philosophy.</p>
+        <h1 style="text-align: center;">Blog</h1>
+        <p style="text-align: center; margin-bottom: 75px;">A blog about technology, music and philosophy.</p>
 
         <ul style="list-style-type: none; padding: 0;">
             <% it.posts.forEach(function(post, index) { %>

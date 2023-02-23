@@ -314,7 +314,15 @@
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
-  max-width: 960px;
+  max-width: 1000px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.ke-container-lg {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -329,7 +337,7 @@
   .ke-splitview {
     flex-direction: column;
   }
-  .ke-container {
+  .ke-container, .ke-container-lg {
     width: 100%;
   }
   [class*='col-'] {
@@ -618,12 +626,11 @@ a.ke-button {
     display: none;
     background-color: #fff;
     z-index: 999;
-    position: fixed;
+    position: absolute;
     left: 0;
     width: 100%;
     overflow-y: auto;
     max-height: 50vh;
-    border-bottom: 1px solid #eee;
     box-shadow: 0 1px 2px rgba(0,0,0,0.1);
   }
   .ke-header .ke-nav ul li {
@@ -672,6 +679,7 @@ a.ke-button {
   box-shadow: 0 1px 5px rgba(0,0,0,0.1);
   display: none;
   position: absolute;
+  z-index: 900;
 }
 .ke-nav .ke-dropdown ul li {
   display: block;
@@ -1035,7 +1043,7 @@ a.ke-button {
   border-color: #fc0;
   color: #fc0;
 }
-.ke-tag {
+a.ke-tag {
   background-color: #f5f5f5;
   border-radius: 10px;
   color: inherit;
@@ -1046,6 +1054,7 @@ a.ke-button {
   min-width: 15px;
   padding: 4px 7px;
   text-decoration: none;
+  margin: 5px 0;
 }
 .ke-blockquote {
   background: #f9f9f9;

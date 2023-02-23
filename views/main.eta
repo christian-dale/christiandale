@@ -26,7 +26,7 @@
     gtag('config', 'G-9RX98F0117');
     </script>
 </head>
-<body class="ke-modern">
+<body class="ke-base">
     <div class="header-wrapper">
         <header class="ke-header ke-header-sm">
             <div class="ke-header-brand"><a class="logo ke-anchor" href="/">>_</a></div>
@@ -37,10 +37,21 @@
             <nav class="ke-nav ke-float-right" style="float: right;">
             <ul>
                 <!--<li><a href="#">Services</a></li>-->
-                <li><a href="/my-work">My Work</a></li>
-                <li><a href="/music">Music</a></li>                
+                <li>
+                    <a href="#">Projects</a>
+                    <div class="ke-dropdown">
+                        <ul>
+                            <li>
+                                <a href="https://ionogy.github.io/kernel.css/">kernel.css</a>
+                            </li>
+                            <li>
+                                <a href="/music">Music</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
                 <li><a href="/blog">Blog</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="/about">About</a></li>
             </ul>
             </nav>
         </header>
@@ -62,16 +73,13 @@
                                     <a href="/" class="ke-anchor">Home</a>
                                 </li>
                                 <li>
-                                    <a href="/my-work" class="ke-anchor">My Work</a>
-                                </li>
-                                <li>
                                     <a href="/music" class="ke-anchor">Music</a>
                                 </li>                                
                                 <li>
                                     <a href="/blog" class="ke-anchor">Blog</a>
                                 </li>
                                 <li>
-                                    <a href="/#about" class="ke-anchor">About / Contact</a>
+                                    <a href="/about" class="ke-anchor">About</a>
                                 </li>
                             </ul>
                         </nav>                        

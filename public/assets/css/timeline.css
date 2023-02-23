@@ -64,11 +64,6 @@ h1, h2, h3 {
 	 font-weight: 900;
 }
 
-p {
-	 font-family: "Merriweather", sans-serif;
-	 line-height: 1.6;
-}
-
 .l-block-spacing {
 	 min-height: 80vh;
 	 padding: 2em 0 4em 0;
