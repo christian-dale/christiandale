@@ -17,31 +17,10 @@ Eta.templates.define("main", Eta.compile(
 
 const router = new Router();
 
-const client = new MongoClient();
-await client.connect({
-  db: "christiandale",
-  tls: true,
-  servers: [
-    {
-      host: Deno.env.get("DBHOST"),
-      port: 27017,
-    },
-  ],
-  credential: {
-    username: Deno.env.get("DBUSER"),
-    password: Deno.env.get("DBPASS"),
-    db: "christiandale",
-    mechanism: "SCRAM-SHA-1",
-  },
-});
-
 interface Email {
   _id: { $oid: string };
   email: string;
 }
-
-const db = client.database("christiandale");
-const emails = db.collection<Email>("emails");
 
 window.App = {
   currentLang: "no",
@@ -137,6 +116,27 @@ router.get("/blog/:id", async (ctx) => {
 router.post("/mailing-list", async (ctx) => {
   const body = ctx.request.body({type: "form"});
   const value = await body.value;
+
+  const client = new MongoClient();
+  await client.connect({
+    db: "christiandale",
+    tls: true,
+    servers: [
+      {
+        host: Deno.env.get("DBHOST"),
+        port: 27017,
+      },
+    ],
+    credential: {
+      username: Deno.env.get("DBUSER"),
+      password: Deno.env.get("DBPASS"),
+      db: "christiandale",
+      mechanism: "SCRAM-SHA-1",
+    },
+  });
+
+  const db = client.database("christiandale");
+  const emails = db.collection<Email>("emails");
 
   emails.insertOne({
     email: value.get("email")

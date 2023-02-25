@@ -104,5 +104,20 @@
             </div>            
         </div>
     </footer>
+
+    <div class="cookie-policy-wrapper">
+        <div class="cookie-policy">
+            <div class="ke-grid">
+                <div class="ke-col-8">
+                    <p>This website uses cookies.  We are committed to maintaining the privacy and security of your information and providing you with clear and transparent information about how we collect, use, and share your data. <a href="/privacy" class="privacy-policy-link">Privacy policy</a></p>
+                </div>
+                <div class="ke-col-2">
+                    <a href="#" class="btn-cookie-policy-accept ke-button ke-btn-primary">Accept</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/assets/js/main.js"></script>
 </body>
 </html>

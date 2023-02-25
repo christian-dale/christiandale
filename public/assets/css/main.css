@@ -164,6 +164,20 @@ hr {
     .section-me {
         padding-bottom: 50px;
     }
+
+    .cookie-policy-wrapper {
+        position: relative;
+    }
+
+    .cookie-policy {
+        box-sizing: border-box;
+        bottom: 0 !important;
+        width: 100vw !important;
+        background-color: #000;
+        margin: 0 !important;
+        padding: 0 15px !important;
+        border-radius: 0 !important;
+    }
 }
 
 @media (min-width: 900px) {
@@ -177,6 +191,13 @@ hr {
 
     .section-me {
         padding: 75px 0;
+    }
+
+    .cookie-policy .btn-cookie-policy-accept {
+        width: 150px;
+        right: 50px;
+        margin-top: 20px;
+        margin-left: 50px;
     }
 }
 
@@ -203,4 +224,29 @@ footer .footer-nav ul li {
 footer .footer-nav ul li a {
     padding: 10px 0;
     color: #fff;
+}
+
+.cookie-policy {
+    position: fixed;
+    bottom: 25px;
+    width: calc(100% - 100px);
+    background-color: #000;
+    padding-left: 25px;
+    margin-left: 35px;
+    border-radius: 5px;
+}
+
+.cookie-policy p {
+    color: #fff;
+    font-size: 0.9em;
+}
+
+.cookie-policy .privacy-policy-link {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.cookie-policy .btn-cookie-policy-accept {
+    width: 150px;
+    right: 50px;
 }
