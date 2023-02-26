@@ -60,7 +60,7 @@ router.get("/music", async (ctx) => {
   });
 });
 
-router.get("/about", async (ctx) => {
+router.redirect("/projects", "/about#section-work").get("/about", async (ctx) => {
   ctx.response.body = await Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/about.eta`), {
     title: "Christian Dale - About"
   });
