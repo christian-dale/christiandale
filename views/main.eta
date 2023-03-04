@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<%= App.currentLang %>">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +9,7 @@
     <title><%= it.title %></title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css">
     <link rel="stylesheet" href="/assets/css/kernel.css">
     <link rel="stylesheet" href="/assets/css/main.css">
 
@@ -52,6 +53,7 @@
                 </li>
                 <li><a href="/blog">Blog</a></li>
                 <li><a href="/about">About</a></li>
+                <li><a href="#" class="lang-switcher"></a></li>
             </ul>
             </nav>
         </header>

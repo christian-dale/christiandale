@@ -5,7 +5,7 @@
         <div class="ke-col-1">
             <div class="hero-info">
                 <h1>Christian Dale</h1>
-                <p>Full-stack web developer from Norway, with many years of experience. Interested in most things tech, including game development. <!--Let´s have a chat about your <strong>next business objectives</strong>.--></p>
+                <p><%= App.lang("home:description") %> <!--Let´s have a chat about your <strong>next business objectives</strong>.--></p>
 
                 <p class="social-icons">
                     <a class="linkIcon github-btn" href="https://github.com/christian-dale" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -58,7 +58,7 @@
 
 <div class="section-news">
     <div class="ke-container">
-        <h2>Latest Posts</h2>
+        <h2><%= App.lang("home:latestPosts") %></h2>
 
         <ul style="list-style-type: none; padding: 0;">
             <% it.posts.forEach(function(post, index) { %>

@@ -2,7 +2,7 @@
 
 In this article, I will lay out the pros of UBI and how it might solve many of the issues current welfare systems are experiencing. So join me on my journey of discovering a better world for all. From now on, I will refer to Universal Basic Income as UBI.
 
-## Issues with current welfare systems
+### Issues with current welfare systems
 
 The issues related to the current welfare systems are multifaceted, although some problems are more pressing than others. The first big issue is its fundamental historic design flaws. Welfare as a system had the following original aims:
 
@@ -29,7 +29,7 @@ Many unemployed people can do these untraditional jobs. They feel they aren't re
 
 Another issue faced is the social stigma of being a welfare recipient - this increases inequality in society - which results in discrimination based on life situations and income.
 
-## Defining what UBI is
+### Defining what UBI is
 
 UBI is a universal government-funded payout for every citizen over a specified age. Although some people disagree on the implementation details of UBI, the payout should be wholly unconditional.
 People somewhat disagree on the technicalities of how UBI should be implemented, but the idea at its core is what´s important.
@@ -38,13 +38,13 @@ People somewhat disagree on the technicalities of how UBI should be implemented,
 
 The goal is to give everyone a livable wage, which means people who earn above the median yearly income would have to pay the dividend back as taxes. A core principle of UBI is the unconditionality. People receive an income regardless of income level.
 
-## How it solves the current issues with welfare
+### How it solves the current issues with welfare
 
 As mentioned earlier, it is a common misconception that people who receive "free" money will remain inactive - be "slobs" watching tv all day. That's false, and the research shows that most people would do the opposite. Most people want to work if able. Most individuals wish to contribute or help in some way.
 
 You have probably heard the trope: Giving positive reinforcements has much better results than negative reinforcements. I believe the same reasoning fits most areas of society, especially welfare.
 
-## What about people who require additional support?
+### What about people who require additional support?
 
 Expenses differ based on the individual. Examples are people with children or people with considerable medical expenses.
 
@@ -54,7 +54,7 @@ Poverty is one of the leading causes of mental health issues. The uncertainty of
 
 Society usually stresses the importance of contributing. Everyone should get a job. Ironically this might have the opposite of the intended effect.
 
-## Studies on UBI
+### Studies on UBI
 
 ### The Stockton demonstration
 
@@ -71,11 +71,11 @@ In the demonstration, 125 randomly selected residents received a monthly paychec
 
 This trial only included the unemployed - which is inconclusive to the general population - but the findings are still very promising. Freelancers, artists, and entrepreneurs had more positive views on the effects of basic income, which some felt had given them opportunities to start businesses.
 
-## Hope at the end of the tunnel
+### Hope at the end of the tunnel
 
 Although discussion on UBI is still in the starting phases, plenty of research has shown promising results. That certainly makes the idea worthwhile to discuss and study further. You may disagree with the prepositions outlined in this document, but I invite you to consider some of the philosophies behind them. Maybe it can give you a new perspective.
 
-## Sources
+### Sources
 
 American Study on UBI - https://www.stocktondemonstration.org
 

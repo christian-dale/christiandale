@@ -1,35 +1,40 @@
-import { Application, Router } from "https://deno.land/x/oak/mod.ts";
+import { Application, Router, Cookies } from "https://deno.land/x/oak/mod.ts";
 import * as Eta from "https://deno.land/x/eta@v1.12.3/mod.ts";
 import { Marked } from "https://deno.land/x/markdown@v2.0.0/mod.ts";
 import { Bson, MongoClient } from "https://deno.land/x/mongo@v0.31.1/mod.ts";
+import validator from "npm:validator@13";
 
-Eta.configure({
-  views: `${Deno.cwd()}/views/`
-});
+Eta.configure({views: `${Deno.cwd()}/views/`});
 
 /** Fix for Deno Deploy */
-Eta.config.includeFile = function(path, data) {
-  return Eta.templates.get(path)(data, Eta.config);
-};
+Eta.config.includeFile = (path: string, data: Record<string, unknown>) => Eta.templates.get(path)(data, Eta.config);
 
 Eta.templates.define("main", Eta.compile(
   await Deno.readTextFile(`${Deno.cwd()}/views/main.eta`)));
 
 const router = new Router();
 
-interface Email {
-  _id: { $oid: string };
-  email: string;
-}
-
-window.App = {
-  currentLang: "no",
-  lang(word: string) {
-
+declare global {
+  interface Window {
+    App: Record<string, unknown>
   }
 }
 
-router.redirect("/set-lang", "/").get("/", async (ctx) => {
+window.App = {
+  title: "Christian Dale",
+  currentLang: Deno.env.get("LANG") ?? "en",
+
+  lang(word: string) {
+    const langJSON = JSON.parse(Deno.readTextFileSync(`${Deno.cwd()}/lang/${App.currentLang}.json`));
+    return langJSON[word];
+  },
+  
+  async renderTemplate(template: string, options: object) {
+    return await Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/${template}.eta`), options);
+  }
+}
+
+router.get("/", async (ctx) => {
   const posts = [];
 
   for await (const post of Deno.readDir(`${Deno.cwd()}/posts/`)) {
@@ -42,40 +47,30 @@ router.redirect("/set-lang", "/").get("/", async (ctx) => {
     }
   }
 
-  ctx.response.body = await Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/home.eta`), {
+  ctx.response.body = await App.renderTemplate("home", {
     title: "Christian Dale",
     posts: posts.sort((a, b) => new Date(a.date) - new Date(b.date)).reverse().slice(0, 3)
   });
 });
 
 router.get("/my-work", async (ctx) => {
-  ctx.response.body = await Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/mywork.eta`), {
-    title: "Christian Dale - My Work"
-  });
+  ctx.response.body = await App.renderTemplate("mywork", { title: "Christian Dale - My Work" });
 });
 
 router.get("/music", async (ctx) => {
-  ctx.response.body = await Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/music.eta`), {
-    title: "Christian Dale - Music"
-  });
+  ctx.response.body = await App.renderTemplate("music", { title: "Christian Dale - Music" });
 });
 
 router.redirect("/projects", "/about#section-work").get("/about", async (ctx) => {
-  ctx.response.body = await Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/about.eta`), {
-    title: "Christian Dale - About"
-  });
+  ctx.response.body = await App.renderTemplate("about", { title: "Christian Dale - About" });
 });
 
 router.get("/contact", async (ctx) => {
-  ctx.response.body = await Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/contact.eta`), {
-    title: "Christian Dale - Contact"
-  });
+  ctx.response.body = await App.renderTemplate("contact", { title: "Christian Dale - Contact" });
 });
 
 router.get("/privacy", async (ctx) => {
-  ctx.response.body = await Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/privacy.eta`), {
-    title: "Christian Dale - Privacy Policy"
-  });
+  ctx.response.body = await App.renderTemplate("privacy", { title: "Christian Dale - Privacy Policy" });
 });
 
 router.get("/blog", async (ctx) => {
@@ -91,7 +86,7 @@ router.get("/blog", async (ctx) => {
     }
   }
 
-  ctx.response.body = await Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/blog.eta`), {
+  ctx.response.body = await App.renderTemplate("blog", {
     title: "Christian Dale - Blog",
     posts: posts.sort((a, b) => new Date(a.date) - new Date(b.date)).reverse()
   });
@@ -99,12 +94,12 @@ router.get("/blog", async (ctx) => {
 
 router.get("/blog/:id", async (ctx) => {
   const post = await Deno.readTextFile(`${Deno.cwd()}/posts/${ctx.params.id}.md`);
-  let postMeta = await Deno.readTextFile(`${Deno.cwd()}/posts/${ctx.params.id}.json`);
+  const postMetaStr = await Deno.readTextFile(`${Deno.cwd()}/posts/${ctx.params.id}.json`);
 
-  postMeta = JSON.parse(postMeta);
+  const postMeta = JSON.parse(postMetaStr);
   postMeta.attrib = Marked.parse(postMeta.attrib).content;
 
-  ctx.response.body = await Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/post.eta`), {
+  ctx.response.body = await App.renderTemplate("post", {
     title: `Christian Dale - ${postMeta.title}`,
     post: {
       content: Marked.parse(post).content,
@@ -117,13 +112,18 @@ router.post("/mailing-list", async (ctx) => {
   const body = ctx.request.body({type: "form"});
   const value = await body.value;
 
+  interface Email {
+    _id: { $oid: string };
+    email: string;
+  }
+
   const client = new MongoClient();
   await client.connect({
     db: "christiandale",
     tls: true,
     servers: [
       {
-        host: Deno.env.get("DBHOST"),
+        host: Deno.env.get("DBHOST") as string,
         port: 27017,
       },
     ],
@@ -138,17 +138,42 @@ router.post("/mailing-list", async (ctx) => {
   const db = client.database("christiandale");
   const emails = db.collection<Email>("emails");
 
-  emails.insertOne({
-    email: value.get("email")
-  });
+  if (validator.isEmail(value.get("email"))) {
+    emails.insertOne({
+      email: value.get("email")!
+    });
+  }
 
   ctx.response.body = `<html><head></head><body><p>Thank you for subscribing. <a href="/">Continue ...</a></p></body></html>`;
+});
+
+router.get("/set-lang", async (ctx) => {
+  const lang = await ctx.cookies.get("lang");
+
+  if (lang && lang == "en") {
+    ctx.cookies.set("lang", "no");
+  } else {
+    ctx.cookies.set("lang", "en");
+  }
+
+  ctx.response.status = 200;
+  ctx.response.body = await ctx.cookies.get("lang");
 });
 
 const app = new Application();
 
 app.use(router.routes());
 app.use(router.allowedMethods());
+
+app.use(async (ctx, next) => {
+  const currentLang = await ctx.cookies.get("lang");
+
+  if (!currentLang) {
+    ctx.cookies.set("lang", "en");
+  }
+
+  await next();
+});
 
 app.use(async (context, next) => {
   try {
@@ -164,9 +189,7 @@ app.use(async (context, next) => {
 app.use(async (ctx) => {
   ctx.response.type = "text/html; charset=utf-8";
   ctx.response.status = 404;
-  ctx.response.body = await Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/404.eta`), {
-    title: "Christian Dale"
-  });
+  ctx.response.body = await App.renderTemplate("404", { title: "Christian Dale" });
 });
 
 await app.listen({ port: 80 });
