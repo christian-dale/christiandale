@@ -163,6 +163,11 @@ router.get("/set-lang", async (ctx) => {
   ctx.response.body = await ctx.cookies.get("lang");
 });
 
+router.get("/sitemap.xml", async (ctx) => {
+    ctx.response.type = "text/xml";
+    ctx.response.body = await Deno.readTextFile(`${Deno.cwd()}/public/sitemap_${App.currentLang}.xml`);
+});
+
 const app = new Application();
 
 app.use(router.routes());
