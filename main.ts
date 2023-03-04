@@ -2,7 +2,6 @@ import { Application, Router, Cookies } from "https://deno.land/x/oak/mod.ts";
 import * as Eta from "https://deno.land/x/eta@v1.12.3/mod.ts";
 import { Marked } from "https://deno.land/x/markdown@v2.0.0/mod.ts";
 import { Bson, MongoClient } from "https://deno.land/x/mongo@v0.31.1/mod.ts";
-import validator from "npm:validator@13";
 
 Eta.configure({views: `${Deno.cwd()}/views/`});
 
@@ -138,11 +137,9 @@ router.post("/mailing-list", async (ctx) => {
   const db = client.database("christiandale");
   const emails = db.collection<Email>("emails");
 
-  if (validator.isEmail(value.get("email"))) {
-    emails.insertOne({
-      email: value.get("email")!
-    });
-  }
+  emails.insertOne({
+    email: value.get("email")!
+  });
 
   ctx.response.body = `<html><head></head><body><p>Thank you for subscribing. <a href="/">Continue ...</a></p></body></html>`;
 });
