@@ -22,14 +22,20 @@ declare global {
 window.App = {
   title: "Christian Dale",
   currentLang: Deno.env.get("LANG") ?? "en",
+  langObject: {},
 
   lang(word: string) {
-    const langJSON = JSON.parse(Deno.readTextFileSync(`${Deno.cwd()}/lang/${App.currentLang}.json`));
-    return langJSON[word];
+    return App.langObject[word];
   },
   
   async renderTemplate(template: string, options: object) {
     return await Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/${template}.eta`), options);
+  }
+}
+
+for await (const lang of Deno.readDir(`${Deno.cwd()}/lang/`)) {
+  if (lang.isFile && lang.name.includes(".json") && lang.name.split(".")[0] == App.currentLang) {
+    App.langObject = JSON.parse(await Deno.readTextFile(`${Deno.cwd()}/lang/${lang.name}`));
   }
 }
 
