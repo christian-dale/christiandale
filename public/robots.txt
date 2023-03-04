@@ -1,4 +1,2 @@
 User-Agent: *
 Disallow: /cdn-cgi/
-
-Sitemap: https://christiandale.me/sitemap.xml
