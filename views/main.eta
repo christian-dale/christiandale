@@ -25,7 +25,9 @@
     gtag('js', new Date());
 
     gtag('config', 'G-9RX98F0117', {
-        'linker': ['christiandale.no']
+        'linker': {
+            'domains': ['christiandale.no']
+        }
     });
     </script>
 </head>
