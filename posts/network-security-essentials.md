@@ -28,6 +28,10 @@ It is important to make sure that only the intended persons have access to a net
 
 Authorization is a method in which you give access to an already authenticated user to specific information. For example, one user would be a guest, and another would be an admin.
 
+### Fail2ban
+
+Fail2ban is designed to hinder brute-force attacks and many other possible attack vectors. It pairs well with popular web servers like Apache, and even with SSH. The software works by blocking the ip of the attacker when blocking criteria are met. Read more about fail2ban [here](https://fail2ban.org).
+
 ### How potential security threats would be handled
 
 Of course, some data on a network is more important than other data, for example private user information. Therefore, it is important to secure this especially well, with methods like username and password and two factor authentication. This is what is referred to as preventative measures.
@@ -53,15 +57,15 @@ An example of this would be if you have a login form which takes the username fi
 
 Let's say we have the following query.
 
-<pre class="code code-block prettyprint"><code>SELECT \* FROM users WHERE username = '?' AND password = '?'</code></pre>
+<pre class="ke-code ke-code-block prettyprint"><code>SELECT \* FROM users WHERE username = '?' AND password = '?'</code></pre>
 
 Something like the following example could be used in that case to check if the server is vulnerable to MYSQL injections. We could set the password field to "' OR 1=1;" to achieve a bypass of the authentication system and gain access to the system. The database query would now look like this.
 
-<pre class="code code-block prettyprint"><code>SELECT * FROM users WHERE username = ? AND password = '' OR 1=1;</code></pre>
+<pre class="ke-code ke-code-block prettyprint"><code>SELECT * FROM users WHERE username = ? AND password = '' OR 1=1;</code></pre>
 
 This tells the database to either check if the username and passwords match, or if 1 = 1, which is always true, thus gaining login to the system.
 If a system is vulnerable to such attacks, the result could be even worse, in this example the whole database table would be deleted.
 
-<pre class="code code-block prettyprint"><code>SELECT * FROM users WHERE username = ? AND password = '' OR DROP TABLE users;</code></pre>
+<pre class="ke-code ke-code-block prettyprint"><code>SELECT * FROM users WHERE username = ? AND password = '' OR DROP TABLE users;</code></pre>
 
 MYSQL injection attacks can be prevented by using correct sanitation of all information sent to the network by users.

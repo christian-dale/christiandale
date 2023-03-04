@@ -94,6 +94,15 @@ hr {
     width: 100%;
 }
 
+.page-post .post-content h2 {
+    font-weight: bold;
+}
+
+.page-post .post-content h3 {
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
 .post-header {
     height: 50vh;
     background-size: cover;
