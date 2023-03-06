@@ -25,7 +25,7 @@ window.App = {
   langObject: {},
 
   lang(word: string) {
-    return App.langObject[word];
+    return App.langObject[word] ?? word;
   },
   
   async renderTemplate(template: string, options: object) {

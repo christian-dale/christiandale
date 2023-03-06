@@ -1,4 +1,12 @@
 {
+    "nav:projects": "Prosjekter",
+    "nav:blog": "Blog",
+    "nav:about": "Om meg",
+
     "home:description": "Fullstack webutvikler fra Norge, med mange års erfaring. Interessert i det meste av teknologi, inkludert spillutvikling og embedded systemer.",
-    "home:latestPosts": "Siste innlegg"
+    "home:latestPosts": "Siste innlegg",
+
+    "about:title": "Om meg",
+    "about:description": "Hei, og velkommen til nettstedet mitt! Jeg er en programvareutvikler fra Norge, som er interessert i de fleste programmeringsspråk. På fritiden driver jeg med musikkkomponering, youtube og vektløfting 💪",
+    "about:contactmeText": "Du kan kontakte meg på"
 }

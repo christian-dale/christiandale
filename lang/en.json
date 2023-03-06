@@ -1,4 +1,12 @@
 {
+    "nav:projects": "Projects",
+    "nav:blog": "Blog",
+    "nav:about": "About",
+
     "home:description": "Full-stack web developer from Norway, with many years of experience. Interested in most things tech, including game development and embedded devices.",
-    "home:latestPosts": "Latest posts"
+    "home:latestPosts": "Latest posts",
+
+    "about:title": "About me",
+    "about:description": "Hello, and welcome to my website! I am a software developer from Norway, who is interested in most programming languages. In my spare time I do music composing, youtube and weight lifting 💪",
+    "about:contactmeText": "You may contact me at"
 }
