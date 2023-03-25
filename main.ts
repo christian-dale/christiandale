@@ -1,6 +1,6 @@
 import { Application, Router, Cookies } from "https://deno.land/x/oak/mod.ts";
 import * as Eta from "https://deno.land/x/eta@v1.12.3/mod.ts";
-import { Marked } from "https://deno.land/x/markdown@v2.0.0/mod.ts";
+import { marky } from "https://deno.land/x/marky@v1.1.6/mod.ts";
 import { Bson, MongoClient } from "https://deno.land/x/mongo@v0.31.1/mod.ts";
 
 Eta.configure({views: `${Deno.cwd()}/views/`});
@@ -102,12 +102,12 @@ router.get("/blog/:id", async (ctx) => {
   const postMetaStr = await Deno.readTextFile(`${Deno.cwd()}/posts/${ctx.params.id}.json`);
 
   const postMeta = JSON.parse(postMetaStr);
-  postMeta.attrib = Marked.parse(postMeta.attrib).content;
+  postMeta.attrib = marky(postMeta.attrib);
 
   ctx.response.body = await App.renderTemplate("post", {
     title: `Christian Dale - ${postMeta.title}`,
     post: {
-      content: Marked.parse(post).content,
+      content: marky(post),
       meta: postMeta
     }
   });
