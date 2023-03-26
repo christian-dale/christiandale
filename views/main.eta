@@ -24,11 +24,7 @@
     }
     gtag('js', new Date());
 
-    gtag('config', 'G-9RX98F0117', {
-        'linker': {
-            'domains': ['christiandale.no']
-        }
-    });
+    gtag('config', 'G-9RX98F0117');
     </script>
 </head>
 <body class="ke-base">
