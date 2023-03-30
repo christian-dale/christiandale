@@ -1,4 +1,4 @@
-/*if (localStorage.getItem("cookiePolicy")) {
+if (localStorage.getItem("cookiePolicy")) {
     document.querySelector(".cookie-policy").remove();
 }
 
@@ -9,6 +9,7 @@ if (document.querySelector(".cookie-policy") != null) {
     });
 }
 
+/*
 if (document.documentElement.lang == "en") {
     document.querySelector(".lang-switcher").innerHTML = `<span class="fi fi-no"></span></a>`;
 } else {
