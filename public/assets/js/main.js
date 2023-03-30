@@ -1,4 +1,4 @@
-if (localStorage.getItem("cookiePolicy")) {
+/*if (localStorage.getItem("cookiePolicy")) {
     document.querySelector(".cookie-policy").remove();
 }
 
@@ -24,3 +24,4 @@ document.querySelector(".lang-switcher").addEventListener("click", function() {
         location.href = "/";
     }
 });
+*/
