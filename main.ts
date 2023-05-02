@@ -150,19 +150,6 @@ router.post("/mailing-list", async (ctx) => {
   ctx.response.body = `<html><head></head><body><p>Thank you for subscribing. <a href="/">Continue ...</a></p></body></html>`;
 });
 
-router.get("/set-lang", async (ctx) => {
-  const lang = await ctx.cookies.get("lang");
-
-  if (lang && lang == "en") {
-    ctx.cookies.set("lang", "no");
-  } else {
-    ctx.cookies.set("lang", "en");
-  }
-
-  ctx.response.status = 200;
-  ctx.response.body = await ctx.cookies.get("lang");
-});
-
 router.get("/sitemap.xml", async (ctx) => {
     ctx.response.type = "text/xml";
     ctx.response.body = await Deno.readTextFile(`${Deno.cwd()}/public/sitemap_${App.currentLang}.xml`);
@@ -172,16 +159,6 @@ const app = new Application();
 
 app.use(router.routes());
 app.use(router.allowedMethods());
-
-app.use(async (ctx, next) => {
-  const currentLang = await ctx.cookies.get("lang");
-
-  if (!currentLang) {
-    ctx.cookies.set("lang", "en");
-  }
-
-  await next();
-});
 
 app.use(async (context, next) => {
   try {
