@@ -8,12 +8,7 @@
         <ul style="list-style-type: none; padding: 0;">
             <% it.posts.forEach(function(post, index) { %>
                 <li>
-                    <% if (post.lang == "no") { %>
-                        <h3><a href="https://christiandale.no/blog/<%= post.permalink %>" class="ke-anchor"><%= post.title %></a></h3>
-                        <span class="fi fi-no"></span>
-                    <% } else { %>
-                        <h3><a href="https://christiandale.me/blog/<%= post.permalink %>" class="ke-anchor"><%= post.title %></a></h3>
-                    <% } %>
+                    <h3><a href="/blog/<%= post.permalink %>" class="ke-anchor"><%= post.title %></a></h3>
                     <p><b><%= post.date %></b></p>
                     <p><%= post.description %></p>
                 </li>
