@@ -21,21 +21,9 @@ declare global {
 
 window.App = {
   title: "Christian Dale",
-  currentLang: Deno.env.get("LANG") ?? "en",
-  langObject: {},
-
-  lang(word: string) {
-    return App.langObject[word] ?? word;
-  },
   
   async renderTemplate(template: string, options: object) {
     return await Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/${template}.eta`), options);
-  }
-}
-
-for await (const lang of Deno.readDir(`${Deno.cwd()}/lang/`)) {
-  if (lang.isFile && lang.name.includes(".json") && lang.name.split(".")[0] == App.currentLang) {
-    App.langObject = JSON.parse(await Deno.readTextFile(`${Deno.cwd()}/lang/${lang.name}`));
   }
 }
 
@@ -148,11 +136,6 @@ router.post("/mailing-list", async (ctx) => {
   });
 
   ctx.response.body = `<html><head></head><body><p>Thank you for subscribing. <a href="/">Continue ...</a></p></body></html>`;
-});
-
-router.get("/sitemap.xml", async (ctx) => {
-    ctx.response.type = "text/xml";
-    ctx.response.body = await Deno.readTextFile(`${Deno.cwd()}/public/sitemap_${App.currentLang}.xml`);
 });
 
 const app = new Application();
