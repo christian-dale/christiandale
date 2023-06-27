@@ -39,7 +39,7 @@
             <ul>
                 <!--<li><a href="#">Services</a></li>-->
                 <li>
-                    <a href="#">Projects</a>
+                    <a href="#"><%= App.lang("nav:projects") %></a>
                     <div class="ke-dropdown">
                         <ul>
                             <li>
@@ -51,8 +51,8 @@
                         </ul>
                     </div>
                 </li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/about">About</a></li>
+                <li><a href="/blog"><%= App.lang("nav:blog") %></a></li>
+                <li><a href="/about"><%= App.lang("nav:about") %></a></li>
                 <!--<li><a href="#" class="lang-switcher"></a></li>-->
             </ul>
             </nav>

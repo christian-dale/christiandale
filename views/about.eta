@@ -7,9 +7,9 @@
                 <img src="/assets/img/blog/hope.jpg" alt="Picture of Christian Dale" style="border-radius: 5px; width: 100%; object-fit: cover;">
             </div>
             <div class="ke-col-1">
-                <h1>About</h1>
-                <p style="margin-top: 20px;">Hello, and welcome to my website! I am a software developer from Norway, who is interested in most programming languages. In my spare time I do music composing, youtube and weight lifting 💪</p>
-                <p>You may contact me at <a href="mailto:inquiry@christiandale.me">inquiry@christiandale.me</a></p>
+                <h1><%= App.lang("about:title") %></h1>
+                <p style="margin-top: 20px;"><%= App.lang("about:description") %></p>
+                <p><%= App.lang("about:contactmeText") %> <a href="mailto:inquiry@christiandale.me">inquiry@christiandale.me</a></p>
                 <!--<a href="/contact" class="ke-button ke-btn-default">Contact form</a>-->
                 <a href="#section-skills" class="ke-button ke-btn-primary">List of skills</a>
                 <a href="#section-work" class="ke-button ke-btn-primary">My work</a>
