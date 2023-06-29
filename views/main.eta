@@ -13,16 +13,15 @@
     <link rel="stylesheet" href="/assets/css/kernel.css">
     <link rel="stylesheet" href="/assets/css/main.css">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9RX98F0117"></script>
+    <!-- Google Analytics, ga-lite implementation -->
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
+        (function(e,t,n,i,s,a,c){e[n]=e[n]||function(){(e[n].q=e[n].q||[]).push(arguments)}
+        ;a=t.createElement(i);c=t.getElementsByTagName(i)[0];a.async=true;a.src=s
+        ;c.parentNode.insertBefore(a,c)
+        })(window,document,"galite","script","https://cdn.jsdelivr.net/npm/ga-lite@2/dist/ga-lite.min.js");
 
-    gtag('config', 'G-9RX98F0117');
+        galite('create', 'G-9RX98F0117', 'auto');
+        galite('send', 'pageview');
     </script>
 </head>
 <body class="ke-base">
