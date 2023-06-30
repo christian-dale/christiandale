@@ -216,6 +216,10 @@ hr {
         padding: 0 15px !important;
         border-radius: 0 !important;
     }
+
+    .items-list .list-item {
+        flex-basis: 100%;
+    }
 }
 
 @media (min-width: 900px) {
