@@ -1,3 +1,20 @@
+---
+{
+    "title": "Best laptop for coding or programming",
+    "description": "Which laptop to choose depends on a number of factors, like your budget, open source ethics, choice of operating system and what kind of developement software you use. Altough these factors are important to consider, in general, most programming related activities, are low on resource intensivenes and would therefore not require great amounts of processing power.",
+    "date": "2023-03-04",
+    "dateUpdate": "2023-03-04",
+    "permalink": "best-laptop-for-coding-or-programming",
+    "lang": "en",
+    "draft": false,
+    "categories": [
+        "technology", "programming"
+    ],
+    "image": "/assets/img/blog/laptop.jpg",
+    "attrib": ""
+}
+---
+
 **Which laptop to choose for school / university, and which to choose for a developement job?**
 
 Which laptop to choose depends on a number of factors, like your budget, open source ethics, choice of operating system and what kind of developement software you use. Altough these factors are important to consider, in general, most programming related activities, are low on resource intensivenes and would therefore not require great amounts of processing power. The exceptions to this rule would be using or creating cpu / gpu heavy software like games, 3D or managing wast amounts of data.

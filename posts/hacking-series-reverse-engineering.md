@@ -1,3 +1,21 @@
+---
+{
+    "title": "Hacking series part 1: Reverse engineering",
+    "description": "Lately I have been interested in learning about hacking, in order to improve the security of my own applications.",
+    "date": "2021-12-19",
+    "dateUpdate": "2021-12-19",
+    "permalink": "hacking-series-reverse-engineering",
+    "lang": "en",
+    "draft": true,
+    "categories": [
+        "programming",
+        "hacking"
+    ],
+    "image": "/assets/img/blog/abstract1.jpg",
+    "attrib": ""
+}
+---
+
 Lately I have been interested in learning about hacking,
 in order to improve the security of my own applications.
 

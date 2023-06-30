@@ -1,3 +1,21 @@
+---
+{
+    "title": "Network Security Essentials",
+    "description": "These are some general tips on network security I wrote for an assignement.",
+    "date": "2022-04-10",
+    "dateUpdate": "2023-03-04",
+    "permalink": "network-security-essentials",
+    "lang": "en",
+    "draft": false,
+    "categories": [
+        "webdev",
+        "networksecurity"
+    ],
+    "image": "/assets/img/blog/security.jpg",
+    "attrib": ""
+}
+---
+
 These are some general tips on network security I wrote for an assignement.
 Most of the advice applies to Ubuntu GNU / Linux, but the methods would be just as important
 in any other operating system.

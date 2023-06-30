@@ -1,3 +1,21 @@
+---
+{
+    "title": "Connecting CloudFlare with GoDaddy",
+    "description": "This will be a simple guide on connecting CloudFlare with GoDaddy.",
+    "date": "2022-03-31",
+    "dateUpdate": "2022-03-31",
+    "permalink": "connecting-cloudflare-with-godaddy",
+    "lang": "en",
+    "draft": false,
+    "categories": [
+        "webdev",
+        "cloudflare"
+    ],
+    "image": "/assets/img/blog/abstract2.jpg",
+    "attrib": ""
+}
+---
+
 ## Introduction
 
 This will be a simple guide on connecting CloudFlare with GoDaddy.

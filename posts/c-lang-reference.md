@@ -1,3 +1,18 @@
+---
+{
+    "title": "A complete reference of the C programming language",
+    "description": "I think C is an awesome programming language, mainly because of it's simplicity. This is why I decided to make this reference in order to have something to refer to when programming in C.",
+    "permalink": "c-lang-reference",
+    "date": "2023-01-26",
+    "dateUpdate": "2023-01-26",
+    "draft": false,
+    "lang": "en",
+    "categories": ["programming", "c-lang"],
+    "image": "/assets/img/blog/hero2.jpg",
+    "attrib": ""
+}
+---
+
 I think C is an awesome programming language, mainly because of it's simplicity.
 This is why I decided to make this reference in order to have something to refer to when programming in C.
 

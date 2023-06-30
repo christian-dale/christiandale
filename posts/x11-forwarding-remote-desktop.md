@@ -1,3 +1,18 @@
+---
+{
+    "title": "Installing a GUI on your remote Ubuntu server using X11 Forwarding and Remote Desktop",
+    "description": "When using ssh to access servers remotely, have you ever thought, wouldn't it be nice to view GUI programs on my server?",
+    "date": "2022-03-08",
+    "dateUpdate": "2022-03-08",
+    "permalink": "x11-forwarding-remote-desktop",
+    "lang": "en",
+    "draft": false,
+    "categories": ["linux"],
+    "image": "/assets/img/blog/linux.jpg",
+    "attrib": ""
+}
+---
+
 When using ssh to access servers remotely, have you ever thought, wouldn't it be nice to view GUI programs on my server?
 In this guide I will show you how to do exactly this.
 This guide assumes you are using Ubuntu, but I would assume the packages used are available on most GNU / Linux distros.

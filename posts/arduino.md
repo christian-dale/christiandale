@@ -1,3 +1,21 @@
+---
+{
+    "title": "Concurrency on the Arduino",
+    "description": "In this article you will learn about concurrency on the arduino.",
+    "date": "2020-10-27",
+    "dateUpdate": "2020-10-27",
+    "permalink": "arduino",
+    "lang": "en",
+    "draft": false,
+    "categories": [
+        "programming",
+        "arduino"
+    ],
+    "image": "/assets/img/blog/arduino.jpg",
+    "attrib": ""
+}
+---
+
 In this article you will learn about concurrency on the arduino. Concurrency is a way of doing multiple
 things on the Arduino seemingly at the same time. This is great for making your code more responsive.  
 

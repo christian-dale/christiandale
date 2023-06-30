@@ -1,3 +1,18 @@
+---
+{
+    "title": "Orbital Mechanics",
+    "description": "This article is about coding orbital mechanics in javascript and learning the equations needed for creating a demo.",
+    "date": "2020-11-07",
+    "dateUpdate": "2020-11-07",
+    "permalink": "orbitalmechanics",
+    "lang": "en",
+    "draft": false,
+    "categories": ["programming", "games"],
+    "image": "https://source.unsplash.com/z3o1SQjm1Lk",
+    "attrib": ""
+}
+---
+
 This article is about coding orbital mechanics in javascript and learning the
 equations needed for creating a demo. This article assumes you already have some experience with coding in javascript.
 

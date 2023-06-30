@@ -1,3 +1,18 @@
+---
+{
+    "title": "4 major new features in PHP 8",
+    "description": "With the release of PHP 8, there are a number of new and powerful features that can help simplify and improve your codebase, so let's get right to it.",
+    "date": "2021-01-24",
+    "dateUpdate": "2021-01-24",
+    "permalink": "php8",
+    "lang": "en",
+    "draft": false,
+    "categories": ["programming", "php"],
+    "image": "/assets/img/blog/php8.png",
+    "attrib": "Logo by Colin Viebrock, [CC BY SA](https://creativecommons.org/licenses/by-sa/4.0/)."
+}
+---
+
 With the release of PHP 8, there are a number of new and powerful features that can
 help simplify and improve your codebase, so let's get right to it. These are in no particular order.
 

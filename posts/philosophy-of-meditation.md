@@ -1,3 +1,21 @@
+---
+{
+    "title": "Philosophy of meditation",
+    "description": "Most people think of meditation as sitting in a quiet place and not thinking about anything while sitting in a certain position.",
+    "date": "2023-01-21",
+    "dateUpdate": "2023-01-21",
+    "permalink": "philosophy-of-meditation",
+    "lang": "en",
+    "draft": false,
+    "categories": [
+        "philosophy",
+        "meditation"
+    ],
+    "image": "/assets/img/blog/meditation.jpg",
+    "attrib": ""
+}
+---
+
 Most people think of meditation as sitting in a quiet place and not thinking about anything
 while sitting in a certain position.
 While this is meditation in the traditional buddhist way, it is not the main thing I am reffering to here.

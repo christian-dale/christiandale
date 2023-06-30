@@ -1,3 +1,21 @@
+---
+{
+    "title": "A case for Universal Basic Income (UBI)",
+    "description": "How Universal Basic Income might be the solution to a failing welfare system. In this article I will lay out the pros of UBI and how it might solve many of the issues current welfare systems in many nations are facing.",
+    "date": "2023-02-19",
+    "dateUpdate": "2023-02-19",
+    "permalink": "a-case-for-ubi",
+    "lang": "en",
+    "draft": false,
+    "categories": [
+        "politics",
+        "ideas"
+    ],
+    "image": "/assets/img/blog/ubi.jpg",
+    "attrib": ""
+}
+---
+
 **Could Universal Basic Income be the solution to a failing welfare system?**
 
 In this article, I will lay out the pros of UBI and how it might solve many of the issues current welfare systems are experiencing. So join me on my journey of discovering a better world for all. From now on, I will refer to Universal Basic Income as UBI.

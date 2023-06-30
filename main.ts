@@ -31,11 +31,16 @@ router.get("/", async (ctx) => {
   const posts = [];
 
   for await (const post of Deno.readDir(`${Deno.cwd()}/posts/`)) {
-    if (post.isFile && post.name.includes(".json")) {
-      const postJson = JSON.parse(await Deno.readTextFile(`${Deno.cwd()}/posts/${post.name}`));
+    if (post.isFile && post.name.includes(".md")) {
+      const fileContent = await Deno.readTextFile(`${Deno.cwd()}/posts/${post.name}`);
+      const match = fileContent.match(/---\n({[\s\S]*})\n---/);
 
-      if (postJson.draft == false) {
-        posts.push(postJson);
+      if (match != null) {
+        const postJson = JSON.parse(match[1]);
+
+        if (postJson.draft == false) {
+          posts.push(postJson);
+        }
       }
     }
   }
@@ -70,11 +75,16 @@ router.get("/blog", async (ctx) => {
   const posts = [];
 
   for await (const post of Deno.readDir(`${Deno.cwd()}/posts/`)) {
-    if (post.isFile && post.name.includes(".json")) {
-      const postJson = JSON.parse(await Deno.readTextFile(`${Deno.cwd()}/posts/${post.name}`));
+    if (post.isFile && post.name.includes(".md")) {
+      const fileContent = await Deno.readTextFile(`${Deno.cwd()}/posts/${post.name}`);
+      const match = fileContent.match(/---\n({[\s\S]*})\n---/);
 
-      if (postJson.draft == false) {
-        posts.push(postJson);
+      if (match != null) {
+        const postJson = JSON.parse(match[1]);
+
+        if (postJson.draft == false) {
+          posts.push(postJson);
+        }
       }
     }
   }
@@ -87,18 +97,20 @@ router.get("/blog", async (ctx) => {
 
 router.get("/blog/:id", async (ctx) => {
   const post = await Deno.readTextFile(`${Deno.cwd()}/posts/${ctx.params.id}.md`);
-  const postMetaStr = await Deno.readTextFile(`${Deno.cwd()}/posts/${ctx.params.id}.json`);
+  const postJson = post.match(/---\n({[\s\S]*})\n---/);
 
-  const postMeta = JSON.parse(postMetaStr);
-  postMeta.attrib = marky(postMeta.attrib);
+  if (postJson != null) {
+    const postMeta = JSON.parse(postJson[1]);
+    postMeta.attrib = marky(postMeta.attrib);
 
-  ctx.response.body = await App.renderTemplate("post", {
-    title: `Christian Dale - ${postMeta.title}`,
-    post: {
-      content: marky(post),
-      meta: postMeta
-    }
-  });
+    ctx.response.body = await App.renderTemplate("post", {
+      title: `Christian Dale - ${postMeta.title}`,
+      post: {
+        content: marky(post),
+        meta: postMeta
+      }
+    });
+  }
 });
 
 router.post("/mailing-list", async (ctx) => {
