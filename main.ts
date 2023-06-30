@@ -98,6 +98,7 @@ router.get("/blog", async (ctx) => {
 router.get("/blog/:id", async (ctx) => {
   const post = await Deno.readTextFile(`${Deno.cwd()}/posts/${ctx.params.id}.md`);
   const postJson = post.match(/---\n({[\s\S]*})\n---/);
+  const postMd = post.match(/---\n{[\s\S]*}\n---([\s\S*]+)/);
 
   if (postJson != null) {
     const postMeta = JSON.parse(postJson[1]);
@@ -106,7 +107,7 @@ router.get("/blog/:id", async (ctx) => {
     ctx.response.body = await App.renderTemplate("post", {
       title: `Christian Dale - ${postMeta.title}`,
       post: {
-        content: marky(post),
+        content: marky(postMd[1]),
         meta: postMeta
       }
     });
