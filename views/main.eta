@@ -33,6 +33,7 @@
             <nav class="ke-nav ke-float-right" style="float: right;">
             <ul>
                 <!--<li><a href="#">Services</a></li>-->
+                <li><a href="/shop">Shop</a></li>
                 <li>
                     <a href="#">Projects</a>
                     <div class="ke-dropdown">

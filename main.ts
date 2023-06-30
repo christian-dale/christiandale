@@ -51,12 +51,12 @@ router.get("/", async (ctx) => {
   });
 });
 
-router.get("/my-work", async (ctx) => {
-  ctx.response.body = await App.renderTemplate("mywork", { title: "Christian Dale - My Work" });
-});
-
 router.get("/music", async (ctx) => {
   ctx.response.body = await App.renderTemplate("music", { title: "Christian Dale - Music" });
+});
+
+router.get("/shop", async (ctx) => {
+  ctx.response.body = await App.renderTemplate("shop", { title: "Christian Dale - Shop" });
 });
 
 router.redirect("/projects", "/about#section-work").get("/about", async (ctx) => {
