@@ -100,7 +100,7 @@
 
         <div class="ke-container">
             <div class="footer-copyright">
-                <p>Copyright &copy; 2023 - Christian Dale</p>
+                <p>Copyright &copy; 2020 - <%~ new Date().getFullYear() %>, Christian Dale | <a href="/privacy-policy">Privacy Policy</a></p>
             </div>            
         </div>
     </footer>

@@ -23,7 +23,7 @@
         <% } %>
         <div class="post-content">
             <h1><%= it.post.meta.title %></h1>
-            <p><%= it.post.meta.date %></p>
+            <p><b><%= new Date(it.post.meta.date).toDateString() %></b></p>
 
             <div class="post-tags">
                 <% it.post.meta.categories.forEach(function(category) { %>

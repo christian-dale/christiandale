@@ -65,7 +65,7 @@
                 <li>
                     <h3><a href="/blog/<%= post.permalink %>" class="ke-anchor"><%= post.title %></a></h3>
                     <p><%= post.description %></p>
-                    <p><b><%= post.date %></b></p>
+                    <p><b><%= new Date(post.date).toDateString() %></b></p>
                 </li>
             <% }) %>
         </ul>
