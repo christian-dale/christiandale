@@ -21,6 +21,8 @@
         galite('create', 'G-9RX98F0117', 'auto');
         galite('send', 'pageview');
     </script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4919922704535736" crossorigin="anonymous"></script>
 </head>
 <body class="ke-base">
     <div class="header-wrapper">
