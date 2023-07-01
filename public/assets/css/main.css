@@ -52,7 +52,8 @@ hr {
 }
 
 .main-hero h1 {
-    font-size: 4.5em;   
+    font-size: 4.2em;
+    font-weight: 900 !important;
 }
 
 .main-hero p {
@@ -173,7 +174,7 @@ hr {
     padding: 0 15px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
     .main-hero, .main-hero .ke-grid {
         padding: 0 10px;
     }
@@ -222,7 +223,7 @@ hr {
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 800px) {
     .header-wrapper {
         padding: 0 5px;
     }
