@@ -111,6 +111,7 @@ hr {
     margin-top: 35px;
     margin-bottom: 50px;
     border-radius: 5px;
+    border: 1px solid #000;
 }
 
 .post-header .post-header-content {
