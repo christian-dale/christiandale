@@ -62,10 +62,10 @@
 
         <ul style="list-style-type: none; padding: 0;">
             <% it.posts.forEach(function(post, index) { %>
-                <li>
-                    <h3><a href="/blog/<%= post.permalink %>" class="ke-anchor"><%= post.title %></a></h3>
+                <li style="margin-bottom: 50px;">
+                    <h3 style="margin-bottom: 5px;"><a href="/blog/<%= post.permalink %>" class="ke-anchor"><%= post.title %></a></h3>
+                    <p style="margin: 0;"><b><%= new Date(post.date).toDateString() %></b></p>
                     <p><%= post.description %></p>
-                    <p><b><%= new Date(post.date).toDateString() %></b></p>
                 </li>
             <% }) %>
         </ul>
