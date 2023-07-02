@@ -1,7 +1,7 @@
 ---
 {
     "title": "Using Deno KV with Deno deploy guide",
-    "description": "I think C is an awesome programming language, mainly because of it's simplicity. This is why I decided to make this reference in order to have something to refer to when programming in C.",
+    "description": "Deno KV is a new key-value storage system released with version 1.32 of the Deno runtime. It allows for persistant data storage, meaning that the date is stored on disk between system reboots.",
     "permalink": "using-deno-kv-with-deno-deploy-guide",
     "date": "2023-07-02",
     "dateUpdate": "2023-07-02",
