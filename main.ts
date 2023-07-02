@@ -156,9 +156,11 @@ const app = new Application();
 app.use(router.routes());
 app.use(router.allowedMethods());
 
-app.use(async (context, next) => {
+app.use(async (ctx, next) => {
   try {
-    await context.send({
+    ctx.response.headers.set("Cache-Control", "max-age=7890000");
+
+    await ctx.send({
       root: `${Deno.cwd()}/public`,
       index: "index.html",
     });
