@@ -26,7 +26,7 @@ Deno KV is also designed to be very fast and optimized.
     <li><a href="#overview">Overview of Deno KV</a></li>
     <ul>
         <li><a href="#example">Example of a simple KV application</a></li>
-        <li><a href="#advanced-example">More advanced examples</a></li>
+        <li><a href="#advanced-example">More advanced example</a></li>
         <li><a href="#atomic-operations">Atomic operations</a></li>
     </ul>
     <li><a href="#deno-deploy-kv-beta">Getting access to Deno Deploy KV beta</a></li>
@@ -81,13 +81,17 @@ but instead expects an array as an argument.
 Altough this might seem weird at first, it allows for a powerful way to categorize and query data.
 For example when using the **<em>kv.list()</em>** we can query data with a **prefix** or a **range selector**.
 
-### More advanced examples
+<div id="advanced-example"></div>
+
+### More advanced example
 
 The simple example above shows the **prefix** selector, but it also support the **range** selector, which is used in a similar fashion:
 
 ```// Receives a list of all items with "prefix" users, and that has a key of j up to p.
 kv.list({start: ["users", "j"], end: ["users", "p"]});
 ```
+
+<div id="atomic operations"></div>
 
 ### Atomic operations
 
