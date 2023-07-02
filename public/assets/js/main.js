@@ -9,3 +9,5 @@ if (document.querySelector(".cookie-policy") != null) {
         document.querySelector(".cookie-policy").remove();
     });
 }
+
+hljs.highlightAll();
