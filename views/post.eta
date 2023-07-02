@@ -15,9 +15,11 @@
 </script>
 
 <div class="page-post">
-    <div class="ke-container" style="padding-bottom: 75px;">
+    <div class="ke-container">
         <div class="post-header" style="background: url('<%= it.post.meta.image %>') no-repeat center center; background-size: cover;"></div>
+    </div>
 
+    <div class="ke-container" style="padding-bottom: 75px; max-width: 800px; margin: 0 auto;">
         <% if (it.post.meta.attrib != "") { %>
             <%~ it.post.meta.attrib %>
         <% } %>
