@@ -1,5 +1,7 @@
 <% layout("main", {metaDescription: "About me"}) %>
 
+<link rel="stylesheet" href="/assets/css/timeline.css">
+
 <div class="section-me" id="about">
     <div class="ke-container-lg">
         <div class="ke-grid">
