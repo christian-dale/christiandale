@@ -271,6 +271,7 @@ footer .footer-nav ul li a {
 
 .cookie-policy {
     position: fixed;
+    display: none;
     bottom: 25px;
     width: calc(100% - 100px);
     background-color: #000;
