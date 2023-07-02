@@ -110,7 +110,7 @@
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"> -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script defer src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4919922704535736" crossorigin="anonymous"></script>
 
     <!-- Google Analytics, ga-lite implementation -->
@@ -124,6 +124,6 @@
         galite('send', 'pageview');
     </script>
 
-    <script src="/assets/js/main.js"></script>
+    <script defer src="/assets/js/main.js"></script>
 </body>
 </html>
