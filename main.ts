@@ -1,4 +1,4 @@
-import { Application, Router, Cookies } from "https://deno.land/x/oak/mod.ts";
+import { Application, Router, Cookies, Status } from "https://deno.land/x/oak/mod.ts";
 import * as Eta from "https://deno.land/x/eta@v1.12.3/mod.ts";
 import { marky } from "https://deno.land/x/marky@v1.1.6/mod.ts";
 import { Bson, MongoClient } from "https://deno.land/x/mongo@v0.31.1/mod.ts";
@@ -59,7 +59,7 @@ router.get("/shop", async (ctx) => {
   ctx.response.body = await App.renderTemplate("shop", { title: "Christian Dale - Shop" });
 });
 
-router.redirect("/projects", "/about#section-work").get("/about", async (ctx) => {
+router.redirect("/projects", "/about#section-work", Status.PermanentRedirect).get("/about", async (ctx) => {
   ctx.response.body = await App.renderTemplate("about", { title: "Christian Dale - About" });
 });
 
