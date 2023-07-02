@@ -158,8 +158,6 @@ app.use(router.allowedMethods());
 
 app.use(async (ctx, next) => {
   try {
-    ctx.response.headers.set("Cache-Control", "max-age=7890000");
-
     await ctx.send({
       root: `${Deno.cwd()}/public`,
       index: "index.html",
