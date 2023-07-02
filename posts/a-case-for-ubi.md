@@ -1,9 +1,9 @@
 ---
 {
-    "title": "A case for Universal Basic Income (UBI)",
+    "title": "Impact of universal basic income on poverty alleviation and economic stability",
     "description": "How Universal Basic Income might be the solution to a failing welfare system. In this article I will lay out the pros of UBI and how it might solve many of the issues current welfare systems in many nations are facing.",
     "date": "2023-02-19",
-    "dateUpdate": "2023-02-19",
+    "dateUpdate": "2023-06-02",
     "permalink": "a-case-for-ubi",
     "lang": "en",
     "draft": false,
