@@ -27,7 +27,7 @@ window.App = {
   }
 }
 
-router.get("/", async (ctx) => {
+router.redirect("/set-lang", "/", Status.PermanentRedirect).get("/", async (ctx) => {
   const posts = [];
 
   for await (const post of Deno.readDir(`${Deno.cwd()}/posts/`)) {
