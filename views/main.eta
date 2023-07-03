@@ -121,7 +121,7 @@
         <div class="cookie-policy">
             <div class="ke-grid">
                 <div class="ke-col-8">
-                    <p><%= App.lang("main:cookieNotice") %></p>
+                    <p><%~ App.lang("main:cookieNotice") %></p>
                 </div>
                 <div class="ke-col-2">
                     <a href="#" class="btn-cookie-policy-accept ke-button ke-btn-primary"><%~ App.lang("main:cookieNoticeAccept") %></a>
