@@ -19,8 +19,6 @@ declare global {
   }
 }
 
-Deno.env.set("LANG", "no");
-
 window.App = {
   title: "Christian Dale",
   currentLang: Deno.env.get("LANG") ?? "en",
@@ -163,6 +161,16 @@ router.post("/mailing-list", async (ctx) => {
   });
 
   ctx.response.body = `<html><head></head><body><p>Thank you for subscribing. <a href="/">Continue ...</a></p></body></html>`;
+});
+
+router.get("/sitemap.xml", async (ctx) => {
+  const lang = App.currentLang == "no" ? "_no" : "";
+  const sitemap = await Deno.readTextFile(`${Deno.cwd()}/public/sitemap/sitemap${lang}.xml`);
+
+  console.log(`${Deno.cwd()}/public/sitemap${lang}.xml`);
+
+  ctx.response.headers.set("Content-Type", "text/xml");
+  ctx.response.body = sitemap;
 });
 
 const app = new Application();
