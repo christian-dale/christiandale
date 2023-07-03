@@ -8,6 +8,8 @@
 
     "main:404": "404 - Ikke funnet",
     "main:404Description": "Denne siden ble ikke funnet.",
+    "main:cookieNotice": "Denne nettsiden bruker informasjonskapsler. Vi er forpliktet til å opprettholde personvernet og sikkerheten til informasjonen din og gi deg klar og gjennomsiktig informasjon om hvordan vi samler inn, bruker og deler dataene dine. <a href=\"/privacy\" class=\"privacy-policy-link\">Personvernregler</a>",
+    "main:cookieNoticeAccept": "Ok",
 
     "home:description": "Fullstack webutvikler fra Norge, med mange års erfaring. Interessert i det meste av teknologi, inkludert spillutvikling og integrerte systemer.",
     "home:latestPosts": "Siste innlegg",
