@@ -1,12 +1,57 @@
 {
+    "nav:home": "Home",
+    "nav:music": "Music",
+    "nav:shop": "Shop",
     "nav:projects": "Projects",
     "nav:blog": "Blog",
     "nav:about": "About",
 
+    "main:404": "404 - Not found",
+    "main:404Description": "This page could not be found.",
+
     "home:description": "Full-stack web developer from Norway, with many years of experience. Interested in most things tech, including game development and embedded devices.",
     "home:latestPosts": "Latest posts",
 
+    "blog:description": "A blog about technology, music and philosophy.",
+
+    "shop:title": "Shop",
+    "shop:description": "Welcome to my shop. Here you can find apparel, 3d models, music and other trinkets.",
+    "shop:btnBuy": "Buy",
+
+    "music:title": "Music",
+    "music:description": "Music I have created. Take a look on Spotify or Soundcloud.",
+
     "about:title": "About me",
     "about:description": "Hello, and welcome to my website! I am a software developer from Norway, who is interested in most programming languages. In my spare time I do music composing, youtube and weight lifting 💪",
-    "about:contactmeText": "You may contact me at"
+    "about:contactmeText": "You may contact me at <a href=\"mailto:inquiry@christiandale.me\">inquiry@christiandale.me</a>",
+    "about:btnListOfSkills": "List of skills",
+    "about:btnMyWork": "My work",
+    "about:btnTimeline": "Timeline",
+    "about:listOfSkills": "List of skills",
+    "about:listOfSkillsText": "The skills I've amassed over the years.",
+    "about:listOfSkillsTopFive": "My 5 top skills",
+    "about:otherSkillsTitle": "Other skills",
+    "about:myWork": "My work",
+    "about:myWorkDescription": "These are some of the things I've worked on.",
+    "about:myWorkAkariTitle": "Projects I've worked on as a part of",
+    "about:myWorkAkariDescription": "I'm currently working for Akari as a web developer / web lead. This involves multiple different areas of responsibility, some of them being creating custom functions for customer websites, and maintaining / keeping systems secure and up to date.",
+    "about:privateProjectsTitle": "Projects I've worked on privately",
+    "about:pairSynthDescription": "Modular synthesizer.",
+    "about:lordOfTheLandsDescription": "Competitive and fast-paced economy management game.",
+    "about:kernelcssDescription": "Simple CSS framework.",
+    "about:colonyDescription": "Real time strategy game written in C.",
+    "about:libreDescription": "Work-in progress open source Discord like software written in 2015.",
+    "about:portfolioCMSDescription": "Portfolio content management system.",
+    "about:minorProjectsTitle": "Other minor projects / tools",
+    "about:dirlistRecursiveDescription": "Recursive directory traversal library.",
+    "about:timelineTitle": "Tidslinje",
+    "about:timelineDescription": "Companies I've worked for over the years",
+    "about:timelineAkariDescription": "Akari is a marketing agency that works closely with local customers, partners and suppliers. <br><br> Akari focuses on creating and telling good stories together with holistic profiling and marketing for small and medium-sized businesses. <br><br> My role at Akari is <b>web developer / web lead</b>.",
+    "about:timelineStrixcodeDescription": "Strixcode was a self owned company I started after my job at Brandingbox in order to serve a couple of the customers. <br><br> My role at Strixcode was <b>owner / software developer</b>.",
+    "about:timelineBrandingboxDescription": "Brandingbox was a marketing agency specifying in helping small to medium sized businesses. This was the first company I worked for as a developer. <br><br> My role at Brandingbox was <b>web developer</b>.",
+
+    "footer:navigationTitle": "Navigation",
+    "footer:otherTitle": "Other",
+    "footer:privacyPolicy": "Privacy policy",
+    "footer:copyright": "Copyright"
 }

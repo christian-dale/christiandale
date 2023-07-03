@@ -1,31 +1,62 @@
-<% layout("main", {metaDescription: "At christiandale.me, we understand the importance of protecting your personal information. We are committed to maintaining the privacy and security of your information and providing you with clear and transparent information about how we collect, use, and share your data."}) %>
+<% layout("main", {metaDescription: App.currentLang == "en" ? "At christiandale.me, we understand the importance of protecting your personal information. We are committed to maintaining the privacy and security of your information and providing you with clear and transparent information about how we collect, use, and share your data." : 
+    "På christiandale.me forstår vi viktigheten av å beskytte din personlige informasjon. Vi er forpliktet til å opprettholde personvernet og sikkerheten til informasjonen din og gi deg klar og gjennomsiktig informasjon om hvordan vi samler inn, bruker og deler dataene dine."}) %>
 
 <div class="ke-container">
-    <h1>Privacy Policy</h1>
+    <% if (App.currentLang == "en") { %>
+        <h1>Privacy Policy</h1>
 
-    <p>At christiandale.me, we understand the importance of protecting your personal information. We are committed to maintaining the privacy and security of your information and providing you with clear and transparent information about how we collect, use, and share your data.</p>
+        <p>At christiandale.me, we understand the importance of protecting your personal information. We are committed to maintaining the privacy and security of your information and providing you with clear and transparent information about how we collect, use, and share your data.</p>
 
-    <h2>Information We Collect</h2>
+        <h2>Information We Collect</h2>
 
-    <p>We collect information that you provide directly to us, including your name, email address, and any other information that you choose to share with us. We may also collect information about your use of our website, including the pages you visit, the links you click, and the features you use.</p>
+        <p>We collect information that you provide directly to us, including your name, email address, and any other information that you choose to share with us. We may also collect information about your use of our website, including the pages you visit, the links you click, and the features you use.</p>
 
-    <h2>How We Use Your Information</h2>
+        <h2>How We Use Your Information</h2>
 
-    <p>We use the information we collect to provide you with a better user experience, to improve the content and features of our website, and to contact you with information that we believe will be of interest to you. We may also use your information to personalize your experience on our website and to tailor our marketing efforts to better meet your needs.</p>
+        <p>We use the information we collect to provide you with a better user experience, to improve the content and features of our website, and to contact you with information that we believe will be of interest to you. We may also use your information to personalize your experience on our website and to tailor our marketing efforts to better meet your needs.</p>
 
-    <h2>Sharing Your Information</h2>
+        <h2>Sharing Your Information</h2>
 
-    <p>We do not share your information with third parties for their own marketing purposes without your consent. We may share your information with third-party service providers that we use to support our business, such as website hosting, analytics, and marketing services.</p>
+        <p>We do not share your information with third parties for their own marketing purposes without your consent. We may share your information with third-party service providers that we use to support our business, such as website hosting, analytics, and marketing services.</p>
 
-    <h2>Security</h2>
+        <h2>Security</h2>
 
-    <p>We take reasonable measures to protect your information from unauthorized access, use, or disclosure. However, no data transmission over the internet can be guaranteed to be 100% secure. We cannot ensure or warrant the security of any information you transmit to us, so you do so at your own risk.</p>
+        <p>We take reasonable measures to protect your information from unauthorized access, use, or disclosure. However, no data transmission over the internet can be guaranteed to be 100% secure. We cannot ensure or warrant the security of any information you transmit to us, so you do so at your own risk.</p>
 
-    <h2>Changes to this Policy</h2>
+        <h2>Changes to this Policy</h2>
 
-    <p>We may update this privacy policy from time to time. If we make any changes to our policy, we will post the updated policy on this page so that you are always aware of what information we collect, how we use it, and under what circumstances we may share it.</p>
+        <p>We may update this privacy policy from time to time. If we make any changes to our policy, we will post the updated policy on this page so that you are always aware of what information we collect, how we use it, and under what circumstances we may share it.</p>
 
-    <h2>Contact Us</h2>
+        <h2>Contact Us</h2>
 
-    <p>If you have any questions or concerns about our privacy policy or our data collection and use practices, please contact us at <a href="mailto:inquiry@christiandale.me">inquiry@christiandale.me</a>.</p>
+        <p>If you have any questions or concerns about our privacy policy or our data collection and use practices, please contact us at <a href="mailto:inquiry@christiandale.me">inquiry@christiandale.me</a>.</p>
+    <% } else { %>
+        <h1>Personvernregler</h1>
+
+        <p>På christiandale.no forstår vi viktigheten av å beskytte din personlige informasjon. Vi er forpliktet til å opprettholde personvernet og sikkerheten til informasjonen din og gi deg klar og gjennomsiktig informasjon om hvordan vi samler inn, bruker og deler dataene dine.</p>
+
+        <h2>Informasjon vi samler inn</h2>
+
+        <p>Vi samler inn informasjon som du oppgir direkte til oss, inkludert navn, e-postadresse og all annen informasjon du velger å dele med oss. Vi kan også samle inn informasjon om din bruk av nettstedet vårt, inkludert sidene du besøker, koblingene du klikker på og funksjonene du bruker.</p>
+
+        <h2>Hvordan vi bruker informasjonen din</h2>
+
+        <p>Vi bruker informasjonen vi samler inn for å gi deg en bedre brukeropplevelse, for å forbedre innholdet og funksjonene på nettstedet vårt, og for å kontakte deg med informasjon som vi tror vil være av interesse for deg. Vi kan også bruke informasjonen din til å tilpasse opplevelsen din på nettstedet vårt og for å skreddersy markedsføringstiltak for å bedre møte dine behov.</p>
+
+        <h2>Deling av informasjonen din</h2>
+
+        <p>Vi deler ikke informasjonen din med tredjeparter for deres egne markedsføringsformål uten ditt samtykke. Vi kan dele informasjonen din med tredjeparts tjenesteleverandører som vi bruker for å støtte virksomheten vår, for eksempel webhotell, analyse og markedsføringstjenester.</p>
+
+        <h2>Sikkerhet</h2>
+
+        <p>Vi tar rimelige tiltak for å beskytte informasjonen din mot uautorisert tilgang, bruk eller avsløring. Imidlertid kan ingen dataoverføring over internett garanteres å være 100 % sikker. Vi kan ikke garantere sikkerheten til informasjon du sender til oss, så du gjør det på egen risiko.</p>
+
+        <h2>Endringer i denne retningslinjen</h2>
+
+        <p>Vi kan oppdatere denne personvernreglene fra tid til annen. Hvis vi gjør endringer i retningslinjene våre, vil vi legge ut de oppdaterte retningslinjene på denne siden slik at du alltid er klar over hvilken informasjon vi samler inn, hvordan vi bruker den, og under hvilke omstendigheter vi kan dele den.</p>
+
+        <h2>Kontakt oss</h2>
+
+        <p>Hvis du har spørsmål eller bekymringer angående personvernreglene våre eller vår datainnsamling og brukspraksis, vennligst kontakt oss på <a href="mailto:post@christiandale.no">post@christiandale.no</a>. </p>
+    <% } %>
 </div>

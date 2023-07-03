@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<%= App.currentLang %>">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,22 +33,22 @@
             <nav class="ke-nav ke-float-right" style="float: right;">
             <ul>
                 <!--<li><a href="#">Services</a></li>-->
-                <li><a href="/shop">Shop</a></li>
+                <li><a href="/shop"><%= App.lang("nav:shop") %></a></li>
                 <li>
-                    <a href="#">Projects</a>
+                    <a href="#"><%= App.lang("nav:projects") %></a>
                     <div class="ke-dropdown">
                         <ul>
                             <li>
                                 <a href="https://ionogy.github.io/kernel.css/">kernel.css</a>
                             </li>
                             <li>
-                                <a href="/music">Music</a>
+                                <a href="/music"><%= App.lang("nav:music") %></a>
                             </li>
                         </ul>
                     </div>
                 </li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/about">About</a></li>
+                <li><a href="/blog"><%= App.lang("nav:blog") %></a></li>
+                <li><a href="/about"><%= App.lang("nav:about") %></a></li>
                 <!--<li><a href="#" class="lang-switcher"></a></li>-->
             </ul>
             </nav>
@@ -64,30 +64,32 @@
             <div class="ke-container">
                 <div class="ke-grid">
                     <div class="ke-col-1">
-                        <h3>Navigation</h3>
+                        <h3><%= App.lang("footer:navigationTitle") %></h3>
+
                         <nav class="footer-nav">
                             <ul>
                                 <li>
-                                    <a href="/" class="ke-anchor">Home</a>
+                                    <a href="/" class="ke-anchor"><%= App.lang("nav:home") %></a>
                                 </li>
                                 <li>
-                                    <a href="/music" class="ke-anchor">Music</a>
+                                    <a href="/music" class="ke-anchor"><%= App.lang("nav:music") %></a>
                                 </li>                                
                                 <li>
-                                    <a href="/blog" class="ke-anchor">Blog</a>
+                                    <a href="/blog" class="ke-anchor"><%= App.lang("nav:blog") %></a>
                                 </li>
                                 <li>
-                                    <a href="/about" class="ke-anchor">About</a>
+                                    <a href="/about" class="ke-anchor"><%= App.lang("nav:about") %></a>
                                 </li>
                             </ul>
                         </nav>                        
                     </div>
+
                     <div class="ke-col-1">
-                        <h3>Other</h3>
+                        <h3><%= App.lang("footer:otherTitle") %></h3>
                         <nav class="footer-nav">
                             <ul>
                                 <li>
-                                    <a href="https://christiandale.me/privacy" class="ke-anchor">Privacy Policy</a>
+                                    <a href="/privacy" class="ke-anchor"><%= App.lang("footer:privacyPolicy") %></a>
                                 </li>
                             </ul>
                         </nav>                        
@@ -98,7 +100,7 @@
 
         <div class="ke-container">
             <div class="footer-copyright">
-                <p>Copyright &copy; 2020 - <%~ new Date().getFullYear() %>, Christian Dale | <a href="/privacy-policy">Privacy Policy</a></p>
+                <p><%= App.lang("footer:copyright") %> &copy; 2020 - <%~ new Date().getFullYear() %>, Christian Dale | <a href="/privacy"><%= App.lang("footer:privacyPolicy") %></a></p>
             </div>            
         </div>
     </footer>

@@ -1,9 +1,9 @@
-<% layout("main", {metaDescription: "Music I have created"}) %>
+<% layout("main", {metaDescription: App.lang("music:title")}) %>
 
 <div class="page-music" style="padding: 75px 0;">
     <div class="ke-container">
-        <h1 style="text-align: center;">Music</h1>
-        <p style="text-align: center;">Music I have created. Take a look on Spotify or Soundcloud.</p>
+        <h1 style="text-align: center;"><%= App.lang("music:title") %></h1>
+        <p style="text-align: center;"><%= App.lang("music:description") %></p>
 
         <p class="social-icons" style="text-align: center;">
             <a class="linkIcon spotify-btn" style="color: #212121 !important; font-size: 1.5em;" href="https://open.spotify.com/artist/6w169Ejb7ec8p7Z4cVtCs3?si=1AFXbpQSQuea0ElZHr2YPg" target="_blank"><i class="fa-brands fa-spotify"></i></a>

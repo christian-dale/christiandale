@@ -1,12 +1,57 @@
 {
+    "nav:home": "Hjem",
+    "nav:music": "Musikk",
+    "nav:shop": "Butikk",
     "nav:projects": "Prosjekter",
     "nav:blog": "Blog",
     "nav:about": "Om meg",
 
-    "home:description": "Fullstack webutvikler fra Norge, med mange års erfaring. Interessert i det meste av teknologi, inkludert spillutvikling og embedded systemer.",
+    "main:404": "404 - Ikke funnet",
+    "main:404Description": "Denne siden ble ikke funnet.",
+
+    "home:description": "Fullstack webutvikler fra Norge, med mange års erfaring. Interessert i det meste av teknologi, inkludert spillutvikling og integrerte systemer.",
     "home:latestPosts": "Siste innlegg",
 
+    "shop:title": "Butikk",
+    "shop:description": "Velkommen til butikken min. Her kan du finne klær, 3d-modeller, musikk og andre pyntegjenstander.",
+    "shop:btnBuy": "Kjøp",
+
+    "music:title": "Musikk",
+    "music:description": "Musikk jeg har laget. Ta en titt på Spotify eller Soundcloud.",
+
+    "blog:description": "En blog om teknologi, musikk og filosofi.",
+
     "about:title": "Om meg",
-    "about:description": "Hei, og velkommen til nettstedet mitt! Jeg er en programvareutvikler fra Norge, som er interessert i de fleste programmeringsspråk. På fritiden driver jeg med musikkkomponering, youtube og vektløfting 💪",
-    "about:contactmeText": "Du kan kontakte meg på"
+    "about:description": "Hei, og velkommen til nettsiden min! Jeg er utvikler fra Norge som er interessert i det meste innenfor programmering. I fritiden liker jeg å jobbe med musikk, lage youtube videoer og vektløfting 💪",
+    "about:contactmeText": "You may contact me at <a href=\"mailto:inquiry@christiandale.me\">post@christiandale.no</a>",
+    "about:btnListOfSkills": "Kunnskapsliste",
+    "about:btnMyWork": "Mitt arbeid",
+    "about:btnTimeline": "Tidslinje",
+    "about:listOfSkills": "Kunnskapsliste",
+    "about:listOfSkillsText": "Erfaringer jeg har bygget opp igjennom årene",
+    "about:listOfSkillsTopFive": "Mine top 5 erfaringer",
+    "about:otherSkillsTitle": "Andre erfaringer",
+    "about:myWork": "Mitt arbeid",
+    "about:myWorkDescription": "Dette er noen av tingene jeg har jobbet med.",
+    "about:myWorkAkariTitle": "Prosjekter jeg har jobbet med som en del av",
+    "about:myWorkAkariDescription": "Jeg jobber for tiden for Akari som webutvikler / webansvarlig. Dette involverer flere forskjellige ansvarsområder, noen av dem er å lage tilpassede funksjoner for kundenettsteder, og vedlikeholde / holde systemer sikre og oppdaterte.",
+    "about:privateProjectsTitle": "Prosjekter jeg har jobbet med privat",
+    "about:pairSynthDescription": "Modulær synth.",
+    "about:lordOfTheLandsDescription": "Konkurransedyktig og fartsfylt økonomistyringsspill.",
+    "about:kernelcssDescription": "Enkelt CSS rammeverk.",
+    "about:colonyDescription": "Sanntidsstrategispill skrevet i C.",
+    "about:libreDescription": "Åpen kildekode Discord-lignende programvare skrevet i 2015. Fortsatt under arbeid.",
+    "about:portfolioCMSDescription": "Innholdsstyringssystem for porteføljer.",
+    "about:minorProjectsTitle": "Andre mindre prosjekter/verktøy",
+    "about:dirlistRecursiveDescription": "Rekursivt katalogtraversalbibliotek.",
+    "about:timelineTitle": "Tidslinje",
+    "about:timelineDescription": "Companies I've worked for over the years",
+    "about:timelineAkariDescription": "Akari er et markedsføringsbyrå som jobber tett med lokale kunder, partnere og leverandører. <br><br> Akari fokuserer på å skape og fortelle gode historier sammen med helhetlig profilering og markedsføring for små og mellomstore bedrifter. <br><br> Min rolle i Akari er <b>webutvikler / webansvarlig.</b>",
+    "about:timelineStrixcodeDescription": "Strixcode var et selveid selskap jeg startet etter jobben min i Brandingbox for å betjene et par av kundene. <br><br> Min rolle i Strixcode var <b>eier / programvareutvikler</b>.",
+    "about:timelineBrandingboxDescription": "Brandingbox var et markedsføringsbyrå som spesifiserte å hjelpe små og mellomstore bedrifter. Dette var det første selskapet jeg jobbet for som utvikler. <br><br> Min rolle i Brandingbox var <b>webutvikler</b>.",
+
+    "footer:navigationTitle": "Navigasjon",
+    "footer:otherTitle": "Annet",
+    "footer:privacyPolicy": "Personvern",
+    "footer:copyright": "Kopirett"
 }

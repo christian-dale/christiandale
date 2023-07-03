@@ -9,13 +9,13 @@
                 <img src="/assets/img/blog/hope.jpg" alt="Picture of Christian Dale" style="border-radius: 5px; width: 100%; object-fit: cover;">
             </div>
             <div class="ke-col-1">
-                <h1>About</h1>
-                <p style="margin-top: 20px;">Hello, and welcome to my website! I am a software developer from Norway, who is interested in most programming languages. In my spare time I do music composing, youtube and weight lifting 💪</p>
-                <p>You may contact me at <a href="mailto:inquiry@christiandale.me">inquiry@christiandale.me</a></p>
+                <h1><%~ App.lang("about:title") %></h1>
+                <p style="margin-top: 20px;"><%= App.lang("about:description") %></p>
+                <p><%~ App.lang("about:contactmeText") %></p>
                 <!--<a href="/contact" class="ke-button ke-btn-default">Contact form</a>-->
-                <a href="#section-skills" class="ke-button ke-btn-primary">List of skills</a>
-                <a href="#section-work" class="ke-button ke-btn-primary">My work</a>
-                <a href="#section-timeline" class="ke-button ke-btn-primary">Timeline</a>
+                <a href="#section-skills" class="ke-button ke-btn-primary"><%= App.lang("about:btnListOfSkills") %></a>
+                <a href="#section-work" class="ke-button ke-btn-primary"><%= App.lang("about:btnMyWork") %></a>
+                <a href="#section-timeline" class="ke-button ke-btn-primary"><%= App.lang("about:btnTimeline") %></a>
             </div>
         </div>
     </div>
@@ -25,10 +25,10 @@
 <div class="">
 <div id="section-skills" class="section-skills" style="padding: 75px 0; background-color: #f5f5f5;">
     <div class="ke-container">
-        <h1>List of skills</h1>
-        <p>The skills I´ve amassed over the years.</p>
+        <h1><%= App.lang("about:listOfSkills") %></h1>
+        <p><%= App.lang("about:listOfSkillsText") %></p>
 
-        <h3>My 5 top skills</h3>
+        <h3><%= App.lang("about:listOfSkills") %></h3>
 
         <p><b>HTML / CSS / Javascript</b></p>
         <div class="ke-progressbar">
@@ -55,7 +55,7 @@
             <div class="ke-progress" style="width: 75%; background-color: #00e676;"></div>
         </div>           
 
-        <h3>Other skills</h3>
+        <h3><%= App.lang("about:otherSkillsTitle") %></h3>
         <div class="tag-list">
             <a class="ke-tag" href="#">DNS</a>
             <a class="ke-tag" href="#">Java</a>
@@ -76,50 +76,49 @@
 <div class="">
 <div id="section-work" class="page-mywork" style="padding: 75px 0;">
     <div class="ke-container">
-        <h1>My work</h1>
-        <p>These are some of the things I´ve worked on.</p>
+        <h1><%= App.lang("about:myWork") %></h1>
+        <p><%= App.lang("about:myWorkDescription") %></p>
 
-        <h3>Projects I´ve worked on as a part of <a href="https://akari.no">Akari</a></h3>
-        <p>I´m currently working for Akari as a web developer / web lead. This involves multiple different
-        areas of responsibility, some of them being creating custom functions for customer websites, and maintaining / keeping systems secure and up to date.</p>
+        <h3><%= App.lang("about:myWorkAkariTitle") %> <a href="https://akari.no">Akari</a></h3>
+        <p><%= App.lang("about:myWorkAkariDescription") %></p>
 
-        <h3>Projects I´ve worked on privately</h3>
+        <h3><%= App.lang("about:privateProjectsTitle") %></h3>
         <ul>
             <li>
                 <h4>PairSynth</h4>
-                <p>Modular synthesizer.</p>
+                <p><%= App.lang("about:pairsynthDescription") %></p>
                 <a href="https://github.com/team-cryo/pairsynth" target="_blank">https://github.com/team-cryo/pairsynth</a>
             </li>
             <li>
                 <h4>Lord of the Lands</h4>
-                <p>Competitive and fast-paced economy management game.</p>
+                <p><%= App.lang("about:lordOfTheLandsDescription") %></p>
                 <a href="https://teamcryo.tech" target="_blank">https://teamcryo.tech</a>
             </li>            
             <li class="projectItem">
                 <h4>Kernel.css</h4>
-                <p>Simple CSS framework.</p>
+                <p><%= App.lang("about:kernelcssDescription") %></p>
                 <a href="https://ionogy.github.io/kernel.css/" target="_blank">https://ionogy.github.io/kernel.css/</a>
             </li>
             <li class="projectItem">
                 <h4>Colony</h4>
-                <p>Real time strategy game written in C.</p>
+                <p><%= App.lang("about:colonyDescription") %></p>
             </li>
             <li class="projectItem">
                 <h4>Libre</h4>
-                <p>Work-in progress open source Discord like software written in 2015.</p>
+                <p><%= App.lang("about:libreDescription") %></p>
             </li>
             <li class="projectItem">
                 <h4>Portfolio CMS</h4>
-                <p>Portfolio content management system.</p>
+                <p><%= App.lang("about:portfolioCMSDescription") %></p>
                 <a href="https://github.com/christian-dale/portfolio-cms" target="_blank">https://github.com/christian-dale/portfolio-cms</a>
             </li>        
         </ul>
 
-        <h3>Other minor projects / tools</h3>
+        <h3><%= App.lang("about:minorProjectsTitle") %></h3>
         <ul>
             <li class="projectItem">
                 <h4>Dirlist recursive</h4>
-                <p>Recursive directory traversal library.</p>
+                <p><%= App.lang("about:dirlistRecursiveDescription") %></p>
             </li>
         </ul>
     </div>
@@ -129,8 +128,8 @@
 
 <div id="section-timeline" class="section-timeline" style="padding: 75px 0; background-color: #f5f5f5;">
     <div class="ke-container">
-        <h1>Timeline</h1>
-        <p>Companies I´ve worked for over the years</p>
+        <h1><%= App.lang("about:timelineTitle") %></h1>
+        <p><%= App.lang("about:timelineDescription") %></p>
 
         <section class="block-content t-block-teal l-block-spacing">
             <div class="l-contained">
@@ -138,16 +137,7 @@
                     <li>
             <div class="content">
                         <h3>Akari (2022 -)</h3>
-                
-                        <p>
-                        <a href="https://akari.no" target="_blank" class="ke-anchor">Akari</a> is a marketing agency that works closely with local customers, partners and suppliers.
-                        </p>
-
-                        <p>
-                        Akari focuses on creating and telling good stories together with holistic profiling and marketing for small and medium-sized businesses.
-                        </p>
-
-                        <p>My role at Akari is <b>web developer / web lead.</b></p>
+                        <p><%~ App.lang("about:timelineAkariDescription") %></p>
         </div>
                     </li>
                     <li>
@@ -158,19 +148,14 @@
                             a couple of the customers.
                         </p>
 
-                        <p>My role at Strixcode was <b>owner / software developer</b>.</p>
+                        <p><%~ App.lang("about:timelineStrixcodeDescription") %></p>
         </div>
                     </li>
                     <li>
             <div class="content">
                         <h3>Brandingbox (2017 - 2019)</h3>
-                
-                        <p>
-                        Brandingbox was a marketing agency specifying in helping small to medium sized businesses.
-                        This was the first company I worked for as a developer.
-                        </p>
 
-                        <p>My role at Brandingbox was <b>web developer</b>.</p>
+                        <p><%~ App.lang("about:timelineBrandingboxDescription") %></p>
         </div>
                     </li>
                 </ul>

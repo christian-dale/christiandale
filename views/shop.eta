@@ -2,15 +2,15 @@
 
 <div class="page-shop" style="padding: 75px 0;">
     <div class="ke-container">
-        <h1 style="text-align: center;">Shop</h1>
-        <p style="text-align: center;">Welcome to my shop. Here you can find apparel, 3d models, music and other trinkets.</p>
+        <h1 style="text-align: center;"><%= App.lang("shop:title") %></h1>
+        <p style="text-align: center;"><%= App.lang("shop:description") %></p>
 
         <div class="items-list" style="margin-top: 50px;">
             <div class="list-item">
                 <img class="list-item-img" src="https://public-files.gumroad.com/6ecbaqew48joyt3199ydxqurxbau">
                 <h3>Low Poly Nature Pack</h3>
                 <div class="list-item-info">
-                    <p style="display: inline-block; float: left;"><a href="https://chrisdaletweets.gumroad.com/l/iasqay?_gl=1*1e2tx80*_ga*OTYwMjM5NjkzLjE2ODc2NDUyMTI.*_ga_6LJN6D94N6*MTY4ODE1NDAxNi4xMS4xLjE2ODgxNTQwMTguMC4wLjA.">Buy</a></p>
+                    <p style="display: inline-block; float: left;"><a href="https://chrisdaletweets.gumroad.com/l/iasqay?_gl=1*1e2tx80*_ga*OTYwMjM5NjkzLjE2ODc2NDUyMTI.*_ga_6LJN6D94N6*MTY4ODE1NDAxNi4xMS4xLjE2ODgxNTQwMTguMC4wLjA."><%= App.lang("shop:btnBuy") %></a></p>
                     <p style="display: inline-block; float: right;">$2<p>   
                 </div>
             </div>

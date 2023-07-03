@@ -19,11 +19,25 @@ declare global {
   }
 }
 
+Deno.env.set("LANG", "no");
+
 window.App = {
   title: "Christian Dale",
+  currentLang: Deno.env.get("LANG") ?? "en",
+  langObject: {},
+
+  lang(word: string) {
+    return App.langObject[word] ?? word;
+  },
   
   async renderTemplate(template: string, options: object) {
     return await Eta.render(await Deno.readTextFile(`${Deno.cwd()}/views/${template}.eta`), options);
+  }
+}
+
+for await (const lang of Deno.readDir(`${Deno.cwd()}/lang/`)) {
+  if (lang.isFile && lang.name.includes(".json") && lang.name.split(".")[0] == App.currentLang) {
+    App.langObject = JSON.parse(await Deno.readTextFile(`${Deno.cwd()}/lang/${lang.name}`));
   }
 }
 
@@ -38,7 +52,7 @@ router.redirect("/set-lang", "/", Status.PermanentRedirect).get("/", async (ctx)
       if (match != null) {
         const postJson = JSON.parse(match[1]);
 
-        if (postJson.draft == false) {
+        if (postJson.draft == false && postJson.lang == App.currentLang) {
           posts.push(postJson);
         }
       }
@@ -82,7 +96,7 @@ router.get("/blog", async (ctx) => {
       if (match != null) {
         const postJson = JSON.parse(match[1]);
 
-        if (postJson.draft == false) {
+        if (postJson.draft == false && postJson.lang == App.currentLang) {
           posts.push(postJson);
         }
       }

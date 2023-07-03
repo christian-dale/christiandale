@@ -3,7 +3,11 @@
 <div class="section-blog" style="margin: 75px 0;">
     <div class="ke-container">
         <h1 style="text-align: center;">Blog</h1>
-        <p style="text-align: center; margin-bottom: 75px;">A blog about technology, music and philosophy.</p>
+        <p style="text-align: center;"><%= App.lang("blog:description") %></p>
+
+        <% if (App.currentLang == "no") { %>
+            <p style="text-align: center; margin-bottom: 75px;">Les den engelske bloggen <a href="https://christiandale.me">her</a></p> 
+        <% } %>
 
         <ul style="list-style-type: none; padding: 0;">
             <% it.posts.forEach(function(post, index) { %>
