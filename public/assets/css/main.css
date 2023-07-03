@@ -6,6 +6,7 @@ a {
 
 p {
     font-size: large;
+    line-height: 2em !important;
 }
 
 hr {
