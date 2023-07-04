@@ -116,6 +116,10 @@ router.get("/blog/:id", async (ctx) => {
     const postMeta = JSON.parse(postJson[1]);
     postMeta.attrib = marky(postMeta.attrib);
 
+    if (postMeta.lang == "en" && App.currentLang == "no") {
+        ctx.response.redirect("https://christiandale.me/blog/" + ctx.params.id);
+    }
+
     ctx.response.body = await App.renderTemplate("post", {
       title: `Christian Dale - ${postMeta.title}`,
       post: {
