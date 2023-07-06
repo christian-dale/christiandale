@@ -59,6 +59,16 @@
                         </ul>
                     </div>
                 </li>
+                <li>
+                    <a href="#"><%= App.lang("nav:tools") %></a>
+                    <div class="ke-dropdown">
+                        <ul>
+                            <li>
+                                <a href="/blog/lorem-ipsum-generator">Lorem ipsum generator</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
                 <li><a href="/blog"><%= App.lang("nav:blog") %></a></li>
                 <li><a href="/about"><%= App.lang("nav:about") %></a></li>
                 <!--<li><a href="#" class="lang-switcher"></a></li>-->
