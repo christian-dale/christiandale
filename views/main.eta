@@ -51,7 +51,7 @@
                     <div class="ke-dropdown">
                         <ul>
                             <li>
-                                <a href="https://ionogy.github.io/kernel.css/">kernel.css</a>
+                                <a href="https://ionogy.github.io/kernel.css/" target="_blank">kernel.css</a>
                             </li>
                             <li>
                                 <a href="/music"><%= App.lang("nav:music") %></a>
