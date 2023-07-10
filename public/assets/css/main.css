@@ -178,6 +178,10 @@ hr {
     display: none;
 }
 
+.page-post ul li p {
+    margin: 0;
+}
+
 @media (max-width: 800px) {
     .main-hero, .main-hero .ke-grid {
         padding: 0 10px;
