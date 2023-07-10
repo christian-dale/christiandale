@@ -2,6 +2,7 @@ import { Application, Router, Cookies, Status } from "https://deno.land/x/oak/mo
 import * as Eta from "https://deno.land/x/eta@v1.12.3/mod.ts";
 import { marky } from "https://deno.land/x/marky@v1.1.6/mod.ts";
 import { Bson, MongoClient } from "https://deno.land/x/mongo@v0.31.1/mod.ts";
+import { render } from "https://deno.land/x/gfm/mod.ts";
 
 Eta.configure({views: `${Deno.cwd()}/views/`});
 
@@ -123,7 +124,9 @@ router.get("/blog/:id", async (ctx) => {
     ctx.response.body = await App.renderTemplate("post", {
       title: `Christian Dale - ${postMeta.title}`,
       post: {
-        content: marky(postMd[1]),
+        content: render(postMd[1], {
+          disableHtmlSanitization: true
+        }),
         meta: postMeta
       }
     });
