@@ -1,7 +1,7 @@
 ---
 {
     "title": "Effects of universal basic income on poverty alleviation and economic stability",
-    "description": "How Universal Basic Income might be the solution to a failing welfare system. In this article I will lay out the pros of UBI and how it might solve many of the issues current welfare systems in many nations are facing.",
+    "description": "How Universal Basic Income might be the solution to a failing welfare system. Current welfare system emerged at a time when societies as a whole were facing different issues than what they currently are doing.",
     "date": "2023-02-19",
     "dateUpdate": "2023-07-11",
     "permalink": "a-case-for-ubi",
@@ -50,7 +50,7 @@ The first big issue is its fundamental historic design flaws. Welfare as a syste
 * **Give an income to individuals incapable of working because of evident and diagnosable sicknesses.**
 * **Rehabilitating the induvidual with the hopes of being employed again in the future.**
 
-The welfare system emerged at a time when societies as a whole were facing different issues than what they currently are doing. The family dynamic was completely different; people lived in a traditional family structure. The husband went to work, while the wife was homebound and focused on caring for their children. 
+Current welfare system emerged at a time when societies as a whole were facing different issues than what they currently are doing. The family dynamic was completely different; people lived in a traditional family structure. The husband went to work, while the wife was homebound and focused on caring for their children. 
 
 The majority of people had stable jobs where they worked 8 hours workdays. They earned a livable wage that could support their family, and they usually kept this job until retirement.
 
