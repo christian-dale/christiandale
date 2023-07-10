@@ -62,9 +62,9 @@ A growing group in society is working from home or doing freelance work. These j
 
 Sickness is not always easy to define. Many people struggle with health issues that do not always fit a specific diagnosis. Humans are much too complex to be put into a category, and reasons, why one might not work, are multifaceted.
 
-A common misconception is that unemployed people are not contributing to society. The current definition of work is too limited, and we all need to broaden our perspectives. Work - in the traditional sense - generates value in the form of wealth. The reality is that most people create some form of value for society.
+A common misconception is that unemployed people are not contributing to society. The current definition of work is too limited, and we all need to broaden our perspectives. Work, in the traditional sense, generates value in the form of wealth. The reality is that most people create some form of value for society.
 
-Some examples of value generated that does not fit the traditional description of work are the following:
+Some examples of value generated - what one might call diverse value creation - that does not fit the traditional description of work are the following:
 
 * **Voluntary work.**
 * **Art and creative work, in its many forms.**
