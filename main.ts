@@ -133,43 +133,6 @@ router.get("/blog/:id", async (ctx) => {
   }
 });
 
-router.post("/mailing-list", async (ctx) => {
-  const body = ctx.request.body({type: "form"});
-  const value = await body.value;
-
-  interface Email {
-    _id: { $oid: string };
-    email: string;
-  }
-
-  const client = new MongoClient();
-  await client.connect({
-    db: "christiandale",
-    tls: true,
-    servers: [
-      {
-        host: Deno.env.get("DBHOST") as string,
-        port: 27017,
-      },
-    ],
-    credential: {
-      username: Deno.env.get("DBUSER"),
-      password: Deno.env.get("DBPASS"),
-      db: "christiandale",
-      mechanism: "SCRAM-SHA-1",
-    },
-  });
-
-  const db = client.database("christiandale");
-  const emails = db.collection<Email>("emails");
-
-  emails.insertOne({
-    email: value.get("email")!
-  });
-
-  ctx.response.body = `<html><head></head><body><p>Thank you for subscribing. <a href="/">Continue ...</a></p></body></html>`;
-});
-
 router.get("/sitemap.xml", async (ctx) => {
   const lang = App.currentLang == "no" ? "_no" : "";
   const sitemap = await Deno.readTextFile(`${Deno.cwd()}/public/sitemap/sitemap${lang}.xml`);

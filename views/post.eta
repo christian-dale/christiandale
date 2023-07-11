@@ -40,18 +40,6 @@
 
         <p><b>Last updated: <%= it.post.meta.dateUpdate %></b></p>
 
-        <div style="border: 1px solid #eee; padding: 0 25px; margin: 25px 0;">
-            <h3>Dear reader</h3>
-
-            <p>If you enjoyed this article and found it interesting. Consider joining my mailing list where you receive
-            an email when I post new articles.</p>
-
-            <form style="margin-bottom: 25px;" method="post" action="/mailing-list">
-                <input type="text" name="email" class="ke-input-text" placeholder="Email" style="max-width: 350px;">
-                <input type="submit" class="ke-button ke-btn-primary">
-            </form>
-        </div>
-
         <div id="disqus_thread"></div>
         <script>
         /**
