@@ -14,7 +14,7 @@
 ---
 
 Deno KV is a new key-value storage system released with version 1.32 of the Deno runtime.
-It allows for persistant data storage, meaning that the date is stored on disk between system reboots.
+It allows for persistant data storage, meaning that the data is stored on disk between system reboots.
 
 At the time of writing, Deno KV is still experimental and the API is subject to change.
 It is therefore recommened to keep data backed up, as is always advicable.
