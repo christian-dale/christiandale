@@ -125,7 +125,7 @@ kv.atomic().set(key, value).delete(["users", "peter"]).commit();
 
 At the time of writing Deno Deploy KV is currently only available as a closed beta.
 
-You can join the waitlist by visit this link: [https://deno.com/kv](https://deno.com/kv)
+You can join the waitlist by visiting this link: [https://deno.com/kv](https://deno.com/kv)
 
 Once you have access you will see a new tab called "KV (beta)" in your Deno Deploy project dash.
 
