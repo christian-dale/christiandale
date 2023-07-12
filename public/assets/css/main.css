@@ -105,8 +105,8 @@ hr {
 
 .post-header {
     height: 300px;
-    background-size: cover;
-    position: relative;
+    width: 100%;
+    object-fit: cover;
     margin-top: 35px;
     margin-bottom: 50px;
     border-radius: 5px;

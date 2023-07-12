@@ -17,7 +17,7 @@
 <div class="page-post">
     <% if (it.post.meta.image != "") { %>
     <div class="ke-container">
-        <div class="post-header" style="background: url('<%= it.post.meta.image %>') no-repeat center center; background-size: cover;"></div>
+        <img class="post-header" src="<%= it.post.meta.image %>">
     </div>
     <% } %>
 
