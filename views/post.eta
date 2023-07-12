@@ -9,6 +9,7 @@
     "@type": "Person",
     "name": "Christian Dale"
     },
+    "image": "<%= App.baseURL %><%= it.post.meta.image %>",
     "datePublished": "<%= it.post.meta.date %>",
     "description": "<%= it.post.meta.description %>"
 }

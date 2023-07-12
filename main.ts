@@ -23,6 +23,7 @@ declare global {
 window.App = {
   title: "Christian Dale",
   currentLang: Deno.env.get("LANG") ?? "en",
+  baseURL: Deno.env.get("BASE_URL") ?? "localhost",
   langObject: {},
 
   lang(word: string) {
