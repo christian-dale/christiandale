@@ -21,13 +21,13 @@ but there are a few things we need to learn before that. We will learn about
 computing the distance between points, calculating the amount of force acting upon an object
 using Newtons gravity equation, and computing the direction of a vector.
 
-** The distance between points **
+### The distance between points
 
 Computing the distance between two points is easy. This is the equation for doing so.
 
 <pre class="code code-block prettyprint"><code>d = sqrt((x1 - x0)^2 + (y1 - y0)^2)</code></pre>
 
-** Newton's law of gravity **
+### Newton's law of gravity
 
 This is probably the most complicated part of this article, but once you understand it
 everything else will be simple in comparison. In this equation, F is equal to the amount of force
@@ -38,19 +38,19 @@ and d is the distance between the two objects.
 
 <pre class="code code-block prettyprint"><code>F = (G * m * M) / d^2</code></pre>
 
-** The direction of a vector **
+### The direction of a vector
 
 <pre class="code code-block prettyprint">o = atan2(x1 - x0, y1 - y0)
 Fx = cos(o) * F
 Fy = sin(o) * F</code></pre>
 
-** Astronomical units **
+### Astronomical units
 
 Astronomical units are a way of measuring distances in space and is what works best for large distances
 like between planets and moons. An astronomical unit is the distance between the center of the sun to
 the center of the earth and is defined as AU = 149.6e9, or about 150 million kilometers.
 
-** A demo **
+### A demo
 
 This is not to scale.
 
@@ -58,7 +58,7 @@ This is not to scale.
   <canvas style="max-width: 100%" width="400" height="400"></canvas>
 </div>
 
-** This is the code **
+### This is the code
 
 <pre class="code code-block prettyprint"><code>const width = 400;
 const height = 400;

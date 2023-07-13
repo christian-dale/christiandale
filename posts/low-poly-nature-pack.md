@@ -16,7 +16,7 @@
 }
 ---
 
-** Low Poly Nature Pack now available! **
+### Low Poly Nature Pack now available!
 
 The Low Poly Nature Pack is now available for download form Gumroad, and soon to be available on the Unity asset store.
 

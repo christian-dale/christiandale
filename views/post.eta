@@ -17,7 +17,7 @@
 
 <div class="page-post">
     <% if (it.post.meta.image != "") { %>
-    <div class="ke-container">
+    <div class="ke-container" style="max-width: 800px; margin: 0 auto;">
         <img class="post-header" src="<%= it.post.meta.image %>">
     </div>
     <% } %>
