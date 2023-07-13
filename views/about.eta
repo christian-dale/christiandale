@@ -1,4 +1,4 @@
-<% layout("main", {metaDescription: "About me"}) %>
+<% layout("main", {metaDescription: "About me", canonical: "/about"}) %>
 
 <link rel="stylesheet" href="/assets/css/timeline.css">
 

@@ -1,4 +1,4 @@
-<% layout("main", {metaDescription: App.lang("main:404")}) %>
+<% layout("main", {metaDescription: App.lang("main:404"), canonical: "/404"}) %>
 
 <div class="page-404" style="padding: 75px 0;">
     <div class="ke-container">

@@ -1,4 +1,4 @@
-<% layout("main", {metaDescription: "Contact"}) %>
+<% layout("main", {metaDescription: "Contact", canonical: "/contact"}) %>
 
 <div class="page-contact">
     <div class="ke-container">

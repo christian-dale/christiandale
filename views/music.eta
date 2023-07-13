@@ -1,4 +1,4 @@
-<% layout("main", {metaDescription: App.lang("music:title")}) %>
+<% layout("main", {metaDescription: App.lang("music:title"), canonical: "/music"}) %>
 
 <div class="page-music" style="padding: 75px 0;">
     <div class="ke-container">

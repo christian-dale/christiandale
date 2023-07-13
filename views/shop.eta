@@ -1,4 +1,4 @@
-<% layout("main", {metaDescription: "Welcome to my shop. Here you can find apparel, 3d models, music and other trinkets."}) %>
+<% layout("main", {metaDescription: "Welcome to my shop. Here you can find apparel, 3d models, music and other trinkets.", canonical: "/shop"}) %>
 
 <div class="page-shop" style="padding: 75px 0;">
     <div class="ke-container">

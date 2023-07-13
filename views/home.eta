@@ -1,4 +1,4 @@
-<% layout("main", {metaDescription: App.lang("home:description")}) %>
+<% layout("main", {metaDescription: App.lang("home:description"), canonical: "/"}) %>
 
 <div class="ke-hero main-hero">
     <div class="ke-grid">
