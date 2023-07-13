@@ -1,4 +1,4 @@
-<% layout("main", {metaDescription: it.post.meta.description, canonical: "/blog/" + it.post.meta.permalink}) %>
+<% layout("main", {metaDescription: it.post.meta.description, canonical: "/blog/" + it.post.meta.permalink, metaTitle: it.post.meta.title, metaImage: it.post.meta.image}) %>
 
 <script type="application/ld+json">
 {
